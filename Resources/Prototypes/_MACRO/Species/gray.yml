@@ -2,7 +2,7 @@
   id: Gray
   name: species-name-gray
   roundStart: false
-  #randomViable: false
+  midRoundRandomViable: false
   prototype: MobGray
   dollPrototype: AppearanceGray
   skinColoration: GrayToned
