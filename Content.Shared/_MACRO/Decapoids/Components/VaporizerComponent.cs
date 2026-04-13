@@ -1,46 +1,53 @@
-using Content.Shared._Impstation.Decapoids;
+using Content.Shared._MACRO.Decapoids;
 using Content.Shared.Atmos;
 using Content.Shared.Chemistry.Reagent;
 using Content.Shared.FixedPoint;
+using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Serialization;
 
-namespace Content.Server.Decapoids.Components;
+namespace Content.Shared._MACRO.Decapoids.Components;
 
-[RegisterComponent]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 [AutoGenerateComponentPause]
 public sealed partial class VaporizerComponent : Component
 {
-    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    /// <summary>
+    /// Solution name.
+    /// </summary>
+    [DataField]
     public string LiquidTank = "waterTank";
-
-    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    /// <summary>
+    /// Expected Reagent to process into gas.
+    /// </summary>
+    [DataField]
     public ProtoId<ReagentPrototype> ExpectedReagent = "Water";
 
-    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    [DataField]
     public Gas OutputGas = Gas.WaterVapor;
 
-    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    [DataField]
     public FixedPoint2 MaxPressure = Atmospherics.OneAtmosphere * 10;
 
-    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    [DataField]
     public float ReagentToMoles = 0.07f;
 
-    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    [DataField]
     public FixedPoint2 ReagentPerSecond = 0.09;
 
-    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    [DataField]
     public TimeSpan ProcessDelay = TimeSpan.FromMilliseconds(200);
 
     /// <summary>
     /// A percentage for how filled the liquid tank should be before it is considered "Low"
     /// </summary>
-    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    [DataField]
     public float LowPercentage = 0.2f;
 
     [DataField(readOnly: true), ViewVariables(VVAccess.ReadOnly)]
     [AutoPausedField]
-    public TimeSpan NextProcess = new();
+    public TimeSpan NextProcess = TimeSpan.Zero;
 
-    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    [DataField, AutoNetworkedField]
     public VaporizerState State = VaporizerState.Empty;
 }
