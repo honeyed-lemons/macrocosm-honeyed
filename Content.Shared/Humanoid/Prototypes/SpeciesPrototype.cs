@@ -108,14 +108,15 @@ public sealed partial class SpeciesPrototype : IPrototype
 
     // MACRO start
     /// <summary>
-    /// Whether or not the species is available for randomization.
+    /// Whether the species is viable to roll when a humanoid's
+    /// species is randomized outside of character creation.
     /// </summary>
     [DataField]
-    public bool RandomViable { get; private set; }
+    public bool MidRoundRandomViable { get; private set; }
 
     /// <summary>
     /// When a random species is picked, verify random float is lower than this number
-    /// if not, don't pick the species
+    /// if not, don't pick the species.
     /// </summary>
     [DataField]
     public float RandomChance { get; private set; } = 1f;

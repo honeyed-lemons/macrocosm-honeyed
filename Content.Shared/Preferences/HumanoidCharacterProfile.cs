@@ -214,29 +214,29 @@ namespace Content.Shared.Preferences
         }
 
         // TODO: This should eventually not be a visual change only.
-        // MACRO start, extensive changes.
-        public static HumanoidCharacterProfile Random(HashSet<string>? speciesBlacklist = null, bool? characterCreation = true)
+        public static HumanoidCharacterProfile Random(HashSet<string>? speciesBlacklist = null, bool? characterCreation = true) // MACRO visitor species: add characterCreation
         {
             var prototypeManager = IoCManager.Resolve<IPrototypeManager>();
             var random = IoCManager.Resolve<IRobustRandom>();
 
             var species = random.Pick(prototypeManager
                 .EnumeratePrototypes<SpeciesPrototype>()
+                // MACRO visitor species: replace .Where
+                //.Where(x => ignoredSpecies == null ? x.RoundStart : x.RoundStart && !ignoredSpecies.Contains(x.ID)) // MACRO visitor species: commented out
                 .Where(x =>
                 {
                     if (speciesBlacklist != null && speciesBlacklist.Contains(x.ID))
                         return false;
                     if (characterCreation == true)
                         return x.RoundStart;
-                    return random.NextFloat() < x.RandomChance && x.RandomViable;
+                    return random.NextFloat() < x.RandomChance && x.MidRoundRandomViable;
                 })
+                // MACRO end
                 .ToArray()
-            )
-            .ID;
+            ).ID;
 
             return RandomWithSpecies(species);
         }
-        // MACRO end
 
         public static HumanoidCharacterProfile RandomWithSpecies(string? species = null)
         {
