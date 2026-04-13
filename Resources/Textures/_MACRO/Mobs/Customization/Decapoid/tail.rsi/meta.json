@@ -1,42 +1,42 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "Drawn by crocodilecarousel (github) for Impstation",
+    "copyright": "drawn by crocodilecarousel (github) for Impstation",
     "size": {
         "x": 32,
         "y": 32
     },
     "states": [
         {
-            "name": "curly",
+            "name": "grasper-curly",
             "directions": 4
         },
         {
-            "name": "freaky",
+            "name": "grasper-freaky",
             "directions": 4
         },
         {
-            "name": "highup",
+            "name": "grasper-highup",
             "directions": 4
         },
         {
-            "name": "long",
+            "name": "grasper-long",
             "directions": 4
         },
         {
-            "name": "moon1",
+            "name": "grasper-moon1",
             "directions": 4
         },
         {
-            "name": "moon2",
+            "name": "grasper-moon2",
             "directions": 4
         },
         {
-            "name": "short",
+            "name": "grasper-short",
             "directions": 4
         },
         {
-            "name": "uneven",
+            "name": "grasper-uneven",
             "directions": 4
         }
     ]

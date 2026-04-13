@@ -1,18 +1,22 @@
 ﻿{
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "sprited by crocodilecarousel (github) for Impstation",
+    "copyright": "default by widgetbeck, stripes sprited by crocodilecarousel (github) for Impstation",
     "size": {
         "x": 32,
         "y": 32
     },
     "states": [
         {
-            "name": "gillstripes1",
+            "name": "gills-default",
             "directions": 4
         },
         {
-            "name": "gillstripes2",
+            "name": "gills-stripes1",
+            "directions": 4
+        },
+        {
+            "name": "gills-stripes2",
             "directions": 4
         }
     ]

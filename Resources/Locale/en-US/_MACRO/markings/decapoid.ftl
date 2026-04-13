@@ -1,7 +1,7 @@
 # Chest
 
 marking-CrabChestBiopulse = Biopulse
-marking-CrabChestBiopulse-biopulse1 = Outter
+marking-CrabChestBiopulse-biopulse1 = Outer
 marking-CrabChestBiopulse-biopulse2 = Inner
 
 marking-CrabChestMasked = Masked
@@ -44,12 +44,12 @@ marking-GaudyClownHead-gaudyclownhead2 = Inner
 
 # Snout
 
-marking-DecapoidGills1 = Gills (Default)
-marking-DecapoidGills1-gills = Gills
+marking-DecapoidGillsDefault = Gills (Default)
+marking-DecapoidGillsDefault-gills-default = Gills
 
 marking-GillStripes = Gills (Striped)
-marking-GillStripes-gillstripes1 = Color 1
-marking-GillStripes-gillstripes2 = Color 2
+marking-GillStripes-gills-stripes1 = Color 1
+marking-GillStripes-gills-stripes2 = Color 2
 
 # Eyes
 
@@ -180,62 +180,62 @@ marking-DecapoidCrestWise = Crest (Wise)
 # HeadSide
 
 marking-DecapoidWhiskerMid = Whiskers (Mid)
-marking-DecapoidWhisker-1 = Whiskers
+marking-DecapoidWhisker-whisker-mid = Whiskers
 
 marking-DecapoidWhiskerMidR = Whiskers (Mid Uneven R)
-marking-DecapoidWhisker-2 = Whiskers
+marking-DecapoidWhisker-whisker-midr = Whiskers
 
 marking-DecapoidWhiskerMidL = Whiskers (Mid Uneven L)
-marking-DecapoidWhisker-3 = Whiskers
+marking-DecapoidWhisker-whisker-midl = Whiskers
 
 marking-DecapoidWhiskerShort = Whiskers (Short)
-marking-DecapoidWhisker-4 = Whiskers
+marking-DecapoidWhisker-whisker-short = Whiskers
 
 marking-DecapoidWhiskerLong = Whiskers (Long)
-marking-DecapoidWhisker-5 = Whiskers
+marking-DecapoidWhisker-whisker-long = Whiskers
 
 marking-DecapoidWhiskerLongR = Whiskers (Long Uneven R)
-marking-DecapoidWhisker-6 = Whiskers
+marking-DecapoidWhisker-whisker-longr = Whiskers
 
 marking-DecapoidWhiskerLongL = Whiskers (Long Uneven L)
-marking-DecapoidWhisker-7 = Whiskers
+marking-DecapoidWhisker-whisker-longl = Whiskers
 
 marking-DecapoidWhiskerSimple = Whiskers (Simple)
-marking-DecapoidWhisker-8 = Whiskers
+marking-DecapoidWhisker-whisker-simple = Whiskers
 
 marking-DecapoidWhiskerStraight = Whiskers (Straight)
-marking-DecapoidWhisker-9 = Whiskers
+marking-DecapoidWhisker-whisker-straight = Whiskers
 
 marking-DecapoidWhiskerHanging = Whiskers (Hanging)
-marking-DecapoidWhisker-10 = Whiskers
+marking-DecapoidWhisker-whisker-hanging = Whiskers
 
 marking-DecapoidWhiskerCurled = Whiskers (Curled)
-marking-DecapoidWhisker-11 = Whiskers
+marking-DecapoidWhisker-curled = Whiskers
 
 # HeadTop
 
 # Tail
 
 marking-GrasperCurly = Curly
-marking-GrasperCurly-curly = Grasper
+marking-GrasperCurly-grasper-curly = Grasper
 
 marking-GrasperFreaky = Freaky
-marking-GrasperFreaky-freaky = Grasper
+marking-GrasperFreaky-grasper-freaky = Grasper
 
 marking-GrasperHigh = High Up
-marking-GrasperHigh-highup = Grasper
+marking-GrasperHigh-grasper-highup = Grasper
 
 marking-GrasperLong = Long
-marking-GrasperLong-long = Grasper
+marking-GrasperLong-grasper-long = Grasper
 
 marking-GrasperMoon = Moon
-marking-GrasperMoon-moon1 = Grasper
-marking-GrasperMoon-moon2 = Tip
+marking-GrasperMoon-grasper-moon1 = Grasper
+marking-GrasperMoon-grasper-moon2 = Tip
 
 marking-GrasperShort = Short
-marking-GrasperShort-short = Grasper
+marking-GrasperShort-grasper-short = Grasper
 
 marking-GrasperUneven = Uneven
-marking-GrasperUneven-uneven = Grasper
+marking-GrasperUneven-grasper-uneven = Grasper
 
 # RArmExtension

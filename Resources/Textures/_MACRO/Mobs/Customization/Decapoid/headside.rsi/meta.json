@@ -8,47 +8,47 @@
     },
     "states": [
         {
-            "name": "1",
+            "name": "whisker-mid",
             "directions": 4
         },
         {
-            "name": "2",
+            "name": "whisker-midr",
             "directions": 4
         },
         {
-            "name": "3",
+            "name": "whisker-midl",
             "directions": 4
         },
         {
-            "name": "4",
+            "name": "whisker-short",
             "directions": 4
         },
         {
-            "name": "5",
+            "name": "whisker-long",
             "directions": 4
         },
         {
-            "name": "6",
+            "name": "whisker-longr",
             "directions": 4
         },
         {
-            "name": "7",
+            "name": "whisker-longl",
             "directions": 4
         },
         {
-            "name": "8",
+            "name": "whisker-simple",
             "directions": 4
         },
         {
-            "name": "9",
+            "name": "whisker-straight",
             "directions": 4
         },
         {
-            "name": "10",
+            "name": "whisker-hanging",
             "directions": 4
         },
         {
-            "name": "11",
+            "name": "whisker-curled",
             "directions": 4
         }
     ]

@@ -14,7 +14,7 @@ public sealed partial class SpeechRequiresEquipmentComponent : Component
     /// Slot and EntityWhitelist for the equipment in said slot that this entity requires to speak.
     /// </summary>
     [DataField(required: true)]
-    public Dictionary<string, EntityWhitelist> Equipment;
+    public EntityWhitelist? Whitelist;
 
     [DataField]
     public LocId? FailMessage;

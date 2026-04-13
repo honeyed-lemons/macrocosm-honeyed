@@ -1,0 +1,5 @@
+- type: Tag
+  id: SGD # SpeechRequiresEquipment whitelist on MobDecapoid.
+
+- type: Tag
+  id: Vaporizer # SpeechRequiresEquipment whitelist on MobDecapoid.
