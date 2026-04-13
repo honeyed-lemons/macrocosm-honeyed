@@ -1,18 +1,18 @@
 ﻿{
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "sprited by widgetbeck (github) for Impstation",
+    "copyright": "sprited by crocodilecarousel (github) for Impstation",
     "size": {
         "x": 32,
         "y": 32
     },
     "states": [
         {
-            "name": "gradient",
+            "name": "gillstripes1",
             "directions": 4
         },
         {
-            "name": "plate",
+            "name": "gillstripes2",
             "directions": 4
         }
     ]
