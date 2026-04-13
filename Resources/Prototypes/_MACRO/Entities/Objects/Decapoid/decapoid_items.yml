@@ -93,7 +93,7 @@
     slots:
     - Snout
     hideOnToggle: true
-  - type: Speech
+  - type: SpeechSound
     speechSounds: Decapoid
     speechVerb: Robotic
 

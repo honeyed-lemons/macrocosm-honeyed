@@ -1,11 +1,10 @@
-using Content.Server._Impstation.Speech.Components;
-using Content.Server.VoiceMask;
+using Content.Server._MACRO.Speech.Components;
 using Content.Shared.Chat;
 using Content.Shared.Inventory;
 
-namespace Content.Server._Impstation.Speech.EntitySystems;
+namespace Content.Server._MACRO.Speech.EntitySystems;
 
-public sealed partial class SpeechSoundSystem : EntitySystem
+public sealed class SpeechSoundSystem : EntitySystem
 {
     public override void Initialize()
     {
@@ -15,12 +14,12 @@ public sealed partial class SpeechSoundSystem : EntitySystem
         SubscribeLocalEvent<SpeechSoundComponent, InventoryRelayedEvent<TransformSpeakerNameEvent>>(OnTransformName);
     }
 
-    private void OnTransformVoice(Entity<SpeechSoundComponent> ent, ref InventoryRelayedEvent<TransformSpeakerVoiceEvent> args)
+    private static void OnTransformVoice(Entity<SpeechSoundComponent> ent, ref InventoryRelayedEvent<TransformSpeakerVoiceEvent> args)
     {
         args.Args.SpeechSounds = ent.Comp.SpeechSounds ?? args.Args.SpeechSounds;
     }
 
-    private void OnTransformName(Entity<SpeechSoundComponent> ent, ref InventoryRelayedEvent<TransformSpeakerNameEvent> args)
+    private static void OnTransformName(Entity<SpeechSoundComponent> ent, ref InventoryRelayedEvent<TransformSpeakerNameEvent> args)
     {
         args.Args.SpeechVerb = ent.Comp.SpeechVerb ?? args.Args.SpeechVerb;
     }
