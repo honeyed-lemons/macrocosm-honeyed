@@ -34,6 +34,10 @@
         {
             "name": "flathead",
             "directions": 4
+        },
+        {
+            "name": "gills",
+            "directions": 4
         }
     ]
 }

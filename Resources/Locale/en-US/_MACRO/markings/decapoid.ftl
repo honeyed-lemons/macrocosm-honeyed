@@ -1,28 +1,28 @@
 # Eyes
-marking-DecapoidEyesDefault = Default Eyes
-marking-DecapoidEyesDefault-eyes-1 = Default Eyes
+marking-DecapoidEyesDefault = Eyes (Default)
+marking-DecapoidEyesDefault-eyes-default = Eyes
 
-marking-DecapoidEyesThree = Three Eyes
-marking-DecapoidEyesThree-eyes-2 = Three Eyes
+marking-DecapoidEyesThree = Eyes (Third)
+marking-DecapoidEyesThree-eyes-three = Eyes
 
-marking-DecapoidEyesWideClose = Wide Close Eyes
-marking-DecapoidEyesWideClose-eyes-3 = Wide Close Eyes
+marking-DecapoidEyesWideClose = Eyes (Wide Close)
+marking-DecapoidEyesWideClose-eyes-wide-close = Eyes
 
-marking-DecapoidEyesStalks = Eyestalks
-marking-DecapoidEyesStalks-eyes-4 = Eyestalks
+marking-DecapoidEyesStalks = Eyes (Stalks)
+marking-DecapoidEyesStalks-eyes-stalks = Eyes
 
-marking-DecapoidEyesWideFar = Wide Far Eyes
-marking-DecapoidEyesWideFar-eyes-5 = Wide Far Eyes
+marking-DecapoidEyesWideFar = Eyes (Wide Close)
+marking-DecapoidEyesWideFar-eyes-wide-far = Eyes
 
-marking-DecapoidEyesSpider = Spider Eyes
-marking-DecapoidEyesSpider-eyes-6 = Spider Eyes
+marking-DecapoidEyesSpider = Eyes (Spider)
+marking-DecapoidEyesSpider-eyes-spider = Eyes
 
 # Head
 marking-DecapoidFlatHead = Flat Head
 marking-DecapoidFlatHead-flathead = Flat Head
 
-marking-DecapoidGills1 = Gills
-marking-DecapoidGills1-gills = Gills
+marking-DecapoidGills = Gills
+marking-DecapoidGills-gills = Gills
 
 # Chest
 marking-DecapoidPecPlate = Pectoral Plate
@@ -36,22 +36,22 @@ marking-DecapoidLowerPlate-lowerplate = Lower Abdominal Plate
 
 # Arms
 marking-DecapoidPauldronRight = Right Pauldron
-marking-DecapoidPauldronRight-pauldronright = Right Pauldron
+marking-DecapoidPauldronRight-pauldron = Right Pauldron
 
 marking-DecapoidPauldronSpike = Left Pauldron Spike
 marking-DecapoidPauldronSpike-pauldronspike = Left Pauldron Spike
 
 marking-DecapoidPauldronLeft = Left Pauldron
-marking-DecapoidPauldronLeft-pauldronleft = Left Pauldron
+marking-DecapoidPauldronLeft-pauldron = Left Pauldron
 
 marking-DecapoidClawPlate = Major Claw
 marking-DecapoidClawPlate-clawplate = Major Claw
 
 marking-DecapoidRHandPlate = Minor Claw
-marking-DecapoidRHandPlate-righthandplate = Minor Claw
+marking-DecapoidRHandPlate-handplate = Minor Claw
 
 marking-DecapoidClawGradient = Major Claw Gradient
 marking-DecapoidClawGradient-clawgradient = Major Claw Gradient
 
 marking-DecapoidRHandGradient = Minor Claw Gradient
-marking-DecapoidRHandGradient-righthandgradient = Minor Claw Gradient
+marking-DecapoidRHandGradient-handgradient = Minor Claw Gradient
