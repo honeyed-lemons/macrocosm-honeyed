@@ -5,6 +5,7 @@
   children:
   # - Apid # macro - uncomment to enable
   - Arachnid
+  # - Decapoid # macro - uncomment to enable
   - Diona
   - Dwarf
   # - Gastropoid # macro - uncomment to enable

@@ -14,3 +14,8 @@
 #  id: Apid
 #  name: Apid
 #  text: "/ServerInfo/_MACRO/Guidebook/Mobs/Apid.xml"
+
+#- type: guideEntry
+#  id: Decapoid
+#  name: Decapoid
+#  text: "/ServerInfo/_MACRO/Guidebook/Mobs/Decapoid.xml"

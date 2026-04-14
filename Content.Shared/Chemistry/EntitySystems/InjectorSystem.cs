@@ -73,6 +73,10 @@ public sealed partial class InjectorSystem : EntitySystem
         if (args.Handled || !args.CanReach || args.Target is not { Valid: true } target)
             return;
 
+        // MACRO Start: Block Injection
+        if (TryBlockInjection(args.User, args.Target.Value))
+            return;
+        // MACRO End: Block Injection
         // Is the target a mob? If yes, use a do-after to give them time to respond.
         if (HasComp<BloodstreamComponent>(target))
         {

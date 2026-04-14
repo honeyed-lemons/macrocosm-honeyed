@@ -245,6 +245,19 @@
       Brute:
         sprite: _MACRO/Mobs/Effects/decapoid_brute_damage.rsi
         color: "#162581"
+  - type: BlockInjection
+    failurePopup: block-injection-decapoid
+  - type: CanWieldOneHanded
+
+- type: entity # For testing purposes.
+  save: false
+  id: BaseMobDecapoidInternals
+  parent: MobDecapoid
+  suffix: SpawnsWithInternals
+  components:
+  - type: Loadout
+    prototypes:
+    - StartingGearDecapoidVaporizer
 
 - type: entity
   parent: OrganBase
