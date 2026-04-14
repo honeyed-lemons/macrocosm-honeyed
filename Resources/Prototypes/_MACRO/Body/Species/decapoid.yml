@@ -187,7 +187,11 @@
       293: 1.0
       280: 1.0
       260: 1.0
-  - type: Clumsy #TODO: port clumsy separation
+  - type: Clumsy
+    clumsyVaulting: false
+    clumsyHypo: false
+    clumsyDefib: false
+    clumsyCatching: false
     gunShootFailDamage:
       types:
         Blunt: 5
