@@ -233,8 +233,6 @@
   - type: Speech
     speechSounds: Decapoid
     allowedEmotes: [ 'Click', 'Chitter' ]
-  - type: BodyEmotes
-    soundsId: DecapoidBodyEmotes
   - type: MovementSpeedModifier
     baseWeightlessAcceleration: 1.5 # move more easily in space
     baseWeightlessFriction: 2 # more control over movement in space
@@ -333,6 +331,11 @@
 - type: entity
   parent: [ OrganBaseHandLeft, OrganDecapoidExternal ]
   id: OrganDecapoidHandLeft # This one is the claw.
+  components:
+  - type: EquipmentOrgan
+    handEquipment:
+      left:
+        DecapoidClawItem
 
 - type: entity
   parent: [ OrganBaseHandRight, OrganDecapoidExternal ]
