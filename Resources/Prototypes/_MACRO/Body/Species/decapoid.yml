@@ -138,7 +138,7 @@
       ArmLeft: OrganDecapoidArmLeft
       ArmRight: OrganDecapoidArmRight
       HandRight: OrganDecapoidHandRight
-      HandLeft: OrganDecapoidHandLeft
+      HandLeft: OrganDecapoidHandLeft # This one is the claw!
       LegLeft: OrganDecapoidLegFront
       LegRight: OrganDecapoidLegBack
       FootLeft: OrganDecapoidFootFront
@@ -275,14 +275,6 @@
     metabolizerTypes: [ Decapoid ]
 
 - type: entity
-  parent: OrganDecapoid
-  id: OrganDecapoidInternal
-  abstract: true
-  components:
-  - type: Sprite
-    sprite: Mobs/Species/Human/organs.rsi
-
-- type: entity
   id: OrganDecapoidVisual
   abstract: true
   components:
@@ -387,41 +379,41 @@
       state: back_feet
 
 - type: entity
-  parent: [ OrganBaseBrain, OrganDecapoidInternal ]
+  parent: [ OrganBaseBrain, OrganHumanInternal ]
   id: OrganDecapoidBrain
 
 - type: entity
-  parent: [ OrganDecapoidVisual, OrganBaseEyes, OrganDecapoidInternal ]
+  parent: [ OrganDecapoidVisual, OrganBaseEyes, OrganHumanInternal ]
   id: OrganDecapoidEyes
 
 - type: entity
-  parent: [ OrganBaseTongue, OrganDecapoidInternal ]
+  parent: [ OrganBaseTongue, OrganHumanInternal ]
   id: OrganDecapoidTongue
 
 - type: entity
-  parent: [ OrganBaseAppendix, OrganDecapoidInternal ]
+  parent: [ OrganBaseAppendix, OrganHumanInternal ]
   id: OrganDecapoidAppendix
 
 - type: entity
-  parent: [ OrganBaseEars, OrganDecapoidInternal ]
+  parent: [ OrganBaseEars, OrganHumanInternal ]
   id: OrganDecapoidEars
 
 - type: entity
-  parent: [ OrganBaseLungs, OrganDecapoidInternal, OrganDecapoidMetabolizer ]
+  parent: [ OrganBaseLungs, OrganHumanInternal, OrganDecapoidMetabolizer ]
   id: OrganDecapoidLungs
 
 - type: entity
-  parent: [ OrganBaseHeart, OrganDecapoidInternal, OrganHumanMetabolizer ]
+  parent: [ OrganBaseHeart, OrganHumanInternal, OrganHumanMetabolizer ]
   id: OrganDecapoidHeart
 
 - type: entity
-  parent: [ OrganBaseStomach, OrganDecapoidInternal, OrganHumanMetabolizer ]
+  parent: [ OrganBaseStomach, OrganHumanInternal, OrganHumanMetabolizer ]
   id: OrganDecapoidStomach
 
 - type: entity
-  parent: [ OrganBaseLiver, OrganDecapoidInternal, OrganHumanMetabolizer ]
+  parent: [ OrganBaseLiver, OrganHumanInternal, OrganHumanMetabolizer ]
   id: OrganDecapoidLiver
 
 - type: entity
-  parent: [ OrganBaseKidneys, OrganDecapoidInternal, OrganHumanMetabolizer ]
+  parent: [ OrganBaseKidneys, OrganHumanInternal, OrganHumanMetabolizer ]
   id: OrganDecapoidKidneys
