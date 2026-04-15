@@ -93,6 +93,9 @@ public sealed class EquipmentOrganSystem : EntitySystem
 
     private void OnGotRemoved(Entity<EquipmentOrganComponent> ent, ref OrganGotRemovedEvent args)
     {
+        if (TerminatingOrDeleted(ent))
+            return;
+
         var container = _container.EnsureContainer<Container>(ent, ent.Comp.ContainerId);
 
         foreach (var equipmentData in ent.Comp.StoredEquipment)
