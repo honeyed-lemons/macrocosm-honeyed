@@ -58,9 +58,6 @@
           state: icon
         useSound: /Audio/_MACRO/Items/Decapoid/claw_cutting.ogg
         changeSound: /Audio/_MACRO/Items/Decapoid/switch.ogg
-  - type: Tag
-    tags:
-      - DecapoidClaw
 
 - type: entity
   name: vaporizer
@@ -74,9 +71,7 @@
   - type: Tag
     tags:
       - Vaporizer
-      - BreathMask
       - WhitelistChameleon
-      - GasMask
   - type: Clothing
     quickEquip: true
     slots:

@@ -1,30 +1,6 @@
 # species specific
 
 - type: loadoutGroup
-  id: GroupTankHarnessCommand
-  name: loadout-group-tank-harness-command
-  minLimit: 1
-  hidden: true
-  loadouts:
-  - LoadoutTankHarnessCommand
-
-- type: loadoutGroup
-  id: GroupTankHarnessWithOuterwear
-  name: loadout-group-tank-harness
-  minLimit: 1
-  hidden: true
-  loadouts:
-  - LoadoutTankHarnessWithOuterwear
-
-- type: loadoutGroup
-  id: GroupTankHarnessCommandWithOuterwear
-  name: loadout-group-tank-harness-command
-  minLimit: 1
-  hidden: true
-  loadouts:
-  - LoadoutTankHarnessCommandWithOuterwear
-
-- type: loadoutGroup
   id: GroupFullTankAquatic
   name: loadout-group-full-tank-aquatic
   minLimit: 1
