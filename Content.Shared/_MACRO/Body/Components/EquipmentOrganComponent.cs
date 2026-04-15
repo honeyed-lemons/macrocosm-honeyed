@@ -1,3 +1,4 @@
+using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 
@@ -5,7 +6,7 @@ namespace Content.Shared._MACRO.Body.Components;
 /// <summary>
 /// Organs with this component equip entities to certain slots that persist when the organ is removed.
 /// </summary>
-[RegisterComponent, AutoGenerateComponentState]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 public sealed partial class EquipmentOrganComponent : Component
 {
     /// <summary>
