@@ -25,7 +25,7 @@
     Sneeze:
       collection: UnisexSneezes #placeholder
     Cough:
-      collection: UnisexCoughs #placeholder
+      path: /Audio/Voice/Vox/vox_cough.ogg #placeholder
     Yawn:
       path: /Audio/_MACRO/Voice/Allulalo/allulalo_say.ogg
     Honk:
