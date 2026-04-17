@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
@@ -12,7 +13,7 @@ public sealed partial class EquipmentOrganComponent : Component
     /// <summary>
     /// The equipment to place in said slot.
     /// </summary>
-    [DataField]
+    [DataField(required: true)]
     public Dictionary<string, EquipmentItem> Equipment;
 
     /// <summary>
