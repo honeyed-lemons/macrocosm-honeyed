@@ -14,3 +14,8 @@
 #  id: Apid
 #  name: Apid
 #  text: "/ServerInfo/_MACRO/Guidebook/Mobs/Apid.xml"
+
+#- type: guideEntry
+#  id: Allulalo
+#  name: Allulalo
+#  text: "/ServerInfo/_MACRO/Guidebook/Mobs/Allulalo.xml"
