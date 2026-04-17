@@ -1,7 +1,7 @@
 using Content.Shared.Whitelist;
 using Robust.Shared.GameStates;
 
-namespace Content.Shared._MACRO.TooShortForUI;
+namespace Content.Shared._MACRO.TooShortForUI.Components;
 
 /// <summary>
 /// Blocks the use of machine UI on blacklisted or non-whitelisted machines if the entity is not:
@@ -12,6 +12,13 @@ namespace Content.Shared._MACRO.TooShortForUI;
 [RegisterComponent, NetworkedComponent]
 public sealed partial class TooShortForUIComponent : Component
 {
+    /// <summary>
+    /// These entities will be allowed.
+    /// If the blacklist is null, blocks all entities.
+    /// </summary>
+    [DataField]
+    public EntityWhitelist? Whitelist;
+
     /// <summary>
     /// These entities will *not* be allowed.
     /// If the blacklist is null, blocks all entities.
