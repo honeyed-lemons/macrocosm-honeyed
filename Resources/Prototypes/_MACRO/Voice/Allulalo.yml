@@ -8,7 +8,7 @@
     path: /Audio/_MACRO/Voice/Allulalo/allulalo_exclaim.ogg
 
 - type: emoteSounds
-  id: Allulalo
+  id: UnisexAllulalo
   params:
     variation: 0.125
   sounds:
@@ -17,7 +17,7 @@
     Laugh:
       path: /Audio/_MACRO/Voice/Allulalo/allulalo_laugh.ogg
     Hiss:
-      collection: VoxHiss
+      path: /Audio/_MACRO/Voice/Vox/voxhiss.ogg
       params:
         volume: -5
     Chitter:
@@ -38,10 +38,6 @@
       path: /Audio/_MACRO/Voice/Allulalo/allulalo_cry.ogg
     Weh:
       collection: Weh
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
     Gasp:
       path: /Audio/_MACRO/Voice/Allulalo/allulalo_say.ogg
     DefaultDeathgasp:
