@@ -8,15 +8,15 @@ using Robust.Shared.Network;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Timing;
 
-namespace Content.Shared._Impstation.TooShortForUI;
+namespace Content.Shared._MACRO.TooShortForUI;
 
 public sealed class TooShortForUI : EntitySystem
 {
+    [Dependency] private readonly EntityWhitelistSystem _whitelist = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly INetManager _net = default!;
-    [Dependency] private readonly EntityWhitelistSystem _whitelist = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly SharedGravitySystem _gravity = default!;
+    [Dependency] private readonly SharedPopupSystem _popup = default!;
 
     public override void Initialize()
     {
@@ -44,7 +44,7 @@ public sealed class TooShortForUI : EntitySystem
             return;
 
         // if the target entity is on the blacklist or no blacklist is defined, cancel the event
-        if (_whitelist.IsBlacklistPassOrNull(ent.Comp.Blacklist, args.Target))
+        if (_whitelist.IsWhitelistPassOrNull(ent.Comp.Blacklist, args.Target))
             args.Cancel();
 
         // if the event has been cancelled and there is popup text, popup

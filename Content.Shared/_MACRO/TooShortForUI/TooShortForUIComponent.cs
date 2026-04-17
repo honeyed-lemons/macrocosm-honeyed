@@ -1,7 +1,7 @@
 using Content.Shared.Whitelist;
 using Robust.Shared.GameStates;
 
-namespace Content.Shared._Impstation.TooShortForUI;
+namespace Content.Shared._MACRO.TooShortForUI;
 
 /// <summary>
 /// Blocks the use of machine UI on blacklisted or non-whitelisted machines if the entity is not:
@@ -17,7 +17,7 @@ public sealed partial class TooShortForUIComponent : Component
     /// If the blacklist is null, blocks all entities.
     /// </summary>
     [DataField]
-    public EntityWhitelist? Blacklist = null;
+    public EntityWhitelist? Blacklist;
 
     [DataField]
     public LocId? PopupText = "too-short-for-ui-cant-use";
