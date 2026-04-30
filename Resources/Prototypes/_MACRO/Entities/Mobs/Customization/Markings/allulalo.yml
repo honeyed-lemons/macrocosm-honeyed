@@ -46,8 +46,7 @@
   coloring:
     default:
       type:
-        !type:SimpleColoring
-        color: "#78bfc2"
+        !type:EyeColoring
   sprites:
   - sprite: _MACRO/Mobs/Customization/Allulalo/eyes.rsi
     state: allulaloEyesDefaultLeft
@@ -61,8 +60,7 @@
   coloring:
     default:
       type:
-        !type:SimpleColoring
-        color: "#78bfc2"
+        !type:EyeColoring
   sprites:
   - sprite: _MACRO/Mobs/Customization/Allulalo/eyes.rsi
     state: allulaloEyesUnshadedLeft

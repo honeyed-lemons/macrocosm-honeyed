@@ -3,6 +3,7 @@
   name: guide-entry-species
   text: "/ServerInfo/Guidebook/Mobs/Species.xml"
   children:
+  # - Allulalo # macro - uncomment to enable
   # - Apid # macro - uncomment to enable
   - Arachnid
   - Diona

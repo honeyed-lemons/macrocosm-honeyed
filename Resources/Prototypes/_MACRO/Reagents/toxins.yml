@@ -23,11 +23,10 @@
         key: Adrenaline # This is half-ish strength epi
         component: IgnoreSlowOnDamage
         time: 1.5
-      - !type:GenericStatusEffect
-        key: Stun
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectStunned
         time: 0.5
         type: Remove
-      - !type:GenericStatusEffect
-        key: KnockedDown
+      - !type:ModifyKnockdown
         time: 0.5
         type: Remove
