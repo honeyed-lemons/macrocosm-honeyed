@@ -49,6 +49,19 @@
         !type:EyeColoring
   sprites:
   - sprite: _MACRO/Mobs/Customization/Allulalo/eyes.rsi
+    state: allulaloEyesDefault
+  forcedColoring: true
+
+- type: marking
+  id: AllulaloEyesHeterochromia
+  bodyPart: Eyes
+  groupWhitelist: [ Allulalo ]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+  sprites:
+  - sprite: _MACRO/Mobs/Customization/Allulalo/eyes.rsi
     state: allulaloEyesDefaultLeft
   - sprite: _MACRO/Mobs/Customization/Allulalo/eyes.rsi
     state: allulaloEyesDefaultRight

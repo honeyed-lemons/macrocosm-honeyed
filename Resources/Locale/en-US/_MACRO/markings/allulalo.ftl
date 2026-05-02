@@ -23,10 +23,12 @@ marking-AllulaloHeadNeckPlumageOutrageous-allulaloHeadNeckPlumageOutrageous = Pl
 # Snout
 
 # Eyes
-
 marking-AllulaloEyesDefault = Eyes (Default)
-marking-AllulaloEyesDefault-allulaloEyesDefaultLeft = Left eye
-marking-AllulaloEyesDefault-allulaloEyesDefaultRight = Right eye
+marking-AllulaloEyesDefault-allulaloEyesDefault = eyes
+
+marking-AllulaloEyesHeterochromia = Eyes (Heterochromia)
+marking-AllulaloEyesHeterochromia-allulaloEyesDefaultLeft = Left eye
+marking-AllulaloEyesHeterochromia-allulaloEyesDefaultRight = Right eye
 
 marking-AllulaloEyesUnshaded = Eyes (Glowing)
 marking-AllulaloEyesUnshaded-allulaloEyesUnshadedLeft = Left eye
