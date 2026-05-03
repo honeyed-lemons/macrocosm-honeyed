@@ -18,3 +18,10 @@
   typingState: apid
   idleState: apid-idle
   offset: 0, 0
+
+- type: typingIndicator
+  id: kodepiia
+  spritePath: /Textures/_Impstation/Effects/speech.rsi
+  typingState: kode
+  idleState: kode # TODO: new idle state
+  offset: -0.45, 0.35

@@ -1,0 +1,22 @@
+- type: species
+  id: Kodepiia
+  name: species-name-kodepiia
+  roundStart: true # reminder to set this back after testing
+# randomViable: true
+  prototype: MobKodepiia
+  markingLimits: MobKodepiiaMarkingLimits
+  dollPrototype: AppearanceKodepiia
+  skinColoration: Hues
+  maleFirstNames: KodepiiaFirst
+  femaleFirstNames: KodepiiaFirst
+  lastNames: KodepiiaLast
+  sexes:
+  - Unsexed
+  youngAge: 25
+  oldAge: 40
+  ancientAge: 70
+
+# Developer Notes
+#
+# Someone else needs to do this
+# くコ:彡
