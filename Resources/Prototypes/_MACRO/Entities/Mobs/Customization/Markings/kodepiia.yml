@@ -358,7 +358,27 @@
 
 # RArm
 
+- type: marking
+  id: KodeLeftArmBlade
+  bodyPart: RArm
+  groupWhitelist: [ Kodepiia ]
+  sprites:
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
+    state: bladewings
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
+    state: bladewingtips
+
 # LArm
+
+- type: marking
+  id: KodeWingsBlade
+  bodyPart: LArm
+  groupWhitelist: [ Kodepiia ]
+  sprites:
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
+    state: bladewings
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
+    state: bladewingtips
 
 # RLeg
 

@@ -19,7 +19,7 @@
 
 - type: entity
   parent: OrganBase
-  id: OrganBaseHandRightInactive # Allows you to define a left hand that works visually only
+  id: OrganBaseHandRightInactive # Allows you to define a right hand that works visually only
   name: right hand
   abstract: true
   components:
@@ -35,37 +35,3 @@
     markingData:
       layers:
       - RHand
-
-- type: entity
-  parent: OrganKodepiiaTentacles
-  id: OrganBaseRightHandTentacles
-  name: right hand
-  abstract: true
-  components:
-  - type: Organ
-    category: HandRight
-  - type: VisualOrgan
-    layer: enum.HumanoidVisualLayers.Tentacles
-    data:
-      state:
-  - type: VisualOrganMarkings
-    markingData:
-      layers:
-      - Tentacles
-
-- type: entity
-  parent: OrganKodepiiaTentacles
-  id: OrganBaseLeftHandTentacles
-  name: left hand
-  abstract: true
-  components:
-  - type: Organ
-    category: HandLeft
-  - type: VisualOrgan
-    layer: enum.HumanoidVisualLayers.Tentacles
-    data:
-      state: tentacles
-  - type: VisualOrganMarkings
-    markingData:
-      layers:
-      - Tentacles

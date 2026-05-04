@@ -1,0 +1,19 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "bladewings by pinkbat5",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "bladewings",
+            "directions": 4
+        },
+        {
+            "name": "bladewingtips",
+            "directions": 4
+        }
+    ]
+}

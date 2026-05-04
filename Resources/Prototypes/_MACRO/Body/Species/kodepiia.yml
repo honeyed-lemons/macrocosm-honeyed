@@ -20,11 +20,9 @@
     enum.HumanoidVisualLayers.LArm:
       limit: 1
       required: true
-      default: [ KodeWingsBladeLeft ]
     enum.HumanoidVisualLayers.RArm:
       limit: 1
       required: true
-      default: [ KodeWingsBladeRight ]
     enum.HumanoidVisualLayers.LLeg:
       limit: 8
       required: false
@@ -35,9 +33,6 @@
       limit: 1
       required: false
     enum.HumanoidVisualLayers.RFoot:
-      limit: 1
-      required: false
-    enum.HumanoidVisualLayers.Tentacles:
       limit: 1
       required: false
 
@@ -51,12 +46,12 @@
       jumpsuit:
         sizeMaps:
           32:
-            sprite: _Impstation/Mobs/Species/Kodepiia/displacement.rsi
+            sprite: _MACRO/Mobs/Species/Kodepiia/displacement.rsi
             state: jumpsuit
       gloves:
         sizeMaps:
           32:
-            sprite: _Impstation/Mobs/Species/Kodepiia/displacement.rsi
+            sprite: _MACRO/Mobs/Species/Kodepiia/displacement.rsi
             state: hands
   - type: InitialBody
     organs:
@@ -78,9 +73,73 @@
       Stomach: OrganKodepiiaStomach
       Liver: OrganKodepiiaLiver
       Kidneys: OrganKodepiiaKidneys
-      Tentacles: OrganKodepiiaTentacles
   - type: HumanoidProfile
     species: Kodepiia
+  - type: Sprite #have to redefine so that the arms are drawn above clothes.
+    layers:
+    # Torso
+    - map: [ "enum.HumanoidVisualLayers.Chest" ]
+
+    # Head
+    - map: [ "enum.HumanoidVisualLayers.Head" ]
+    - map: [ "enum.HumanoidVisualLayers.Snout" ]
+    - map: [ "enum.HumanoidVisualLayers.Eyes" ]
+
+    # Limbs
+    - map: [ "enum.HumanoidVisualLayers.RLeg" ]
+    - map: [ "enum.HumanoidVisualLayers.LLeg" ]
+
+    # Underwear & clothing
+    - map: [ "enum.HumanoidVisualLayers.UndergarmentBottom" ]
+    - map: [ "enum.HumanoidVisualLayers.UndergarmentTop" ]
+    - map: ["jumpsuit"]
+
+    # Extremities
+    - map: ["enum.HumanoidVisualLayers.LFoot"]
+    - map: ["enum.HumanoidVisualLayers.RFoot"]
+    - map: ["enum.HumanoidVisualLayers.LHand"]
+    - map: ["enum.HumanoidVisualLayers.RHand"]
+
+    # Stuff that goes over the body but below equipment
+    - map: ["enum.HumanoidVisualLayers.Overlay"]
+
+    # More equipment
+    - map: [ "gloves" ]
+    - map: [ "shoes" ]
+    - map: [ "ears" ]
+    - map: [ "eyes" ]
+    - map: [ "belt" ]
+    - map: [ "id" ]
+    - map: [ "outerClothing" ]
+    - map: [ "back" ]
+    - map: [ "neck" ]
+    - map: [ "suitstorage" ]
+
+    # Stuff that goes in front of equipment
+    - map: [ "enum.HumanoidVisualLayers.SnoutCover" ]
+    - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
+    - map: [ "enum.HumanoidVisualLayers.Hair" ]
+    - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
+    - map: [ "enum.HumanoidVisualLayers.HeadTop" ]
+    - map: [ "enum.HumanoidVisualLayers.Tail" ]
+    - map: [ "enum.HumanoidVisualLayers.TailOverlay" ]
+
+    # Kodepiiae arms are drawn in front of everything else
+    - map: [ "enum.HumanoidVisualLayers.RArm" ]
+    - map: [ "enum.HumanoidVisualLayers.LArm" ]
+
+    # Stuff that goes in front of stuff that goes in front of equipment
+    - map: [ "mask" ]
+    - map: [ "head" ]
+    - map: [ "pocket1" ]
+    - map: [ "pocket2" ]
+
+    # Extra stuff
+    - map: ["enum.HumanoidVisualLayers.Handcuffs"]
+      color: "#ffffff"
+      sprite: Objects/Misc/handcuffs.rsi
+      state: body-overlay-2
+      visible: false
 
 - type: entity
   parent:
@@ -140,54 +199,6 @@
     spawned:
     - id: FoodMeatKodepiia
       amount: 5
-  - type: Sprite
-    layers:
-    - map: [ "enum.HumanoidVisualLayers.Chest" ]
-    - map: [ "enum.HumanoidVisualLayers.Head" ]
-    - map: [ "enum.HumanoidVisualLayers.Snout" ]
-    - map: [ "enum.HumanoidVisualLayers.Eyes" ]
-    - map: [ "enum.HumanoidVisualLayers.RArm" ]
-    - map: [ "enum.HumanoidVisualLayers.LArm" ]
-    - map: [ "enum.HumanoidVisualLayers.RLeg" ]
-    - map: [ "enum.HumanoidVisualLayers.LLeg" ]
-    - map: [ "underpants" ]
-    - map: [ "undershirt" ]
-    - map: [ "socks" ]
-    - map: [ "jumpsuit" ]
-    - map: ["enum.HumanoidVisualLayers.LFoot"]
-    - map: ["enum.HumanoidVisualLayers.RFoot"]
-    - map: ["enum.HumanoidVisualLayers.LHand"]
-    - map: ["enum.HumanoidVisualLayers.RHand"]
-    - map: [ "enum.HumanoidVisualLayers.Handcuffs" ]
-      color: "#ffffff"
-      sprite: Objects/Misc/handcuffs.rsi
-      state: body-overlay-2
-      visible: false
-    - map: [ "id" ]
-    - map: [ "gloves" ]
-    - map: [ "shoes" ]
-    - map: [ "ears" ]
-    - map: [ "outerClothing" ]
-    - map: [ "eyes" ]
-    - map: [ "belt" ]
-    - map: [ "back" ]
-    - map: [ "neck" ]
-    - map: [ "enum.HumanoidVisualLayers.SnoutCover" ]
-    - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
-    - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
-    - map: [ "pocket1" ]
-    - map: [ "pocket2" ]
-    - map: [ "clownedon" ] # Dynamically generated
-      sprite: "Effects/creampie.rsi"
-      state: "creampie_human"
-      visible: false
-    - map: [ "enum.HumanoidVisualLayers.Tentacles" ]
-    - map: [ "enum.HumanoidVisualLayers.Tail" ]
-#    - map: [ "enum.HumanoidVisualLayers.TailOversuit" ] # subject to change, really finicky with the arms im afraid
-    - map: [ "enum.HumanoidVisualLayers.Hair" ]
-    - map: [ "enum.HumanoidVisualLayers.HeadTop" ]
-    - map: [ "mask" ]
-    - map: [ "head" ]
   - type: Thirst
   - type: Hunger
     baseDecayRate: 0.15 # 10x default. 6 minutes to hungry and 15.5 minutes to starving
@@ -198,12 +209,6 @@
   id: OrganKodepiia
   abstract: true
   suffix: Kodepiia
-
-- type: entity
-  parent: OrganKodepiia
-  id: OrganKodepiiaTentacles
-  abstract: true
-  suffix: Kodepiia Tentacles
 
 - type: entity
   id: OrganKodepiiaMetabolizer
@@ -248,16 +253,8 @@
   id: OrganKodepiiaHead
 
 - type: entity
-  parent: [ OrganBaseArmLeft, OrganKodepiiaExternal ]
+  parent: [ OrganBaseArmLeft, OrganBaseHandLeft, OrganKodepiiaExternal ] #their arms are an arm and a hand at the same time
   id: OrganKodepiiaArmLeft
-
-- type: entity
-  parent: [ OrganBaseArmRight, OrganKodepiiaExternal ]
-  id: OrganKodepiiaArmRight
-
-- type: entity
-  parent: [ OrganBaseLeftHandTentacles, OrganKodepiiaExternal ]
-  id: OrganKodepiiaTentaclesLeft
   components:
   - type: HandOrgan
     handID: left
@@ -265,8 +262,8 @@
       location: Left
 
 - type: entity
-  parent: [ OrganBaseRightHandTentacles, OrganKodepiiaExternal ]
-  id: OrganKodepiiaTentaclesRight
+  parent: [ OrganBaseArmRight, OrganBaseHandRight, OrganKodepiiaExternal ] #yup
+  id: OrganKodepiiaArmRight
   components:
   - type: HandOrgan
     handID: Right
