@@ -5,7 +5,7 @@
   bodyPart: Chest
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/chest.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/chest.rsi
     state: bars
 
 - type: marking
@@ -13,7 +13,7 @@
   bodyPart: Chest
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/chest.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/chest.rsi
     state: belly
 
 - type: marking
@@ -21,23 +21,23 @@
   bodyPart: Chest
   groupWhitelist: [ Kodepiia ]
   sprites: # this is an abomination lol
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/chest.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/chest.rsi
     state: canvas1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/chest.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/chest.rsi
     state: canvas2
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/chest.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/chest.rsi
     state: canvas3
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/chest.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/chest.rsi
     state: canvas4
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/chest.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/chest.rsi
     state: canvas5
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/chest.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/chest.rsi
     state: canvas6
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/chest.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/chest.rsi
     state: canvas7
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/chest.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/chest.rsi
     state: canvas8
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/chest.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/chest.rsi
     state: canvas9
 
 - type: marking
@@ -45,9 +45,9 @@
   bodyPart: Chest
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/chest.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/chest.rsi
     state: eye1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/chest.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/chest.rsi
     state: eye2
 
 - type: marking
@@ -55,7 +55,7 @@
   bodyPart: Chest
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/chest.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/chest.rsi
     state: gills
 
 - type: marking
@@ -63,11 +63,11 @@
   bodyPart: Chest
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/chest.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/chest.rsi
     state: organs1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/chest.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/chest.rsi
     state: organs2
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/chest.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/chest.rsi
     state: organs3
 
 - type: marking
@@ -75,7 +75,7 @@
   bodyPart: Chest
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/chest.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/chest.rsi
     state: stripes
 
 - type: marking
@@ -83,7 +83,7 @@
   bodyPart: Chest
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/chest.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/chest.rsi
     state: stripes
   shader: unshaded
 
@@ -92,7 +92,7 @@
   bodyPart: Chest
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/chest.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/chest.rsi
     state: tummyteeth
 
 - type: marking
@@ -100,9 +100,9 @@
   bodyPart: Chest
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/chest.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/chest.rsi
     state: koispots1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/chest.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/chest.rsi
     state: koispots2
 
 - type: marking
@@ -110,9 +110,9 @@
   bodyPart: Chest
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/chest.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/chest.rsi
     state: mantleshade1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/chest.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/chest.rsi
     state: mantleshade2
 
 # Head
@@ -123,7 +123,7 @@
   groupWhitelist: [ Kodepiia ]
   followSkinColor: true
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/head.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/head.rsi
     state: fakevoxhead
 
 - type: marking
@@ -131,7 +131,7 @@
   bodyPart: Head
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/head.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/head.rsi
     state: happysmiler
 
 - type: marking
@@ -139,7 +139,7 @@
   bodyPart: Head
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/head.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/head.rsi
     state: eyesplotch
 
 - type: marking
@@ -147,7 +147,7 @@
   bodyPart: Head
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/head.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/head.rsi
     state: foxears
 
 # Snout
@@ -157,7 +157,7 @@
   bodyPart: Snout
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/snout.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/snout.rsi
     state: beak
 
 - type: marking
@@ -166,7 +166,7 @@
   groupWhitelist: [ Kodepiia ]
   followSkinColor: true
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/snout.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/snout.rsi
     state: moustachelong
 
 - type: marking
@@ -175,7 +175,7 @@
   groupWhitelist: [ Kodepiia ]
   followSkinColor: true
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/snout.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/snout.rsi
     state: moustacheshort
 
 - type: marking
@@ -184,7 +184,7 @@
   groupWhitelist: [ Kodepiia ]
   followSkinColor: true
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/snout.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/snout.rsi
     state: smallbeak
 
 - type: marking
@@ -193,7 +193,7 @@
   groupWhitelist: [ Kodepiia ]
   followSkinColor: true
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/snout.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/snout.rsi
     state: simple
 
 # Eyes
@@ -203,9 +203,9 @@
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/eyes.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: bigsquare1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/eyes.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: bigsquare2
 
 - type: marking
@@ -213,9 +213,9 @@
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/eyes.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: bigsquareuneven1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/eyes.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: bigsquareuneven2
 
 - type: marking
@@ -223,7 +223,7 @@
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/eyes.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: gray
 
 - type: marking
@@ -231,7 +231,7 @@
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/eyes.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: grayuneven
 
 - type: marking
@@ -239,7 +239,7 @@
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/eyes.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: human
 
 - type: marking
@@ -247,7 +247,7 @@
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/eyes.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: human
   shader: unshaded
 
@@ -256,9 +256,9 @@
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/eyes.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: humanuneven1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/eyes.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: humanuneven2
 
 - type: marking
@@ -266,9 +266,9 @@
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/eyes.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: humanuneven1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/eyes.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: humanuneven2
   shader: unshaded
 
@@ -277,7 +277,7 @@
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/eyes.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: jamjar
 
 - type: marking
@@ -285,7 +285,7 @@
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/eyes.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: jamjar2
 
 - type: marking
@@ -293,7 +293,7 @@
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/eyes.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: mask
 
 - type: marking
@@ -301,7 +301,7 @@
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/eyes.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: moth
 
 - type: marking
@@ -309,9 +309,9 @@
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/eyes.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: moth1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/eyes.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: moth2
 
 - type: marking
@@ -319,7 +319,7 @@
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/eyes.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: sharkminnow
 
 - type: marking
@@ -327,7 +327,7 @@
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/eyes.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: square
 
 - type: marking
@@ -335,7 +335,7 @@
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/eyes.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: square
   shader: unshaded
 
@@ -344,7 +344,7 @@
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/eyes.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: squareuneven
 
 - type: marking
@@ -352,7 +352,7 @@
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/eyes.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: squareuneven
   shader: unshaded
 
@@ -367,7 +367,7 @@
   bodyPart: RLeg
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rleg.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rleg.rsi
     state: bar
 
 - type: marking
@@ -375,7 +375,7 @@
   bodyPart: RLeg
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rleg.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rleg.rsi
     state: pinstripe
 
 - type: marking
@@ -383,7 +383,7 @@
   bodyPart: RLeg
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rleg.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rleg.rsi
     state: sock
 
 # LLeg
@@ -393,7 +393,7 @@
   bodyPart: LLeg
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/lleg.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/lleg.rsi
     state: bar
 
 - type: marking
@@ -401,7 +401,7 @@
   bodyPart: LLeg
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/lleg.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/lleg.rsi
     state: pinstripe
 
 - type: marking
@@ -409,7 +409,7 @@
   bodyPart: LLeg
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/lleg.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/lleg.rsi
     state: sock
 
 # UndergarmentBottom
@@ -423,7 +423,7 @@
   bodyPart: LFoot
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/lfoot.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/lfoot.rsi
     state: claw
 
 - type: marking
@@ -431,7 +431,7 @@
   bodyPart: LFoot
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/lfoot.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/lfoot.rsi
     state: sock
 
 # RFoot
@@ -441,7 +441,7 @@
   bodyPart: RFoot
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rfoot.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rfoot.rsi
     state: claw
 
 - type: marking
@@ -449,7 +449,7 @@
   bodyPart: RFoot
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rfoot.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rfoot.rsi
     state: sock
 
 # LHand
@@ -465,7 +465,7 @@
   bodyPart: Hair
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/hair.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/hair.rsi
     state: bob4
 
 - type: marking
@@ -473,7 +473,7 @@
   bodyPart: Hair
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/hair.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/hair.rsi
     state: bob5
 
 - type: marking
@@ -481,7 +481,7 @@
   bodyPart: Hair
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/hair.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/hair.rsi
     state: cia
 
 - type: marking
@@ -489,7 +489,7 @@
   bodyPart: Hair
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/hair.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/hair.rsi
     state: cornrowbraid
 
 - type: marking
@@ -497,7 +497,7 @@
   bodyPart: Hair
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/hair.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/hair.rsi
     state: curls
 
 - type: marking
@@ -505,7 +505,7 @@
   bodyPart: Hair
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/hair.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/hair.rsi
     state: dandypompadour
 
 - type: marking
@@ -513,7 +513,7 @@
   bodyPart: Hair
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/hair.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/hair.rsi
     state: doublebun
 
 - type: marking
@@ -521,7 +521,7 @@
   bodyPart: Hair
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/hair.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/hair.rsi
     state: doublebunnoeyes
 
 - type: marking
@@ -529,7 +529,7 @@
   bodyPart: Hair
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/hair.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/hair.rsi
     state: emo2
 
 - type: marking
@@ -537,7 +537,7 @@
   bodyPart: Hair
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/hair.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/hair.rsi
     state: halfshaved
 
 - type: marking
@@ -545,7 +545,7 @@
   bodyPart: Hair
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/hair.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/hair.rsi
     state: himecut2
 
 - type: marking
@@ -553,7 +553,7 @@
   bodyPart: Hair
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/hair.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/hair.rsi
     state: messy
 
 - type: marking
@@ -561,7 +561,7 @@
   bodyPart: Hair
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/hair.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/hair.rsi
     state: ponytail3
 
 - type: marking
@@ -569,7 +569,7 @@
   bodyPart: Hair
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/hair.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/hair.rsi
     state: spiky
 
 - type: marking
@@ -577,7 +577,7 @@
   bodyPart: Hair
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/hair.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/hair.rsi
     state: veryshortovereyealternate
 
 - type: marking
@@ -585,7 +585,7 @@
   bodyPart: Hair
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/hair.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/hair.rsi
     state: vlongfringe
 
 # HeadSide
@@ -595,9 +595,9 @@
   bodyPart: HeadSide
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/headside.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/headside.rsi
     state: sideeye1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/headside.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/headside.rsi
     state: sideeye2
 
 - type: marking
@@ -606,7 +606,7 @@
   groupWhitelist: [ Kodepiia ]
   followSkinColor: true
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/headside.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/headside.rsi
     state: cheekfins
 
 - type: marking
@@ -614,7 +614,7 @@
   bodyPart: HeadSide
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/headside.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/headside.rsi
     state: decagills
 
 - type: marking
@@ -622,7 +622,7 @@
   bodyPart: HeadSide
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/headside.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/headside.rsi
     state: headfrill
 
 - type: marking
@@ -632,7 +632,7 @@
   followSkinColor: true
   forcedColoring: true
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/headside.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/headside.rsi
     state: thaven
 
 # HeadTop
@@ -642,11 +642,11 @@
   bodyPart: HeadTop
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/headtop.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/headtop.rsi
     state: basilisk1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/headtop.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/headtop.rsi
     state: basilisk2
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/headtop.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/headtop.rsi
     state: basilisk3
 
 - type: marking
@@ -654,7 +654,7 @@
   bodyPart: HeadTop
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/headtop.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/headtop.rsi
     state: antennae
 
 - type: marking
@@ -662,7 +662,7 @@
   bodyPart: HeadTop
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/headtop.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/headtop.rsi
     state: mapleantennae
 
 - type: marking
@@ -670,9 +670,9 @@
   bodyPart: HeadTop
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/headtop.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/headtop.rsi
     state: bunny1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/headtop.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/headtop.rsi
     state: bunny2
 
 - type: marking
@@ -681,9 +681,9 @@
   groupWhitelist: [ Kodepiia ]
   followSkinColor: true
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/headtop.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/headtop.rsi
     state: eyestalk1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/headtop.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/headtop.rsi
     state: eyestalk2
 
 - type: marking
@@ -691,7 +691,7 @@
   bodyPart: HeadTop
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/headtop.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/headtop.rsi
     state: grayhead
 
 - type: marking
@@ -699,7 +699,7 @@
   bodyPart: HeadTop
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/headtop.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/headtop.rsi
     state: headslime
 
 - type: marking
@@ -707,7 +707,7 @@
   bodyPart: HeadTop
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/headtop.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/headtop.rsi
     state: hornscurly
 
 - type: marking
@@ -715,7 +715,7 @@
   bodyPart: HeadTop
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/headtop.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/headtop.rsi
     state: hornsstraight
 
 - type: marking
@@ -723,7 +723,7 @@
   bodyPart: HeadTop
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/headtop.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/headtop.rsi
     state: hornssweptback
 
 - type: marking
@@ -732,15 +732,15 @@
   groupWhitelist: [ Kodepiia ]
   followSkinColor: true
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/headtop.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/headtop.rsi
     state: scorpion1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/headtop.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/headtop.rsi
     state: scorpion2
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/headtop.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/headtop.rsi
     state: scorpion3
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/headtop.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/headtop.rsi
     state: scorpion4
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/headtop.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/headtop.rsi
     state: scorpion5
 
 - type: marking
@@ -748,9 +748,9 @@
   bodyPart: HeadTop
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/headtop.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/headtop.rsi
     state: wolf1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/headtop.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/headtop.rsi
     state: wolf2
 
 # Tail
@@ -760,13 +760,13 @@
   bodyPart: Tail
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/tail.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tail.rsi
     state: amalgam1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/tail.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tail.rsi
     state: amalgam2
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/tail.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tail.rsi
     state: amalgam3
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/tail.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tail.rsi
     state: amalgam4
 
 - type: marking
@@ -774,7 +774,7 @@
   bodyPart: Tail
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/tail.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tail.rsi
     state: crablegs
 
 - type: marking
@@ -782,9 +782,9 @@
   bodyPart: Tail
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/tail.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tail.rsi
     state: flowers1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/tail.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tail.rsi
     state: flowers2
 
 - type: marking
@@ -792,7 +792,7 @@
   bodyPart: Tail
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/tail.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tail.rsi
     state: fluffy
 
 - type: marking
@@ -801,7 +801,7 @@
   groupWhitelist: [ Kodepiia ]
   followSkinColor: true
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/tail.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tail.rsi
     state: lizard
 
 - type: marking
@@ -810,11 +810,11 @@
   groupWhitelist: [ Kodepiia ]
   followSkinColor: true
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/tail.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tail.rsi
     state: multiarms1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/tail.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tail.rsi
     state: multiarms2
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/tail.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tail.rsi
     state: multiarms3
 
 - type: marking
@@ -822,7 +822,7 @@
   bodyPart: Tail
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/tail.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tail.rsi
     state: pauldroundl
 
 - type: marking
@@ -830,7 +830,7 @@
   bodyPart: Tail
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/tail.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tail.rsi
     state: pauldroundr
 
 - type: marking
@@ -838,7 +838,7 @@
   bodyPart: Tail
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/tail.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tail.rsi
     state: pauldsharpl
 
 - type: marking
@@ -846,7 +846,7 @@
   bodyPart: Tail
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/tail.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tail.rsi
     state: pauldsharpr
 
 - type: marking
@@ -854,7 +854,7 @@
   bodyPart: Tail
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/tail.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tail.rsi
     state: pauldspines
 
 - type: marking
@@ -862,7 +862,7 @@
   bodyPart: Tail
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/tail.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tail.rsi
     state: shell
 
 - type: marking
@@ -870,7 +870,7 @@
   bodyPart: Tail
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/tail.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tail.rsi
     state: shellcone
 
 - type: marking
@@ -879,9 +879,9 @@
   groupWhitelist: [ Kodepiia ]
   followSkinColor: true
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/tail.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tail.rsi
     state: spider1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/tail.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tail.rsi
     state: spider2
 
 - type: marking
@@ -891,7 +891,7 @@
   followSkinColor: true
   forcedColoring: true
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/tail.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tail.rsi
     state: stubby
 
 - type: marking
@@ -901,7 +901,7 @@
   followSkinColor: true
   forcedColoring: true
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/tail.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tail.rsi
     state: vox
 
 - type: marking
@@ -909,256 +909,256 @@
   bodyPart: Tail
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/tail.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tail.rsi
     state: seafoam1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/tail.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tail.rsi
     state: seafoam2
 
-# RArmExtension
+# Tentacles
 
 - type: marking
   id: JellyCapeStripes
-  bodyPart: RArmExtension
+  bodyPart: Tentacles
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: jellycapestripes1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: jellycapestripes2
 
 - type: marking
   id: KodeArmsCrab
-  bodyPart: RArmExtension
+  bodyPart: Tentacles
   groupWhitelist: [ Kodepiia ]
   followSkinColor: true
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: crabclaws
 
 - type: marking
   id: KodeCapeJelly
-  bodyPart: RArmExtension
+  bodyPart: Tentacles
   groupWhitelist: [ Kodepiia ]
   followSkinColor: true
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: jellycloak1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: jellycloak2
 
 - type: marking
   id: KodeCapePuffy
-  bodyPart: RArmExtension
+  bodyPart: Tentacles
   groupWhitelist: [ Kodepiia ]
   followSkinColor: true
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: puffycape
 
 - type: marking
   id: KodeCapeSpines
-  bodyPart: RArmExtension
+  bodyPart: Tentacles
   groupWhitelist: [ Kodepiia ]
   followSkinColor: true
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: spinecloak
 
 - type: marking
   id: KodeCapeSquid
-  bodyPart: RArmExtension
+  bodyPart: Tentacles
   groupWhitelist: [ Kodepiia ]
   followSkinColor: true
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: squidcape
 
 - type: marking
   id: KodeCloakArms
-  bodyPart: RArmExtension
+  bodyPart: Tentacles
   groupWhitelist: [ Kodepiia ]
   followSkinColor: true
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: cloakarms1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: cloakarms2
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: cloakarms3
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: cloakarms4
 
 - type: marking
   id: KodeDionaArms
-  bodyPart: RArmExtension
+  bodyPart: Tentacles
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: dionaarms1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: dionaarms2
 
 - type: marking
   id: KodeMothChecks
-  bodyPart: RArmExtension
+  bodyPart: Tentacles
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: mothwingschecks1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: mothwingschecks2
 
 - type: marking
   id: KodeMothInk
-  bodyPart: RArmExtension
+  bodyPart: Tentacles
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: mothwingsoutline1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: mothwingsoutline2
 
 - type: marking
   id: KodeMyFirstWings
-  bodyPart: RArmExtension
+  bodyPart: Tentacles
   groupWhitelist: [ Kodepiia ]
   followSkinColor: true
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: myfirstwings1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: myfirstwings2
 
 - type: marking
   id: KodeSlimeArms
-  bodyPart: RArmExtension
+  bodyPart: Tentacles
   groupWhitelist: [ Kodepiia ]
   followSkinColor: true
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: slimearms1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: slimearms2
 
 - type: marking
   id: KodeSwanWings
-  bodyPart: RArmExtension
+  bodyPart: Tentacles
   groupWhitelist: [ Kodepiia ]
   followSkinColor: true
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: swanwings1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: swanwings2
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: swanwings3
 
 - type: marking
   id: KodeTattooArms
-  bodyPart: RArmExtension
+  bodyPart: Tentacles
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: humanarmstattoo1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: humanarmstattoo2
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: humanarmstattoo3
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: humanarmstattoo4
 
 - type: marking
   id: KodeTentaWings
-  bodyPart: RArmExtension
+  bodyPart: Tentacles
   groupWhitelist: [ Kodepiia ]
   followSkinColor: true
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: tentawings
 
 - type: marking
   id: KodeUnevenArmsSimple
-  bodyPart: RArmExtension
+  bodyPart: Tentacles
   groupWhitelist: [ Kodepiia ]
   followSkinColor: true
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: unevenarmssimple
 
 - type: marking
   id: KodeVariableWings
-  bodyPart: RArmExtension
+  bodyPart: Tentacles
   groupWhitelist: [ Kodepiia ]
   followSkinColor: true
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: variablewings1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: variablewings2
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: variablewings3
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: variablewings4
 
 - type: marking
   id: KodeWingsBlade
-  bodyPart: RArmExtension
+  bodyPart: Tentacles
   groupWhitelist: [ Kodepiia ]
   followSkinColor: true
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: bladewings
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: bladewingtips
 
 - type: marking
   id: KodeWingsMoth
-  bodyPart: RArmExtension
+  bodyPart: Tentacles
   groupWhitelist: [ Kodepiia ]
   followSkinColor: true
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: mothwings1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: mothwings2
 
 - type: marking
   id: KodeWingsThing
-  bodyPart: RArmExtension
+  bodyPart: Tentacles
   groupWhitelist: [ Kodepiia ]
   followSkinColor: true
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: thingwings1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: thingwings2
 
 - type: marking
   id: KodeUrchinArms
-  bodyPart: RArmExtension
+  bodyPart: Tentacles
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: urchinarms
 
 - type: marking
   id: PuffCapeCrackle
-  bodyPart: RArmExtension
+  bodyPart: Tentacles
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: puffcapecrackle1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: puffcapecrackle2
 
 - type: marking
   id: PuffCapeFloral
-  bodyPart: RArmExtension
+  bodyPart: Tentacles
   groupWhitelist: [ Kodepiia ]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: puffcapefloral1
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: puffcapefloral2
-  - sprite: _Impstation/Mobs/Customization/Kodepiia/rarmextension.rsi
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarmextension.rsi
     state: puffcapefloral3

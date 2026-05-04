@@ -58,7 +58,8 @@
     TableSalt: 2
     Ammonia: 3
     Fat: 4
-  
+
+- type: reagent
   id: BloodAllulalo
   name: reagent-name-bloodallulalo
   group: Biological

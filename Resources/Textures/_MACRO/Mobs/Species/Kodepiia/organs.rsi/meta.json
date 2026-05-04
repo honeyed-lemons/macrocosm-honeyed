@@ -8,10 +8,10 @@
     },
     "states": [
         {
-        "name": "billeausac"
+        "name": "brain"
         },
         {
-            "name": "compartmentofallthings",
+            "name": "heart-on",
             "delays": [
                 [
                     0.6,
@@ -22,16 +22,28 @@
             ]
         },
         {
-        "name": "finecoil"
+        "name": "lung-l"
+        },
+        {
+        "name": "lung-r"
         },
         {
         "name": "opticullis"
         },
         {
-        "name": "primarygullet"
+        "name": "stomach"
         },
         {
-        "name": "slough"
+        "name": "tongue"
+        },
+        {
+        "name": "kidney-l"
+        },
+        {
+        "name": "kidney-r"
+        },
+        {
+        "name": "liver"
         }
     ]
   }

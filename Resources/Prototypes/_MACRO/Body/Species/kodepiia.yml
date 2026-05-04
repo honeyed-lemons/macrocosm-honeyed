@@ -46,6 +46,9 @@
     enum.HumanoidVisualLayers.RFoot:
       limit: 1
       required: false
+    enum.HumanoidVisualLayers.Tentacles:
+      limit: 1
+      required: false
 
 - type: entity
   parent: BaseSpeciesAppearance
@@ -64,32 +67,29 @@
           32:
             sprite: _Impstation/Mobs/Species/Kodepiia/displacement.rsi
             state: hands
-
-- type: InitialBody
-  organs:
-    Torso: OrganKodepiiaTorso
-    Head: OrganKodepiiaHead
-    ArmLeft: OrganKodepiiaArmLeft
-    ArmRight: OrganKodepiiaArmRight
-    HandLeft: OrganKodepiiaHandLeft
-    HandRight: OrganKodepiiaHandRight
-    LegLeft: OrganKodepiiaLegLeft
-    LegRight: OrganKodepiiaLegRight
-    FootLeft: OrganKodepiiaFootLeft
-    FootRight: OrganKodepiiaFootRight
-    RArmExtension: MobHumanoidAnyMarking
-    Brain: OrganKodepiiaBrain
-    Eyes: OrganKodepiiaEyes
-    Tongue: OrganKodepiiaTongue
-    Appendix: OrganKodepiiaAppendix
-    Ears: OrganKodepiiaEars
-    Lungs: OrganKodepiiaLungs
-    Heart: OrganKodepiiaHeart
-    Stomach: OrganKodepiiaStomach
-    Liver: OrganKodepiiaLiver
-    Kidneys: OrganKodepiiaKidneys
-- type: HumanoidProfile
-  species: Kodepiia
+  - type: InitialBody
+    organs:
+      Torso: OrganKodepiiaTorso
+      Head: OrganKodepiiaHead
+      ArmLeft: OrganKodepiiaArmLeft
+      ArmRight: OrganKodepiiaArmRight
+      LegLeft: OrganKodepiiaLegLeft
+      LegRight: OrganKodepiiaLegRight
+      FootLeft: OrganKodepiiaFootLeft
+      FootRight: OrganKodepiiaFootRight
+      Brain: OrganKodepiiaBrain
+      Eyes: OrganKodepiiaEyes
+      Tongue: OrganKodepiiaTongue
+      Appendix: OrganKodepiiaAppendix
+      Ears: OrganKodepiiaEars
+      Lungs: OrganKodepiiaLungs
+      Heart: OrganKodepiiaHeart
+      Stomach: OrganKodepiiaStomach
+      Liver: OrganKodepiiaLiver
+      Kidneys: OrganKodepiiaKidneys
+      Tentacles: OrganKodepiiaTentacles
+  - type: HumanoidProfile
+    species: Kodepiia
 
 - type: entity
   parent:
@@ -100,8 +100,8 @@
   components:
   - type: Body
     prototype: Kodepiia
-  - type: KodepiiaScrambler
-  - type: ConsumeAction
+#  - type: KodepiiaScrambler
+#  - type: ConsumeAction
     popupSelfStart: kodepiia-consume-start-self
     popupSelfEnd: kodepiia-consume-end-self
     popupOthersStart: kodepiia-consume-start-others
@@ -153,7 +153,6 @@
       amount: 5
   - type: Sprite
     layers:
-    - map: [ "enum.HumanoidVisualLayers.TailBehind" ]
     - map: [ "enum.HumanoidVisualLayers.Chest" ]
     - map: [ "enum.HumanoidVisualLayers.Head" ]
     - map: [ "enum.HumanoidVisualLayers.Snout" ]
@@ -193,25 +192,13 @@
       sprite: "Effects/creampie.rsi"
       state: "creampie_human"
       visible: false
-    - map: [ "enum.HumanoidVisualLayers.RArmExtension" ]
+    - map: [ "enum.HumanoidVisualLayers.Tentacles" ]
     - map: [ "enum.HumanoidVisualLayers.Tail" ]
-    - map: [ "enum.HumanoidVisualLayers.TailOversuit" ] # subject to change, really finicky with the arms im afraid
+#    - map: [ "enum.HumanoidVisualLayers.TailOversuit" ] # subject to change, really finicky with the arms im afraid
     - map: [ "enum.HumanoidVisualLayers.Hair" ]
     - map: [ "enum.HumanoidVisualLayers.HeadTop" ]
     - map: [ "mask" ]
     - map: [ "head" ]
-    - map: [ enum.InstrumentVisuals.Layer ]
-      sprite: _DV/Effects/harpysinger.rsi
-      state: singing_music_notes
-      visible: false
-  - type: HumanoidAppearance
-    species: Kodepiia
-    hideLayersOnEquip:
-    - HeadTop
-    - HeadSide
-    - Hair
-    - Tail
-    - RArmExtension
   - type: Thirst
   - type: Hunger
     baseDecayRate: 0.15 # 10x default. 6 minutes to hungry and 15.5 minutes to starving
@@ -222,6 +209,12 @@
   id: OrganKodepiia
   abstract: true
   suffix: Kodepiia
+
+- type: entity
+  parent: OrganKodepiia
+  id: OrganKodepiiaTentacles
+  abstract: true
+  suffix: Kodepiia Tentacles
 
 - type: entity
   id: OrganKodepiiaMetabolizer
@@ -264,11 +257,6 @@
 - type: entity
   parent: [ OrganBaseHead, OrganKodepiiaExternal ]
   id: OrganKodepiiaHead
-  components:
-  - type: HandOrgan
-    handID: left
-    data:
-      location: Left
 
 - type: entity
   parent: [ OrganBaseArmLeft, OrganKodepiiaExternal ]
@@ -279,12 +267,22 @@
   id: OrganKodepiiaArmRight
 
 - type: entity
-  parent: [ OrganBaseHandLeft, OrganKodepiiaExternal ] # this might need changing as their hands are part of the arms?
-  id: OrganKodepiiaHandLeft
+  parent: [ OrganBaseLeftHandTentacles, OrganKodepiiaExternal ]
+  id: OrganKodepiiaTentaclesLeft
+  components:
+  - type: HandOrgan
+    handID: left
+    data:
+      location: Left
 
 - type: entity
-  parent: [ OrganBaseHandRight, OrganKodepiiaExternal ]
-  id: OrganKodepiiaHandRight
+  parent: [ OrganBaseRightHandTentacles, OrganKodepiiaExternal ]
+  id: OrganKodepiiaTentaclesRight
+  components:
+  - type: HandOrgan
+    handID: Right
+    data:
+      location: Right
 
 - type: entity
   parent: [ OrganBaseLegLeft, OrganKodepiiaExternal ]
@@ -331,9 +329,6 @@
   id: OrganKodepiiaTongue
   name: slough
   description: "Something that used to be skin." # concerning
-  components:
-  - type: Sprite
-    state: slough
 
 - type: entity
   parent: [ OrganBaseAppendix, OrganKodepiiaInternal ]
@@ -354,27 +349,18 @@
   id: OrganKodepiiaLungs
   name: fine coil
   description: "Like lungs, but stretchier...?"
-  components:
-  - type: Sprite
-    state: finecoil
 
 - type: entity
   parent: [ OrganBaseHeart, OrganKodepiiaInternal, OrganKodepiiaMetabolizer ]
   id: OrganKodepiiaHeart
   name: COAT
   description: "Allegedly 'quirked up' with 'the sauce,' if rumors are to be believed."
-  components:
-  - type: Sprite
-    state: compartmentofallthings
 
 - type: entity
   parent: [ OrganBaseStomach, OrganKodepiiaInternal, OrganHumanMetabolizer ]
   id: OrganKodepiiaStomach
   name: primary gullet
   description: "Leaky."
-  components:
-  - type: Sprite
-    state: primarygullet
 
 - type: entity
   parent: [ OrganBaseLiver, OrganKodepiiaInternal, OrganHumanMetabolizer ]
