@@ -5,41 +5,32 @@
     enum.HumanoidVisualLayers.Hair:
       limit: 1
       required: false
-      weight: 0.3 # do we still need these?
     enum.HumanoidVisualLayers.Head:
       limit: 8
       required: false
-      weight: 0.6
     enum.HumanoidVisualLayers.Chest:
       limit: 4
       required: false
-      weight: 0.6
     enum.HumanoidVisualLayers.Tail:
       limit: 2
       required: false
-      weight: 0.6
     enum.HumanoidVisualLayers.Snout:
       limit: 1
       required: false
-      weight: 0.6
     enum.HumanoidVisualLayers.LArm:
       limit: 1
       required: true
       default: [ KodeWingsBladeLeft ]
-      weight: 1
     enum.HumanoidVisualLayers.RArm:
       limit: 1
       required: true
       default: [ KodeWingsBladeRight ]
-      weight: 1
     enum.HumanoidVisualLayers.LLeg:
       limit: 8
       required: false
-      weight: 0.6
     enum.HumanoidVisualLayers.RLeg:
       limit: 8
       required: false
-      weight: 0.6
     enum.HumanoidVisualLayers.LFoot:
       limit: 1
       required: false
@@ -98,28 +89,26 @@
   id: MobKodepiia
   name: Urist McSquid
   components:
-  - type: Body
-    prototype: Kodepiia
 #  - type: KodepiiaScrambler
 #  - type: ConsumeAction
-    popupSelfStart: kodepiia-consume-start-self
-    popupSelfEnd: kodepiia-consume-end-self
-    popupOthersStart: kodepiia-consume-start-others
-    popupOthersEnd: kodepiia-consume-end-self
-    consumeActionId: ActionKodepiiaConsume
-    damage:
-      groups:
-        Genetic: 15
-      types:
-        Piercing: 15
-    whitelist:
-      components:
-      - Respirator
-      - Bloodstream
-    blacklist:
-      components:
-      - SiliconLawBound
-    percentageConsumed: 0.25
+#    popupSelfStart: kodepiia-consume-start-self
+#    popupSelfEnd: kodepiia-consume-end-self
+#    popupOthersStart: kodepiia-consume-start-others
+#    popupOthersEnd: kodepiia-consume-end-self
+#    consumeActionId: ActionKodepiiaConsume
+#    damage:
+#      groups:
+#        Genetic: 15
+#      types:
+#        Piercing: 15
+#    whitelist:
+#      components:
+#      - Respirator
+#      - Bloodstream
+#    blacklist:
+#      components:
+#      - SiliconLawBound
+#    percentageConsumed: 0.25
   - type: TypingIndicator
     proto: kodepiia
   - type: Speech

@@ -4,7 +4,6 @@
   roundStart: true # reminder to set this back after testing
 # randomViable: true
   prototype: MobKodepiia
-  markingLimits: MobKodepiiaMarkingLimits
   dollPrototype: AppearanceKodepiia
   skinColoration: Hues
   maleFirstNames: KodepiiaFirst
@@ -14,7 +13,7 @@
   - Unsexed
   youngAge: 25
   oldAge: 40
-  ancientAge: 70
+#  ancientAge: 70
 
 # Developer Notes
 #
