@@ -6,3 +6,6 @@ reagent-desc-mucin = A fascinating secretion capable of accelerating the movemen
 
 reagent-name-bloodkodepiia = kodepiia ooze
 reagent-desc-bloodkodepiia = The fluid that bleeds from a kodepiia if you cut it. Smells delicious.
+
+reagent-name-bloodallulalo = methylated blood
+reagent-desc-bloodallulalo = An ancient alkylate form of blood. Known to rapidly evaporate if spilled.
