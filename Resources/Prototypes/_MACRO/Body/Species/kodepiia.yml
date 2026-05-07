@@ -14,6 +14,10 @@
     enum.HumanoidVisualLayers.Tail:
       limit: 2
       required: false
+    enum.HumanoidVisualLayers.Tenta:
+      limit: 1
+      required: true
+      default: [ KodeWingsBlade ]
     enum.HumanoidVisualLayers.Snout:
       limit: 1
       required: false
@@ -57,8 +61,6 @@
     organs:
       Torso: OrganKodepiiaTorso
       Head: OrganKodepiiaHead
-      ArmLeft: OrganKodepiiaArmLeft
-      ArmRight: OrganKodepiiaArmRight
       LegLeft: OrganKodepiiaLegLeft
       LegRight: OrganKodepiiaLegRight
       FootLeft: OrganKodepiiaFootLeft
@@ -97,8 +99,6 @@
     # Extremities
     - map: ["enum.HumanoidVisualLayers.LFoot"]
     - map: ["enum.HumanoidVisualLayers.RFoot"]
-    - map: ["enum.HumanoidVisualLayers.LHand"]
-    - map: ["enum.HumanoidVisualLayers.RHand"]
 
     # Stuff that goes over the body but below equipment
     - map: ["enum.HumanoidVisualLayers.Overlay"]
@@ -124,9 +124,8 @@
     - map: [ "enum.HumanoidVisualLayers.Tail" ]
     - map: [ "enum.HumanoidVisualLayers.TailOverlay" ]
 
-    # Kodepiiae arms are drawn in front of everything else
-    - map: [ "enum.HumanoidVisualLayers.RArm" ]
-    - map: [ "enum.HumanoidVisualLayers.LArm" ]
+    # Kodepiiae 'arms' are drawn in front of everything else
+    - map: [ "enum.HumanoidVisualLayers.Tenta" ]
 
     # Stuff that goes in front of stuff that goes in front of equipment
     - map: [ "mask" ]
@@ -253,24 +252,6 @@
   id: OrganKodepiiaHead
 
 - type: entity
-  parent: [ OrganBaseArmLeft, OrganBaseHandLeft, OrganKodepiiaExternal ] #their arms are an arm and a hand at the same time
-  id: OrganKodepiiaArmLeft
-  components:
-  - type: HandOrgan
-    handID: left
-    data:
-      location: Left
-
-- type: entity
-  parent: [ OrganBaseArmRight, OrganBaseHandRight, OrganKodepiiaExternal ] #yup
-  id: OrganKodepiiaArmRight
-  components:
-  - type: HandOrgan
-    handID: Right
-    data:
-      location: Right
-
-- type: entity
   parent: [ OrganBaseLegLeft, OrganKodepiiaExternal ]
   id: OrganKodepiiaLegLeft
 
@@ -279,12 +260,22 @@
   id: OrganKodepiiaLegRight
 
 - type: entity
-  parent: [ OrganBaseFootLeft, OrganKodepiiaExternal ]
+  parent: [ OrganBaseFootLeft, OrganBaseHandLeft, OrganKodepiiaExternal ] # dont worry about it
   id: OrganKodepiiaFootLeft
+  components:
+  - type: HandOrgan
+    handID: left
+    data:
+      location: Left
 
 - type: entity
-  parent: [ OrganBaseFootRight, OrganKodepiiaExternal ]
+  parent: [ OrganBaseFootRight, OrganBaseHandRight, OrganKodepiiaExternal ]
   id: OrganKodepiiaFootRight
+  components:
+  - type: HandOrgan
+    handID: Right
+    data:
+      location: Right
 
 - type: entity
   parent: [ OrganBaseBrain, OrganKodepiiaInternal ]

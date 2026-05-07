@@ -28,7 +28,7 @@ namespace Content.Shared.Humanoid
         LLeg,
         RFoot,
         LFoot,
-        Tentacles,
+        Tenta, // special kode arms
         Overlay,
         Handcuffs,
         StencilMask,

@@ -358,467 +358,7 @@
 
 # RArm
 
-- type: marking
-  id: KodeRightArmWingBlade
-  bodyPart: RArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: bladewingsright
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: bladewingtipsright
-
-- type: marking
-  id: KodeRightArmPuffFloral
-  bodyPart: RArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: puffcapefloral1right
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: puffcapefloral2right
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: puffcapefloral3right
-
-- type: marking
-  id: KodeRightArmCloak
-  bodyPart: RArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: cloakarms1right
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: cloakarms2right
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: cloakarms3right
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: cloakarms4right
-
-- type: marking
-  id: KodeRightArmPuffCapeCrackle
-  bodyPart: RArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: puffcapecrackle1right
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: puffcapecrackle2right
-
-- type: marking
-  id: KodeRightArmUrchin
-  bodyPart: RArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: urchinarmsright
-
-- type: marking
-  id: KodeRightArmThing
-  bodyPart: RArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: thingwings1right
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: thingwings2right
-
-- type: marking
-  id: KodeRightArmMoth
-  bodyPart: RArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: mothwings1right
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: mothwings2right
-
-- type: marking
-  id: KodeRightArmVariable
-  bodyPart: RArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: variablewings1right
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: variablewings2right
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: variablewings3right
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: variablewings4right
-
-- type: marking
-  id: KodeRightArmUnevenSimple
-  bodyPart: RArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: unevenarmssimpleright
-
-- type: marking
-  id: KodeRightArmTenta
-  bodyPart: RArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: tentawingsright
-
-- type: marking
-  id: KodeRightArmTattoo
-  bodyPart: RArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: humanarmstattoo1right
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: humanarmstattoo2right
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: humanarmstattoo4right
-
-- type: marking
-  id: KodeRightArmSwan
-  bodyPart: RArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: swanwings1right
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: swanwings2right
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: swanwings3right
-
-- type: marking
-  id: KodeRightArmSlime
-  bodyPart: RArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: slimearms1right
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: slimearms2right
-
-- type: marking
-  id: KodeRightArmMyFirstWings
-  bodyPart: RArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: myfirstwings1right
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: myfirstwings2right
-
-- type: marking
-  id: KodeRightArmMothInk
-  bodyPart: RArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: mothwingsoutline1right
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: mothwingsoutline2right
-
-- type: marking
-  id: KodeRightArmMothChecks
-  bodyPart: RArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: mothwingschecks1right
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: mothwingschecks2right
-
-- type: marking
-  id: KodeRightArmDiona
-  bodyPart: RArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: dionaarms1right
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: dionaarms2right
-
-- type: marking
-  id: KodeRightArmCapeSquid
-  bodyPart: RArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: squidcaperight
-
-- type: marking
-  id: KodeRightArmCapeSpines
-  bodyPart: RArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: spinecloakright
-
-- type: marking
-  id: KodeRightArmCapePuffy
-  bodyPart: RArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: puffycaperight
-
-- type: marking
-  id: KodeRightArmCapeJelly
-  bodyPart: RArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: jellycloak1right
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: jellycloak2right
-
-- type: marking
-  id: KodeRightArmCrab
-  bodyPart: RArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: crabclawsright
-
-- type: marking
-  id: KodeRightArmJellyCapeStripes
-  bodyPart: RArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: jellycapestripes1right
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/rarm.rsi
-    state: jellycapestripes2right
-
 # LArm
-
-- type: marking
-  id: KodeLeftArmBlade
-  bodyPart: LArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: bladewingsleft
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: bladewingtipsleft
-
-- type: marking
-  id: KodeLeftArmPuffFloral
-  bodyPart: LArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: puffcapefloral1left
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: puffcapefloral2left
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: puffcapefloral3left
-
-- type: marking
-  id: KodeLeftArmCloak
-  bodyPart: LArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: cloakarms1left
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: cloakarms2left
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: cloakarms3left
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: cloakarms4left
-
-- type: marking
-  id: KodeLeftArmPuffCapeCrackle
-  bodyPart: LArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: puffcapecrackle1left
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: puffcapecrackle2left
-
-- type: marking
-  id: KodeLeftArmUrchin
-  bodyPart: LArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: urchinarmsleft
-
-- type: marking
-  id: KodeLeftArmThing
-  bodyPart: LArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: thingwings1left
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: thingwings2left
-
-- type: marking
-  id: KodeLeftArmMoth
-  bodyPart: LArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: mothwings1left
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: mothwings2left
-
-- type: marking
-  id: KodeLeftArmVariable
-  bodyPart: LArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: variablewings1left
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: variablewings2left
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: variablewings3left
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: variablewings4left
-
-- type: marking
-  id: KodeLeftArmUnevenSimple
-  bodyPart: LArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: unevenarmssimpleleft
-
-- type: marking
-  id: KodeLeftArmTenta
-  bodyPart: LArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: tentawingsleft
-
-- type: marking
-  id: KodeLeftArmTattoo
-  bodyPart: LArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: humanarmstattoo1left
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: humanarmstattoo3left
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: humanarmstattoo4left
-
-- type: marking
-  id: KodeLeftArmSwan
-  bodyPart: LArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: swanwings1left
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: swanwings2left
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: swanwings3left
-
-- type: marking
-  id: KodeLeftArmSlime
-  bodyPart: LArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: slimearms1left
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state:
-
-- type: marking
-  id: KodeLeftArmMyFirstWings
-  bodyPart: LArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: myfirstwings1left
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: myfirstwings2left
-
-- type: marking
-  id: KodeLeftArmMothInk
-  bodyPart: LArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: mothwingsoutline1left
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: mothwingsoutline2left
-
-- type: marking
-  id: KodeLeftArmMothChecks
-  bodyPart: LArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: mothwingschecks1left
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: mothwingschecks2left
-
-- type: marking
-  id: KodeLeftArmDiona
-  bodyPart: LArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: dionaarms1left
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: dionaarms2left
-
-- type: marking
-  id: KodeLeftArmCapeSquid
-  bodyPart: LArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: squidcapeleft
-
-- type: marking
-  id: KodeLeftArmCapeSpines
-  bodyPart: LArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: spinecloakleft
-
-- type: marking
-  id: KodeLeftArmCapePuffy
-  bodyPart: LArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: puffycapeleft
-
-- type: marking
-  id: KodeLeftArmCapeJelly
-  bodyPart: LArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: jellycloak1left
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: jellycloak2left
-
-- type: marking
-  id: KodeLeftArmCrab
-  bodyPart: LArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: crabclawsleft
-
-- type: marking
-  id: KodeLeftArmJellyCapeStripes
-  bodyPart: LArm
-  groupWhitelist: [ Kodepiia ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: jellycapestripes1left
-  - sprite: _MACRO/Mobs/Customization/Kodepiia/larm.rsi
-    state: jellycapestripes2left
 
 # RLeg
 
@@ -1373,3 +913,237 @@
     state: seafoam1
   - sprite: _MACRO/Mobs/Customization/Kodepiia/tail.rsi
     state: seafoam2
+
+# Tenta
+
+- type: marking
+  id: JellyCapeStripes
+  bodyPart: Tenta
+  groupWhitelist: [ Kodepiia ]
+  sprites:
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: jellycapestripes1
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: jellycapestripes2
+
+- type: marking
+  id: KodeArmsCrab
+  bodyPart: Tenta
+  groupWhitelist: [ Kodepiia ]
+  sprites:
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: crabclaws
+
+- type: marking
+  id: KodeCapeJelly
+  bodyPart: Tenta
+  groupWhitelist: [ Kodepiia ]
+  sprites:
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: jellycloak1
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: jellycloak2
+
+- type: marking
+  id: KodeCapePuffy
+  bodyPart: Tenta
+  groupWhitelist: [ Kodepiia ]
+  sprites:
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: puffycape
+
+- type: marking
+  id: KodeCapeSpines
+  bodyPart: Tenta
+  groupWhitelist: [ Kodepiia ]
+  sprites:
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: spinecloak
+
+- type: marking
+  id: KodeCapeSquid
+  bodyPart: Tenta
+  groupWhitelist: [ Kodepiia ]
+  sprites:
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: squidcape
+
+- type: marking
+  id: KodeCloakArms
+  bodyPart: Tenta
+  groupWhitelist: [ Kodepiia ]
+  sprites:
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: cloakarms1
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: cloakarms2
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: cloakarms3
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: cloakarms4
+
+- type: marking
+  id: KodeDionaArms
+  bodyPart: Tenta
+  groupWhitelist: [ Kodepiia ]
+  sprites:
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: dionaarms1
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: dionaarms2
+
+- type: marking
+  id: KodeMothChecks
+  bodyPart: Tenta
+  groupWhitelist: [ Kodepiia ]
+  sprites:
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: mothwingschecks1
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: mothwingschecks2
+
+- type: marking
+  id: KodeMothInk
+  bodyPart: Tenta
+  groupWhitelist: [ Kodepiia ]
+  sprites:
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: mothwingsoutline1
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: mothwingsoutline2
+
+- type: marking
+  id: KodeMyFirstWings
+  bodyPart: Tenta
+  groupWhitelist: [ Kodepiia ]
+  sprites:
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: myfirstwings1
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: myfirstwings2
+
+- type: marking
+  id: KodeSlimeArms
+  bodyPart: Tenta
+  groupWhitelist: [ Kodepiia ]
+  sprites:
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: slimearms1
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: slimearms2
+
+- type: marking
+  id: KodeSwanWings
+  bodyPart: Tenta
+  groupWhitelist: [ Kodepiia ]
+  sprites:
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: swanwings1
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: swanwings2
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: swanwings3
+
+- type: marking
+  id: KodeTattooArms
+  bodyPart: Tenta
+  groupWhitelist: [ Kodepiia ]
+  sprites:
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: humanarmstattoo1
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: humanarmstattoo2
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: humanarmstattoo3
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: humanarmstattoo4
+
+- type: marking
+  id: KodeTentaWings
+  bodyPart: Tenta
+  groupWhitelist: [ Kodepiia ]
+  sprites:
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: tentawings
+
+- type: marking
+  id: KodeUnevenArmsSimple
+  bodyPart: Tenta
+  groupWhitelist: [ Kodepiia ]
+  sprites:
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: unevenarmssimple
+
+- type: marking
+  id: KodeVariableWings
+  bodyPart: Tenta
+  groupWhitelist: [ Kodepiia ]
+  sprites:
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: variablewings1
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: variablewings2
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: variablewings3
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: variablewings4
+
+- type: marking
+  id: KodeWingsBlade
+  bodyPart: Tenta
+  groupWhitelist: [ Kodepiia ]
+  sprites:
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: bladewings
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: bladewingtips
+
+- type: marking
+  id: KodeWingsMoth
+  bodyPart: Tenta
+  groupWhitelist: [ Kodepiia ]
+  sprites:
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: mothwings1
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: mothwings2
+
+- type: marking
+  id: KodeWingsThing
+  bodyPart: Tenta
+  groupWhitelist: [ Kodepiia ]
+  sprites:
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: thingwings1
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: thingwings2
+
+- type: marking
+  id: KodeUrchinArms
+  bodyPart: Tenta
+  groupWhitelist: [ Kodepiia ]
+  sprites:
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: urchinarms
+
+- type: marking
+  id: PuffCapeCrackle
+  bodyPart: Tenta
+  groupWhitelist: [ Kodepiia ]
+  sprites:
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: puffcapecrackle1
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: puffcapecrackle2
+
+- type: marking
+  id: PuffCapeFloral
+  bodyPart: Tenta
+  groupWhitelist: [ Kodepiia ]
+  sprites:
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: puffcapefloral1
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: puffcapefloral2
+  - sprite: _MACRO/Mobs/Customization/Kodepiia/tenta.rsi
+    state: puffcapefloral3
