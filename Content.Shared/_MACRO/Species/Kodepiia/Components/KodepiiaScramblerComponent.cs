@@ -13,6 +13,6 @@ public sealed partial class KodepiiaScramblerComponent : Component
     public string? ScramblerActionId = "ActionKodepiiaScrambler";
 
     [DataField]
-    public SoundSpecifier ScramblerSound = new SoundPathSpecifier("/Audio/_MACRO/Kodepiia/kodescramble/kodescramble.ogg");
+    public SoundSpecifier ScramblerSound = new SoundPathSpecifier("/Audio/_MACRO/Voice/Kodepiiae/kodescramble/kodescramble.ogg");
 
 }

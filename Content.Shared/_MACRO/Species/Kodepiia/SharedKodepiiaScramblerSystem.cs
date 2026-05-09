@@ -34,7 +34,7 @@ public abstract partial class SharedKodepiiaScramblerSystem : EntitySystem
         _actionsSystem.RemoveAction(ent.Owner, ent.Comp.ScramblerAction);
     }
 
-    public void PlaySound(EntityUid uid,KodepiiaScramblerComponent comp)
+    public void PlaySound(EntityUid uid, KodepiiaScramblerComponent comp)
     {
         _audio.PlayPredicted(comp.ScramblerSound, uid, uid);
     }
