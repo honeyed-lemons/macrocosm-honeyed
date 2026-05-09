@@ -1,9 +1,9 @@
 using Content.Server.Actions;
 using Content.Server.DoAfter;
-using Content.Server.Humanoid;
 using Content.Server.Popups;
 using Content.Shared._MACRO.Species.Kodepiia;
 using Content.Shared._MACRO.Species.Kodepiia.Components;
+using Content.Shared.Body;
 using Content.Shared.DoAfter;
 using Content.Shared.Humanoid;
 using Content.Shared.IdentityManagement;
@@ -17,7 +17,8 @@ namespace Content.Server._MACRO.Species.Kodepiia;
 public sealed class KodepiiaScramblerSystem : SharedKodepiiaScramblerSystem
 {
     [Dependency] private readonly ActionsSystem _actionsSystem = default!;
-    [Dependency] private readonly HumanoidAppearanceSystem _humanoidAppearance = default!;
+    [Dependency] private readonly HumanoidProfileSystem _humanoidProfile = default!;
+    [Dependency] private readonly SharedVisualBodySystem _visualBody = default!;
     [Dependency] private readonly PopupSystem _popup = default!;
     [Dependency] private readonly DoAfterSystem _doAfter = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
@@ -47,17 +48,21 @@ public sealed class KodepiiaScramblerSystem : SharedKodepiiaScramblerSystem
     {
         if (args.Cancelled)
         {
-            _actionsSystem.SetCooldown(ent.Comp.ScramblerAction,TimeSpan.FromSeconds(10));
+            _actionsSystem.SetCooldown(ent.Comp.ScramblerAction, TimeSpan.FromSeconds(10));
             return;
         }
 
         if (args.Handled)
             return;
 
-        if (!TryComp<HumanoidAppearanceComponent>(ent, out var humanoid))
+        if (!TryComp<HumanoidProfileComponent>(ent, out var humanoid))
             return;
+
         var popupSelf = Loc.GetString("kodepiia-scramble-self", ("name", Identity.Entity(ent, EntityManager)));
-        _humanoidAppearance.LoadProfile(ent, HumanoidCharacterProfile.RandomWithSpecies(humanoid.Species), humanoid);
+        var profile = HumanoidCharacterProfile.RandomWithSpecies(humanoid.Species);
+
+        _visualBody.ApplyProfileTo(ent.Owner, profile);
+        _humanoidProfile.ApplyProfileTo(ent.Owner, profile);
         _popup.PopupEntity(popupSelf, ent, ent);
         args.Handled = true;
     }
