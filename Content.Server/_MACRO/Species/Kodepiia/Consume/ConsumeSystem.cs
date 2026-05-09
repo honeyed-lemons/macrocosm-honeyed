@@ -186,7 +186,7 @@ public sealed class ConsumeSystem : SharedConsumeSystem
         consumed.ConsumedValue += ent.Comp.PercentageConsumed;
         Dirty(args.Target.Value, consumed);
 
-        if (consumed.ConsumedValue >= GibThreshold && TryComp<HumanoidProfileComponent>(args.Target.Value, out var targetBody) && ent.Comp.CanGib)
+        if (consumed.ConsumedValue >= GibThreshold && ent.Comp.CanGib)
             _gibbing.Gib(args.Target.Value);
     }
 
