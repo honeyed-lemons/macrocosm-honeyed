@@ -8,7 +8,6 @@ using Content.Shared._MACRO.Species.Kodepiia.Consume.Components;
 using Content.Shared.Body;
 using Content.Shared.Body.Components;
 using Content.Shared.Body.Systems;
-using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Damage.Systems;
 using Content.Shared.DoAfter;
