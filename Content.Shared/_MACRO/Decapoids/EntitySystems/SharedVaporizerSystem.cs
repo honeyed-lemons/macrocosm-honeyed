@@ -40,10 +40,16 @@ public abstract class SharedVaporizerSystem : EntitySystem
         if (!_solution.TryGetSolution((ent, solutionManager), ent.Comp.LiquidTank, out var solutionEnt, out var solution))
             return;
 
-        ent.Comp.State = GetVaporizerState(ent, solution);
+        var state = GetVaporizerState(ent, solution);
+
+        if (ent.Comp.State != state)
+        {
+            ent.Comp.State = state;
+            Dirty(ent);
+        }
 
         // If the air pressure is less than max AND the state is low or normal
-        if (gasTank.Air.Pressure < ent.Comp.MaxPressure && ent.Comp.State is VaporizerState.LowSolution or VaporizerState.Normal)
+        if (gasTank.Air.Pressure < ent.Comp.MaxPressure && state is VaporizerState.LowSolution or VaporizerState.Normal)
         {
             // Split off the reagents consumed
             var reagentConsumed = _solution.SplitSolution(
@@ -51,11 +57,10 @@ public abstract class SharedVaporizerSystem : EntitySystem
                 ent.Comp.ReagentPerSecond * ent.Comp.ProcessDelay.TotalSeconds);
             // Add gas to the gas tank
             AdjustTankMoles(ent.Comp, gasTank, (float)reagentConsumed.Volume);
+            Dirty(ent, gasTank);
         }
 
-        UpdateVisualState(ent, ent.Comp.State);
-        Dirty(ent, gasTank);
-        Dirty(ent);
+        UpdateVisualState(ent, state);
     }
 
     /// <summary>
