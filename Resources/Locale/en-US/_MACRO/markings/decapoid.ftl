@@ -77,53 +77,53 @@ marking-DecapoidEyesSpider-eyes-spider = Eyes
 
 # RArm
 
-marking-CrabRArmStripes = Stripes
+marking-CrabRArmStripes = Stripes (Arm)
 marking-CrabRArmStripes-stripes = Stripes
 
-marking-DecapoidPauldronRight = Pauldron
+marking-DecapoidPauldronRight = Pauldron (Default)
 marking-DecapoidPauldronRight-pauldron = Pauldron
 
-marking-RightEncrustedPauldron = Encrusted Pauldron
+marking-RightEncrustedPauldron = Pauldron (Encrusted)
 marking-RightEncrustedPauldron-pauldronencrusted1 = Pauldron
 marking-RightEncrustedPauldron-pauldronencrusted2 = Tip
 marking-RightEncrustedPauldron-pauldronencrusted3 = Gems
 
-marking-RPauldronArmored = Armored Pauldron
+marking-RPauldronArmored = Pauldron (Armored)
 marking-RPauldronArmored-pauldronarmored = Pauldron
 
 # LArm
 
-marking-DecapoidPauldronLeft = Pauldron
+marking-DecapoidPauldronLeft = Pauldron (Default)
 marking-DecapoidPauldronLeft-pauldron = Pauldron
 
-marking-DecapoidPauldronSpike = Pauldron Spike
-marking-DecapoidPauldronSpike-pauldronspike = Pauldron Spike
+marking-DecapoidPauldronSpike = Pauldron (Spike)
+marking-DecapoidPauldronSpike-pauldronspike = Pauldron
 
-marking-FlowerMoonPauldron = Flower Moon Pauldron
+marking-FlowerMoonPauldron = Pauldron (Flower Moon)
 marking-FlowerMoonPauldron-flowermoonpauldron1 = Pauldron
 marking-FlowerMoonPauldron-flowermoonpauldron2 = Tip
 
-marking-LeftEncrustedPauldron = Encrusted Pauldron
+marking-LeftEncrustedPauldron = Pauldron (Encrusted)
 marking-LeftEncrustedPauldron-pauldronencrusted1 = Pauldron
 marking-LeftEncrustedPauldron-pauldronencrusted2 = Tip
 marking-LeftEncrustedPauldron-pauldronencrusted3 = Gems
 
-marking-LPauldronArmored = Armored Pauldron
+marking-LPauldronArmored = Pauldron (Armored)
 marking-LPauldronArmored-pauldronarmored = Pauldron
 
-marking-PauldronCracked = Cracked Pauldron
-marking-PauldronCracked-pauldroncracked = Cracked Pauldron
+marking-PauldronCracked = Pauldron (Cracked)
+marking-PauldronCracked-pauldroncracked = Pauldron
 
-marking-PauldronSheerspine = Sheerspine Pauldron
-marking-PauldronSheerspine-pauldronsheerspine = Pauldron
+marking-PauldronSheerspine = Pauldron (Sheerspine)
+marking-PauldronSheerspine-sheerspine = Pauldron
 
-marking-PauldronWarlord = Warlord Pauldron
-marking-PauldronWarlord-leftpauldronwarlord = Pauldron
+marking-PauldronWarlord = Pauldron (Warlord)
+marking-PauldronWarlord-warlord = Pauldron
 
-marking-PauldronCrystal = Crystal Pauldron
-marking-PaukdronCrystal-pauldroncrystal = Pauldron
+marking-PauldronCrystal = Pauldron (Crystal)
+marking-PauldronCrystal-pauldroncrystal = Pauldron
 
-marking-PauldronSkull = Skull Pauldron
+marking-PauldronSkull = Pauldron (Skull)
 marking-PauldronSkull-pauldronskull = Pauldron
 
 # RLeg
@@ -183,34 +183,34 @@ marking-DecapoidWhiskerMid = Whiskers (Mid)
 marking-DecapoidWhisker-whisker-mid = Whiskers
 
 marking-DecapoidWhiskerMidR = Whiskers (Mid Uneven R)
-marking-DecapoidWhisker-whisker-midr = Whiskers
+marking-DecapoidWhiskerMidR-whisker-midr = Whiskers
 
 marking-DecapoidWhiskerMidL = Whiskers (Mid Uneven L)
-marking-DecapoidWhisker-whisker-midl = Whiskers
+marking-DecapoidWhiskerMidL-whisker-midl = Whiskers
 
 marking-DecapoidWhiskerShort = Whiskers (Short)
-marking-DecapoidWhisker-whisker-short = Whiskers
+marking-DecapoidWhiskerShort-whisker-short = Whiskers
 
 marking-DecapoidWhiskerLong = Whiskers (Long)
-marking-DecapoidWhisker-whisker-long = Whiskers
+marking-DecapoidWhiskerLong-whisker-long = Whiskers
 
 marking-DecapoidWhiskerLongR = Whiskers (Long Uneven R)
-marking-DecapoidWhisker-whisker-longr = Whiskers
+marking-DecapoidWhiskerLongR-whisker-longr = Whiskers
 
 marking-DecapoidWhiskerLongL = Whiskers (Long Uneven L)
-marking-DecapoidWhisker-whisker-longl = Whiskers
+marking-DecapoidWhiskerLongL-whisker-longl = Whiskers
 
 marking-DecapoidWhiskerSimple = Whiskers (Simple)
 marking-DecapoidWhisker-whisker-simple = Whiskers
 
 marking-DecapoidWhiskerStraight = Whiskers (Straight)
-marking-DecapoidWhisker-whisker-straight = Whiskers
+marking-DecapoidWhiskerStraight-whisker-straight = Whiskers
 
 marking-DecapoidWhiskerHanging = Whiskers (Hanging)
-marking-DecapoidWhisker-whisker-hanging = Whiskers
+marking-DecapoidWhiskerHanging-whisker-hanging = Whiskers
 
 marking-DecapoidWhiskerCurled = Whiskers (Curled)
-marking-DecapoidWhisker-curled = Whiskers
+marking-DecapoidWhiskerCurled-whisker-curled = Whiskers
 
 # HeadTop
 
