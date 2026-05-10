@@ -4,6 +4,7 @@ using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Interaction.Components;
 using Content.Shared.Inventory;
 using Robust.Shared.Containers;
+using Robust.Shared.Network;
 
 namespace Content.Shared._MACRO.Body.EntitySystems;
 
@@ -12,6 +13,7 @@ public sealed class EquipmentOrganSystem : EntitySystem
     [Dependency] private readonly InventorySystem _inventory = default!;
     [Dependency] private readonly SharedContainerSystem _container = default!;
     [Dependency] private readonly SharedHandsSystem _hands = default!;
+    [Dependency] private readonly INetManager _net = default!;
 
     public override void Initialize()
     {
@@ -62,6 +64,10 @@ public sealed class EquipmentOrganSystem : EntitySystem
     }
     private void OnGotInserted(Entity<EquipmentOrganComponent> ent, ref OrganGotInsertedEvent args)
     {
+        // Client applies container state via ExpectedEntities; forcing pickup here races Insert and asserts.
+        if (!_net.IsServer)
+            return;
+
         foreach (var equipmentData in ent.Comp.StoredEquipment)
         {
             var item = GetEntity(equipmentData.Uid);
