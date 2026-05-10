@@ -12,10 +12,6 @@ namespace Content.Server._MACRO.Decapoids.EntitySystems;
 
 public sealed class VaporizerSystem : SharedVaporizerSystem
 {
-    [Dependency] private readonly SharedSolutionContainerSystem _solution = default!;
-    [Dependency] private readonly IGameTiming _gameTiming = default!;
-    [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
-
     public override void AdjustTankMoles(VaporizerComponent vaporizer, GasTankComponent gasTank, float volumeConsumed)
     {
         gasTank.Air.AdjustMoles(vaporizer.OutputGas, volumeConsumed * vaporizer.ReagentToMoles);

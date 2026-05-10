@@ -77,38 +77,38 @@ marking-DecapoidEyesSpider-eyes6 = Eyes
 
 # RArm
 
-marking-CrabRArmStripes = Stripes Right Arm
-marking-CrabRArmStripes-stripes = Stripes Right Arm
+marking-CrabRArmStripes = Stripes
+marking-CrabRArmStripes-stripes = Stripes
 
-marking-DecapoidPauldronRight = Right Pauldron
-marking-DecapoidPauldronRight-pauldron = Right Pauldron
+marking-DecapoidPauldronRight = Pauldron
+marking-DecapoidPauldronRight-pauldron = Pauldron
 
-marking-RightEncrustedPauldron = Encrusted Pauldron Right
+marking-RightEncrustedPauldron = Encrusted Pauldron
 marking-RightEncrustedPauldron-pauldronencrusted1 = Pauldron
 marking-RightEncrustedPauldron-pauldronencrusted2 = Tip
 marking-RightEncrustedPauldron-pauldronencrusted3 = Gems
 
-marking-RPauldronArmored = Armored Pauldron Right
+marking-RPauldronArmored = Armored Pauldron
 marking-RPauldronArmored-pauldronarmored = Pauldron
 
 # LArm
 
-marking-DecapoidPauldronLeft = Left Pauldron
-marking-DecapoidPauldronLeft-pauldron = Left Pauldron
+marking-DecapoidPauldronLeft = Pauldron
+marking-DecapoidPauldronLeft-pauldron = Pauldron
 
-marking-DecapoidPauldronSpike = Left Pauldron Spike
-marking-DecapoidPauldronSpike-pauldronspike = Left Pauldron Spike
+marking-DecapoidPauldronSpike = Pauldron Spike
+marking-DecapoidPauldronSpike-pauldronspike = Pauldron Spike
 
 marking-FlowerMoonPauldron = Flower Moon Pauldron
 marking-FlowerMoonPauldron-flowermoonpauldron1 = Pauldron
 marking-FlowerMoonPauldron-flowermoonpauldron2 = Tip
 
-marking-LeftEncrustedPauldron = Encrusted Pauldron Left
+marking-LeftEncrustedPauldron = Encrusted Pauldron
 marking-LeftEncrustedPauldron-pauldronencrusted1 = Pauldron
 marking-LeftEncrustedPauldron-pauldronencrusted2 = Tip
 marking-LeftEncrustedPauldron-pauldronencrusted3 = Gems
 
-marking-LPauldronArmored = Armored Pauldron Left
+marking-LPauldronArmored = Armored Pauldron
 marking-LPauldronArmored-pauldronarmored = Pauldron
 
 marking-PauldronCracked = Cracked Pauldron

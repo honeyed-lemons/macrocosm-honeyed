@@ -224,7 +224,7 @@
 
 - type: marking
   id: DecapoidPauldronRight
-  bodyPart: Tail
+  bodyPart: RArm
   groupWhitelist: [ Decapoid ]
   sprites:
   - sprite: _MACRO/Mobs/Customization/Decapoid/rarm.rsi
@@ -232,7 +232,7 @@
 
 - type: marking
   id: RightEncrustedPauldron
-  bodyPart: Tail
+  bodyPart: RArm
   groupWhitelist: [ Decapoid ]
   sprites:
   - sprite: _MACRO/Mobs/Customization/Decapoid/rarm.rsi
@@ -244,7 +244,7 @@
 
 - type: marking
   id: RPauldronArmored
-  bodyPart: Tail
+  bodyPart: RArm
   groupWhitelist: [ Decapoid ]
   sprites:
   - sprite: _MACRO/Mobs/Customization/Decapoid/rarm.rsi
@@ -254,15 +254,19 @@
 
 - type: marking
   id: DecapoidPauldronLeft
-  bodyPart: Tail
+  bodyPart: LArm
   groupWhitelist: [ Decapoid ]
+  coloring:
+    default:
+      type:
+        !type:SkinColoring
   sprites:
   - sprite: _MACRO/Mobs/Customization/Decapoid/larm.rsi
     state: pauldron
 
 - type: marking
   id: DecapoidPauldronSpike
-  bodyPart: Tail
+  bodyPart: LArm
   groupWhitelist: [ Decapoid ]
   sprites:
   - sprite: _MACRO/Mobs/Customization/Decapoid/larm.rsi
@@ -270,7 +274,7 @@
 
 - type: marking
   id: FlowerMoonPauldron
-  bodyPart: Tail
+  bodyPart: LArm
   groupWhitelist: [ Decapoid ]
   sprites:
   - sprite: _MACRO/Mobs/Customization/Decapoid/larm.rsi
@@ -280,7 +284,7 @@
 
 - type: marking
   id: LeftEncrustedPauldron
-  bodyPart: Tail
+  bodyPart: LArm
   groupWhitelist: [ Decapoid ]
   sprites:
   - sprite: _MACRO/Mobs/Customization/Decapoid/larm.rsi
@@ -292,7 +296,7 @@
 
 - type: marking
   id: LPauldronArmored
-  bodyPart: Tail
+  bodyPart: LArm
   groupWhitelist: [ Decapoid ]
   sprites:
   - sprite: _MACRO/Mobs/Customization/Decapoid/larm.rsi
@@ -300,7 +304,7 @@
 
 - type: marking
   id: PauldronCracked
-  bodyPart: Tail
+  bodyPart: LArm
   groupWhitelist: [ Decapoid ]
   sprites:
   - sprite: _MACRO/Mobs/Customization/Decapoid/larm.rsi
@@ -308,7 +312,7 @@
 
 - type: marking
   id: PauldronSheerspine
-  bodyPart: Tail
+  bodyPart: LArm
   groupWhitelist: [ Decapoid ]
   sprites:
   - sprite: _MACRO/Mobs/Customization/Decapoid/larm.rsi
@@ -316,7 +320,7 @@
 
 - type: marking
   id: PauldronWarlord
-  bodyPart: Tail
+  bodyPart: LArm
   groupWhitelist: [ Decapoid ]
   sprites:
   - sprite: _MACRO/Mobs/Customization/Decapoid/larm.rsi
@@ -324,7 +328,7 @@
 
 - type: marking
   id: PauldronCrystal
-  bodyPart: Tail
+  bodyPart: LArm
   groupWhitelist: [ Decapoid ]
   sprites:
   - sprite: _MACRO/Mobs/Customization/Decapoid/larm.rsi
@@ -332,7 +336,7 @@
 
 - type: marking
   id: PauldronSkull
-  bodyPart: Tail
+  bodyPart: LArm
   groupWhitelist: [ Decapoid ]
   sprites:
   - sprite: _MACRO/Mobs/Customization/Decapoid/larm.rsi

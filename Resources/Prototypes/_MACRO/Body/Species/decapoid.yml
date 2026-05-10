@@ -31,6 +31,10 @@
     enum.HumanoidVisualLayers.RArm:
       limit: 1
       required: false
+    enum.HumanoidVisualLayers.LArm:
+      limit: 1
+      required: true
+      default: [ DecapoidPauldronLeft ]
     enum.HumanoidVisualLayers.LHand:
       limit: 1
       required: false
