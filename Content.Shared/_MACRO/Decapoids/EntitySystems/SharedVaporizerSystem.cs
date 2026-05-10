@@ -5,6 +5,7 @@ using Content.Shared.Chemistry.Components.SolutionManager;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Examine;
 using Content.Shared.FixedPoint;
+using Robust.Shared.Network;
 using Robust.Shared.Timing;
 
 namespace Content.Shared._MACRO.Decapoids.EntitySystems;
@@ -14,6 +15,7 @@ public abstract class SharedVaporizerSystem : EntitySystem
     [Dependency] private readonly SharedSolutionContainerSystem _solution = default!;
     [Dependency] private readonly IGameTiming _gameTiming = default!;
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
+    [Dependency] private readonly INetManager _net = default!;
 
     private const int ExaminePriority = 1;
 
@@ -107,6 +109,10 @@ public abstract class SharedVaporizerSystem : EntitySystem
 
     public override void Update(float frameTime)
     {
+        // Solution splits and tank moles are authoritative on the server only.
+        if (!_net.IsServer)
+            return;
+
         var enumerator = EntityQueryEnumerator<VaporizerComponent, GasTankComponent, SolutionContainerManagerComponent>();
 
         while (enumerator.MoveNext(out var uid, out var vaporizer, out var gasTank, out var solutionManager))
