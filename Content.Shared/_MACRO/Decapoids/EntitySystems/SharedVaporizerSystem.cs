@@ -9,7 +9,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Shared._MACRO.Decapoids.EntitySystems;
 
-public sealed class VaporizerSystem : EntitySystem
+public abstract class SharedVaporizerSystem : EntitySystem
 {
     [Dependency] private readonly SharedSolutionContainerSystem _solution = default!;
     [Dependency] private readonly IGameTiming _gameTiming = default!;
@@ -26,22 +26,46 @@ public sealed class VaporizerSystem : EntitySystem
 
     private void OnExamined(Entity<VaporizerComponent> ent, ref ExaminedEvent args)
     {
-        switch (ent.Comp)
-        {
-            case { State: VaporizerState.Normal }:
-                args.PushMarkup(Loc.GetString("vaporizer-examine-state-normal"), ExaminePriority);
-                break;
-            case { State: VaporizerState.LowSolution }:
-                args.PushMarkup(Loc.GetString("vaporizer-examine-state-low"), ExaminePriority);
-                break;
-            case { State: VaporizerState.BadSolution }:
-                args.PushMarkup(Loc.GetString("vaporizer-examine-state-bad"), ExaminePriority);
-                break;
-            case { State: VaporizerState.Empty }:
-                args.PushMarkup(Loc.GetString("vaporizer-examine-state-empty"), ExaminePriority);
-                break;
-        }
+        args.PushMarkup(Loc.GetString("vaporizer-examine-state",("state", ent.Comp.State)), ExaminePriority);
     }
+
+    /// <summary>
+    /// Convert a portion of reagent inside of the vaporizer to gas.
+    /// </summary>
+    /// <param name="ent">Vaporizer to process.</param>
+    /// <param name="gasTank">Gas Tank component to add to.</param>
+    /// <param name="solutionManager">Solution Manager to get the solution from.</param>
+    private void ProcessVaporizerTank(Entity<VaporizerComponent> ent, GasTankComponent gasTank, SolutionContainerManagerComponent solutionManager)
+    {
+        if (!_solution.TryGetSolution((ent, solutionManager), ent.Comp.LiquidTank, out var solutionEnt, out var solution))
+            return;
+
+        ent.Comp.State = GetVaporizerState(ent, solution);
+
+        // If the air pressure is less than max AND the state is low or normal
+        if (gasTank.Air.Pressure < ent.Comp.MaxPressure && ent.Comp.State is VaporizerState.LowSolution or VaporizerState.Normal)
+        {
+            // Split off the reagents consumed
+            var reagentConsumed = _solution.SplitSolution(
+                solutionEnt.Value,
+                ent.Comp.ReagentPerSecond * ent.Comp.ProcessDelay.TotalSeconds);
+            // Add gas to the gas tank
+            AdjustTankMoles(ent.Comp, gasTank, (float)reagentConsumed.Volume);
+        }
+
+        UpdateVisualState(ent, ent.Comp.State);
+        Dirty(ent, gasTank);
+        Dirty(ent);
+    }
+
+    /// <summary>
+    /// Adjusts gas tank mols SERVERSIDE in order to not eat bandwidth.
+    /// </summary>
+    /// <param name="vaporizer">Vaporizer component</param>
+    /// <param name="gasTank">Gas tank component.</param>
+    /// <param name="volumeConsumed">Volume of the solution consumed.</param>
+    public virtual void AdjustTankMoles(VaporizerComponent vaporizer, GasTankComponent gasTank, float volumeConsumed) { }
+
     /// <summary>
     /// Get the fill state of a vaporizer's solution.
     /// </summary>
@@ -67,32 +91,6 @@ public sealed class VaporizerSystem : EntitySystem
         }
 
         return state;
-    }
-    /// <summary>
-    /// Convert a portion of reagent inside of the vaporizer to gas.
-    /// </summary>
-    /// <param name="ent">Vaporizer to process.</param>
-    /// <param name="gasTank">Gas Tank component to add to.</param>
-    /// <param name="solutionManager">Solution Manager to get the solution from.</param>
-    private void ProcessVaporizerTank(Entity<VaporizerComponent> ent, GasTankComponent gasTank, SolutionContainerManagerComponent solutionManager)
-    {
-        if (!_solution.TryGetSolution((ent, solutionManager), ent.Comp.LiquidTank, out var solutionEnt, out var solution))
-            return;
-
-        var state = GetVaporizerState(ent, solution);
-        ent.Comp.State = state;
-        // If the air pressure is less than max AND the state is low or normal
-        if (gasTank.Air.Pressure < ent.Comp.MaxPressure && state is VaporizerState.LowSolution or VaporizerState.Normal)
-        {
-            // Split off the reagents consumed
-            var reagentConsumed = _solution.SplitSolution(
-                solutionEnt.Value,
-                ent.Comp.ReagentPerSecond * ent.Comp.ProcessDelay.TotalSeconds);
-            // Add gas to the gas tank
-            gasTank.Air.AdjustMoles(ent.Comp.OutputGas, (float)reagentConsumed.Volume * ent.Comp.ReagentToMoles);
-        }
-
-        UpdateVisualState(ent, state);
     }
 
     private void UpdateVisualState(EntityUid uid, VaporizerState state, AppearanceComponent? appearance = null)
