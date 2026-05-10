@@ -9,3 +9,155 @@
   - hiss
   - hisses
   - hissed
+
+- type: emote
+  id: KodeHonk
+  name: chat-emote-name-honk
+  category: Vocal
+  available: false
+  icon: _MACRO/Interface/Emotes/kodehonk.png
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [honks.]
+  chatTriggers:
+    - honk
+    - honks
+    - honking
+    - honked
+
+- type: emote
+  id: KodeRing
+  name: chat-emote-name-ring
+  category: Vocal
+  available: false
+  icon: _MACRO/Interface/Emotes/ring.png
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [rings.]
+  chatTriggers:
+    - ring
+    - rings
+    - ringing
+    - ringed
+    - rang
+
+- type: emote
+  id: KodePew
+  name: chat-emote-name-pew
+  category: Vocal
+  available: false
+  icon: _MACRO/Interface/Emotes/pew.png
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [pews.]
+  chatTriggers:
+    - pew
+    - pews
+    - pewpew
+
+- type: emote
+  id: KodeBang
+  name: chat-emote-name-bang
+  category: Vocal
+  available: false
+  icon: _MACRO/Interface/Emotes/bang.png
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [bangs.]
+  chatTriggers:
+    - bang
+    - bangs
+    - banging
+    - banged
+
+- type: emote
+  id: KodeBeep
+  name: chat-emote-name-beep
+  category: Vocal
+  icon: _MACRO/Interface/Emotes/beep.png
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [beeps.]
+  chatTriggers:
+    - beep
+    - beeps
+    - beeping
+    - beeped
+
+- type: emote
+  id: KodeRev
+  name: chat-emote-name-rev
+  category: Vocal
+  available: false
+  icon: _MACRO/Interface/Emotes/revs.png
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [revs.]
+  chatTriggers:
+    - rev
+    - revs
+    - revving
+    - revved
+
+- type: emote
+  id: Caw
+  name: chat-emote-name-caw
+  category: Vocal
+  available: false
+  icon: _MACRO/Interface/Emotes/caw.png
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [caws.]
+  chatTriggers:
+    - caw
+    - caws
+    - cawing
+    - cawed
+
+- type: emote
+  id: Snarl
+  name: chat-emote-name-snarl
+  category: Vocal
+  available: false
+  icon: _MACRO/Interface/Emotes/snarl.png
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [snarls.]
+  chatTriggers:
+    - snarl
+    - snarls
+    - snarled
+    - snarling

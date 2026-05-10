@@ -1,11 +1,11 @@
 - type: speechSounds
   id: Kodepiia
   saySound:
-    path: /Audio/_Impstation/Kodepiia/kodetalk.ogg
+    path: /Audio/_MACRO/Kodepiia/kodetalk.ogg
   askSound:
-    path: /Audio/_Impstation/Kodepiia/kodeask.ogg
+    path: /Audio/_MACRO/Kodepiia/kodeask.ogg
   exclaimSound:
-    path: /Audio/_Impstation/Kodepiia/kodeexclaim.ogg
+    path: /Audio/_MACRO/Kodepiia/kodeexclaim.ogg
 
 - type: emoteSounds
   id: Kodepiia

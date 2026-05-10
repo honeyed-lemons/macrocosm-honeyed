@@ -1109,6 +1109,7 @@
     - VimPilot
     - DoorBumpOpener
     - Cake
+    - KodeEdible # macro add
   - type: CanEscapeInventory
     baseResistTime: 2
   - type: Puller

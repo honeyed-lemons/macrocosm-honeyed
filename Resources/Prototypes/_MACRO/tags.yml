@@ -2,3 +2,6 @@
 
 - type: Tag
   id: CostumeItem # Used for non-clothing items that should be allowed to fit in costume bundles.
+
+- type: Tag
+  id: KodeEdible # Used for food kodepiia are able to eat.

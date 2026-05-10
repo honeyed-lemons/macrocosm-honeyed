@@ -672,6 +672,7 @@
   - type: Tag
     tags:
     - Pill
+    - KodeEdible # macro add
 
 - type: entity
   name: pill canister

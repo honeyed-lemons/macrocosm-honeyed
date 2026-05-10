@@ -153,6 +153,7 @@
   - type: HideLayerClothing
     slots:
     - Tail
+    - Tenta # macro add, for kodepiia
 
 - type: entity
   abstract: true
@@ -185,6 +186,7 @@
   - type: HideLayerClothing
     slots:
     - Tail
+    - Tenta # macro add, for kodepiia
 
 - type: entity
   parent: ClothingOuterBase

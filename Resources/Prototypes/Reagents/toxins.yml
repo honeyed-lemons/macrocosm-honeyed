@@ -483,12 +483,12 @@
   flavor: bitter
   color: "#FFFFE5"
   metabolisms:
-    Bloodstream:
+    Food:
       effects:
       - !type:PopupMessage
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Animal, Vox ]
+          type: [ Animal, Vox, Kodepiia, Anomalocarid ] #macro, added kode
           inverted: true
         type: Local
         visualType: MediumCaution
@@ -498,12 +498,12 @@
         probability: 0.1
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Animal, Vox, Plant ]
+          type: [ Animal, Vox, Plant, Kodepiia, Anomalocarid ] #macro, added kode
           inverted: true
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Animal, Vox, Plant ]
+          type: [ Animal, Vox, Plant, Kodepiia, Anomalocarid ] #macro, added kode
           inverted: true
         damage:
           types:
@@ -527,6 +527,31 @@
           type: [ Vox ]
         reagent: Protein
         amount: 0.25
+      # macro edit start
+      - !type:HealthChange
+        probability: 0.5
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Kodepiia ]
+        damage:
+          groups:
+            Brute: -0.4
+      - !type:SatiateHunger
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Kodepiia ]
+      - !type:ModifyBloodLevel
+        amount: 1
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Kodepiia ]
+      - !type:AdjustReagent
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Goblin ]
+        reagent: Protein
+        amount: 0.5
+      # macro edit end
 
 - type: reagent
   id: Allicin

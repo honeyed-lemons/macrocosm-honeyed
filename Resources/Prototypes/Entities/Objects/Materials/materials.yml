@@ -749,6 +749,11 @@
           Quantity: 3
   - type: Item
     heldPrefix: bones
+  - type: Tag # macro add
+    tags:
+    - DroneUsable
+    - RawMaterial
+    - KodeEdible
 
 - type: entity
   parent: MaterialBones

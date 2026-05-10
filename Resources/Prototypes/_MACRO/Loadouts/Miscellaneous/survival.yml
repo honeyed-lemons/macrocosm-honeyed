@@ -1,0 +1,6 @@
+- type: loadoutEffectGroup
+  id: Carnivorous
+  effects:
+  - !type:SpeciesLoadoutEffect
+    species:
+    - Kodepiia
