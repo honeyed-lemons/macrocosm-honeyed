@@ -45,6 +45,7 @@ public abstract class SharedVaporizerSystem : EntitySystem
         if (ent.Comp.State != state)
         {
             ent.Comp.State = state;
+            UpdateVisualState(ent, state);
             Dirty(ent);
         }
 
@@ -59,8 +60,6 @@ public abstract class SharedVaporizerSystem : EntitySystem
             AdjustTankMoles(ent.Comp, gasTank, (float)reagentConsumed.Volume);
             Dirty(ent, gasTank);
         }
-
-        UpdateVisualState(ent, state);
     }
 
     /// <summary>
