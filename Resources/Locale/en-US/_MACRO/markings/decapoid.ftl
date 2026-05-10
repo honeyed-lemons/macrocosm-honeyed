@@ -54,26 +54,26 @@ marking-GillStripes-gills-stripes2 = Color 2
 # Eyes
 
 marking-CrabTallEyes = Eyes (Tall Eyestalks)
-marking-CrabTallEyes-tall1 = Eyes
-marking-CrabTallEyes-tall2 = Eyes
+marking-CrabTallEyes-eyes-tall1 = Stalks
+marking-CrabTallEyes-eyes-tall2 = Eyes
 
 marking-DecapoidEyesDefault = Eyes (Default)
-marking-DecapoidEyesDefault-eyes1 = Eyes
+marking-DecapoidEyesDefault-eyes-default = Eyes
 
 marking-DecapoidEyesThree = Eyes (Three)
-marking-DecapoidEyesThree-eyes2 = Eyes
+marking-DecapoidEyesThree-eyes-three = Eyes
 
 marking-DecapoidEyesWideClose = Eyes (Wide Close)
-marking-DecapoidEyesWideClose-eyes3 = Eyes
+marking-DecapoidEyesWideClose-eyes-wide-close = Eyes
 
 marking-DecapoidEyesStalks = Eyes (Stalks)
-marking-DecapoidEyesStalks-eyes4 = Eyes
+marking-DecapoidEyesStalks-eyes-stalks = Eyes
 
-marking-DecapoidEyesWideFar = Eyes (Wide Close)
-marking-DecapoidEyesWideFar-eyes5 = Eyes
+marking-DecapoidEyesWideFar = Eyes (Wide Far)
+marking-DecapoidEyesWideFar-eyes-wide-far = Eyes
 
 marking-DecapoidEyesSpider = Eyes (Spider)
-marking-DecapoidEyesSpider-eyes6 = Eyes
+marking-DecapoidEyesSpider-eyes-spider = Eyes
 
 # RArm
 

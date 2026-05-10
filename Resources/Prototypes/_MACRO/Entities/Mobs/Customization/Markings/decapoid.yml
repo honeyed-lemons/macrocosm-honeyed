@@ -144,6 +144,7 @@
   id: DecapoidEyesDefault
   bodyPart: Eyes
   groupWhitelist: [ Decapoid ]
+  forcedColoring: true
   coloring:
     default:
       type:
@@ -156,6 +157,7 @@
   id: DecapoidEyesSpider
   bodyPart: Eyes
   groupWhitelist: [ Decapoid ]
+  forcedColoring: true
   coloring:
     default:
       type:
@@ -168,6 +170,7 @@
   id: DecapoidEyesStalks
   bodyPart: Eyes
   groupWhitelist: [ Decapoid ]
+  forcedColoring: true
   coloring:
     default:
       type:
@@ -180,6 +183,7 @@
   id: DecapoidEyesThree
   bodyPart: Eyes
   groupWhitelist: [ Decapoid ]
+  forcedColoring: true
   coloring:
     default:
       type:
@@ -192,6 +196,7 @@
   id: DecapoidEyesWideClose
   bodyPart: Eyes
   groupWhitelist: [ Decapoid ]
+  forcedColoring: true
   coloring:
     default:
       type:
@@ -204,6 +209,7 @@
   id: DecapoidEyesWideFar
   bodyPart: Eyes
   groupWhitelist: [ Decapoid ]
+  forcedColoring: true
   coloring:
     default:
       type:
