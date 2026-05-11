@@ -85,6 +85,13 @@ public sealed class EquipmentOrganSystem : EntitySystem
 
         foreach (var item in enumerator)
         {
+            if (!TryComp<OrganAttachedComponent>(item, out var organComp))
+                continue;
+
+            // Only remove it if you're the one who owns it.
+            if (organComp.AttachedOrgan != ent)
+                continue;
+
             RemComp<UnremoveableComponent>(item);
             _container.Insert(item, container);
         }

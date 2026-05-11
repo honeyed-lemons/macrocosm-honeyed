@@ -12,7 +12,7 @@ public sealed partial class OrganAttachedComponent : Component
     /// The organ this component's owner is attached to.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public EntityUid AttachedOrgan;
+    public EntityUid? AttachedOrgan;
 
     /// <summary>
     /// What slot this entity is placed into.
