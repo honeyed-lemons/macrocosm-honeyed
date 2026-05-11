@@ -51,9 +51,6 @@ public sealed class NPCRetaliationSystem : EntitySystem
 
     private void OnDisarmed(Entity<NPCRetaliationComponent> ent, ref DisarmedEvent args)
     {
-        if (!ent.Comp.AnyInteraction)
-            return;
-
         TryRetaliate(ent, args.Source);
     }
 
