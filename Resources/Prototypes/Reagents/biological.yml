@@ -221,7 +221,7 @@
     params:
       volume: 6
   metabolisms: # macro add
-    digestion:
+    edible:
       effects:
       - !type:SatiateHunger
         conditions:

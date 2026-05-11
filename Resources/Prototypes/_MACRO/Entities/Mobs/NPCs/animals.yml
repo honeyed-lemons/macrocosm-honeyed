@@ -4,8 +4,6 @@
   id: MobYoungKodepiia
   description: Not quite a not-quite-person.
   components:
-  - type: VentCrawler
-    enterDelay: 2
   - type: Sprite
     sprite: _Impstation/Mobs/Aliens/young-kodepiia.rsi
     drawdepth: Mobs
