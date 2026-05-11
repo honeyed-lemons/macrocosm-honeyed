@@ -245,16 +245,17 @@
     count: 10
   - type: StackPrice
     price: 10
-  - type: Edible # macro add - kodepiia gogurt
+# macro start - kodepiia gogurt
+  - type: Edible 
     requiresSpecialDigestion: true
-  - type: SolutionContainerManager # macro add
+  - type: SolutionContainerManager 
     solutions:
       food:
         maxVol: 15
         reagents:
         - ReagentId: Blood
           Quantity: 15
-
+# macro end
 
 - type: entity
   parent: Bloodpack
