@@ -88,10 +88,6 @@
       collection: VoxCoo
       params:
         volume: -7
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
 
 - type: speechVerb
   id: Kodepiia
