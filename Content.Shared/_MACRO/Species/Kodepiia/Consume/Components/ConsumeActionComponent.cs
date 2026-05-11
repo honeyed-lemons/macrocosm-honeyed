@@ -74,6 +74,18 @@ public sealed partial class ConsumeActionComponent : Component
     public float PercentageConsumed = 0.25f;
 
     [DataField]
+    public string ConsumeFailByBlock = "consume-fail-blocked";
+
+    [DataField]
+    public string ConsumeFailByInedible = "consume-fail-inedible";
+
+    [DataField]
+    public string ConsumeFailByIncapacitated = "consume-fail-incapacitated";
+
+    [DataField]
+    public string ConsumeFailByFullStomach = "ingestion-you-cannot-ingest-any-more";
+
+    [DataField]
     public string? PopupSelfStart;
 
     [DataField]

@@ -90,7 +90,8 @@
       params:
         variation: 0.125
   - type: NoSlip
-  - type: YoungKodepiiaRetaliation
+  - type: NPCRetaliation
+    anyInteraction: true
   - type: Tag
     tags:
     - DoorBumpOpener
