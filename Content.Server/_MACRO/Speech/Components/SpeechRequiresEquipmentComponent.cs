@@ -11,11 +11,20 @@ namespace Content.Server.Speech.Components;
 public sealed partial class SpeechRequiresEquipmentComponent : Component
 {
     /// <summary>
-    /// Slot and EntityWhitelist for the equipment in said slot that this entity requires to speak.
+    /// Whitelist for the equipment this entity requires to speak.
     /// </summary>
-    [DataField(required: true)]
+    [DataField]
     public EntityWhitelist? Whitelist;
 
+    /// <summary>
+    /// Blacklist for the equipment this entity requires to speak.
+    /// </summary>
+    [DataField]
+    public EntityWhitelist? Blacklist;
+
+    /// <summary>
+    /// Message played when you cannot speak.
+    /// </summary>
     [DataField]
     public LocId? FailMessage;
 }

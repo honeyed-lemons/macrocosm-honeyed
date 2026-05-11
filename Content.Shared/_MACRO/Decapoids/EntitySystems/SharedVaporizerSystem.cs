@@ -15,7 +15,6 @@ public abstract class SharedVaporizerSystem : EntitySystem
     [Dependency] private readonly SharedSolutionContainerSystem _solution = default!;
     [Dependency] private readonly IGameTiming _gameTiming = default!;
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
-    [Dependency] private readonly INetManager _net = default!;
 
     private const int ExaminePriority = 1;
 
@@ -51,17 +50,13 @@ public abstract class SharedVaporizerSystem : EntitySystem
             Dirty(ent);
         }
 
-        // If the air pressure is less than max AND the state is low or normal
-        if (gasTank.Air.Pressure < ent.Comp.MaxPressure && state is VaporizerState.LowSolution or VaporizerState.Normal)
-        {
-            // Split off the reagents consumed
-            var reagentConsumed = _solution.SplitSolution(
-                solutionEnt.Value,
-                ent.Comp.ReagentPerSecond * ent.Comp.ProcessDelay.TotalSeconds);
-            // Add gas to the gas tank
-            AdjustTankMoles(ent.Comp, gasTank, (float)reagentConsumed.Volume);
-            Dirty(ent, gasTank);
-        }
+        // If the air pressure isn't less than max AND the state is low or normal, return.
+        if (gasTank.Air.Pressure >= ent.Comp.MaxPressure ||
+            state is not (VaporizerState.LowSolution or VaporizerState.Normal))
+            return;
+
+        AdjustTankMoles(ent.Comp, gasTank, solutionEnt.Value);
+        Dirty(ent, gasTank);
     }
 
     /// <summary>
@@ -69,8 +64,8 @@ public abstract class SharedVaporizerSystem : EntitySystem
     /// </summary>
     /// <param name="vaporizer">Vaporizer component</param>
     /// <param name="gasTank">Gas tank component.</param>
-    /// <param name="volumeConsumed">Volume of the solution consumed.</param>
-    public virtual void AdjustTankMoles(VaporizerComponent vaporizer, GasTankComponent gasTank, float volumeConsumed) { }
+    /// <param name="solution">Solution to consume reagents from.</param>
+    public virtual void AdjustTankMoles(VaporizerComponent vaporizer, GasTankComponent gasTank, Entity<SolutionComponent> solution) { }
 
     /// <summary>
     /// Get the fill state of a vaporizer's solution.
@@ -109,10 +104,6 @@ public abstract class SharedVaporizerSystem : EntitySystem
 
     public override void Update(float frameTime)
     {
-        // Solution splits and tank moles are authoritative on the server only.
-        if (!_net.IsServer)
-            return;
-
         var enumerator = EntityQueryEnumerator<VaporizerComponent, GasTankComponent, SolutionContainerManagerComponent>();
 
         while (enumerator.MoveNext(out var uid, out var vaporizer, out var gasTank, out var solutionManager))

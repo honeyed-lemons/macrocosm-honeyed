@@ -11,9 +11,15 @@ namespace Content.Server._MACRO.Speech.Components;
 [RegisterComponent]
 public sealed partial class SpeechSoundComponent : Component
 {
+    /// <summary>
+    /// When given, replace speech sounds with the provided prototype.
+    /// </summary>
     [DataField]
     public ProtoId<SpeechSoundsPrototype>? SpeechSounds;
 
+    /// <summary>
+    /// When given, replace speech verbs with the provided prototype.
+    /// </summary>
     [DataField]
     public ProtoId<SpeechVerbPrototype>? SpeechVerb;
 }

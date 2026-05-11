@@ -12,8 +12,15 @@ namespace Content.Server._MACRO.Decapoids.EntitySystems;
 
 public sealed class VaporizerSystem : SharedVaporizerSystem
 {
-    public override void AdjustTankMoles(VaporizerComponent vaporizer, GasTankComponent gasTank, float volumeConsumed)
+    [Dependency] private readonly SharedSolutionContainerSystem _solution = default!;
+
+    public override void AdjustTankMoles(VaporizerComponent vaporizer, GasTankComponent gasTank, Entity<SolutionComponent> solution)
     {
-        gasTank.Air.AdjustMoles(vaporizer.OutputGas, volumeConsumed * vaporizer.ReagentToMoles);
+        // Split off the reagents consumed
+        var reagentConsumed = _solution.SplitSolution(
+            solution,
+            vaporizer.ReagentPerSecond * vaporizer.ProcessDelay.TotalSeconds);
+        // Add gas to the gas tank
+        gasTank.Air.AdjustMoles(vaporizer.OutputGas, (float)reagentConsumed.Volume * vaporizer.ReagentToMoles);
     }
 }

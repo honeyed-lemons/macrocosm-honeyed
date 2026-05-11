@@ -27,7 +27,7 @@ public sealed class SpeechRequiresEquipmentSystem : EntitySystem
             while (enumerator.NextItem(out var item, out _))
             {
                 if (TryComp<SpeechSoundComponent>(item, out var comp)
-                    && !_whitelist.IsWhitelistFail(ent.Comp.Whitelist, item))
+                    && _whitelist.CheckBoth(item, ent.Comp.Blacklist, ent.Comp.Whitelist))
                     return;
             }
         }

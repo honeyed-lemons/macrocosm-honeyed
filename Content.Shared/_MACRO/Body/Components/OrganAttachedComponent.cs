@@ -13,4 +13,16 @@ public sealed partial class OrganAttachedComponent : Component
     /// </summary>
     [DataField, AutoNetworkedField]
     public EntityUid AttachedOrgan;
+
+    /// <summary>
+    /// What slot this entity is placed into.
+    /// </summary>
+    [DataField]
+    public string Slot;
+
+    /// <summary>
+    /// Determines if this entity is placed in a hand or inventory slot.
+    /// </summary>
+    [DataField]
+    public bool HandEquipment;
 }

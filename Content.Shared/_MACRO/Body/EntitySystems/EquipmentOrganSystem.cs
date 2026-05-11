@@ -1,10 +1,11 @@
+using System.Linq;
 using Content.Shared._MACRO.Body.Components;
 using Content.Shared.Body;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Interaction.Components;
 using Content.Shared.Inventory;
 using Robust.Shared.Containers;
-using Robust.Shared.Network;
+using Robust.Shared.Prototypes;
 
 namespace Content.Shared._MACRO.Body.EntitySystems;
 
@@ -13,7 +14,6 @@ public sealed class EquipmentOrganSystem : EntitySystem
     [Dependency] private readonly InventorySystem _inventory = default!;
     [Dependency] private readonly SharedContainerSystem _container = default!;
     [Dependency] private readonly SharedHandsSystem _hands = default!;
-    [Dependency] private readonly INetManager _net = default!;
 
     public override void Initialize()
     {
@@ -30,70 +30,47 @@ public sealed class EquipmentOrganSystem : EntitySystem
         _container.EnsureContainer<Container>(ent, ent.Comp.ContainerId);
 
         // Spawn equipment
-        foreach (var (slot, equipmentItem) in ent.Comp.Equipment)
+        foreach (var entProtoId in ent.Comp.Equipment)
         {
-            InsertEquipment(ent, slot, equipmentItem);
+            InsertEquipment(ent, entProtoId);
         }
     }
 
-    private void InsertEquipment(
-        Entity<EquipmentOrganComponent> ent,
-        string slot,
-        EquipmentItem equipmentItem)
+    private void InsertEquipment(Entity<EquipmentOrganComponent> ent, EntProtoId entProtoId)
     {
-        if (!PredictedTrySpawnInContainer(
-                equipmentItem.Prototype,
-                ent.Owner,
-                ent.Comp.ContainerId,
-                out var item))
+        if (!PredictedTrySpawnInContainer(entProtoId, ent.Owner, ent.Comp.ContainerId, out var item))
             return;
 
-        EnsureComp<OrganAttachedComponent>(item.Value, out var attachedComponent);
-        attachedComponent.AttachedOrgan = ent;
-
-        var equipData = new StoredEquipmentData
-        {
-            Slot = slot,
-            HandEquipment = equipmentItem.HandEquipment,
-            Uid = GetNetEntity(item.Value),
-        };
-
-        ent.Comp.StoredEquipment.Add(equipData);
-
-        Dirty(ent);
+        Comp<OrganAttachedComponent>(item.Value).AttachedOrgan = ent;
     }
     private void OnGotInserted(Entity<EquipmentOrganComponent> ent, ref OrganGotInsertedEvent args)
     {
-        // Client applies container state via ExpectedEntities; forcing pickup here races Insert and asserts.
-        if (!_net.IsServer)
+        if (!_container.TryGetContainer(ent,ent.Comp.ContainerId, out var container))
             return;
 
-        foreach (var equipmentData in ent.Comp.StoredEquipment)
+        foreach (var organ in container.ContainedEntities.ToList())
         {
-            var item = GetEntity(equipmentData.Uid);
+            var organComp = Comp<OrganAttachedComponent>(organ);
 
-            if (!item.Valid)
-                continue;
-
-            if (equipmentData.HandEquipment)
+            if (organComp.HandEquipment)
             {
                 _hands.TryForcePickup(
                     args.Target,
-                    item,
-                    equipmentData.Slot,
+                    organ,
+                    organComp.Slot,
                     checkActionBlocker: false);
             }
             else
             {
                 _inventory.TryEquip(args.Target,
-                    item,
-                    equipmentData.Slot,
+                    organ,
+                    organComp.Slot,
                     predicted:true,
                     silent: true,
                     force: true);
             }
 
-            EnsureComp<UnremoveableComponent>(item);
+            EnsureComp<UnremoveableComponent>(organ);
         }
     }
 
@@ -104,13 +81,10 @@ public sealed class EquipmentOrganSystem : EntitySystem
 
         var container = _container.EnsureContainer<Container>(ent, ent.Comp.ContainerId);
 
-        foreach (var equipmentData in ent.Comp.StoredEquipment)
+        var enumerator = _inventory.GetHandOrInventoryEntities(ent.AsType()).ToList();
+
+        foreach (var item in enumerator)
         {
-            var item = GetEntity(equipmentData.Uid);
-
-            if (!item.Valid)
-                continue;
-
             RemComp<UnremoveableComponent>(item);
             _container.Insert(item, container);
         }

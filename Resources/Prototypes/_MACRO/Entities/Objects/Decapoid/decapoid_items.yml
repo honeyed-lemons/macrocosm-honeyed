@@ -58,6 +58,10 @@
           state: icon
         useSound: /Audio/_MACRO/Items/Decapoid/claw_cutting.ogg
         changeSound: /Audio/_MACRO/Items/Decapoid/switch.ogg
+  - type: OrganAttached
+    slot: left
+    handEquipment: true
+
 
 - type: entity
   name: vaporizer

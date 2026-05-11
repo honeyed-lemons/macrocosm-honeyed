@@ -330,9 +330,7 @@
   components:
   - type: EquipmentOrgan
     equipment:
-      left:
-        handEquipment: true
-        prototype: DecapoidClawItem
+    - DecapoidClawItem
 
 - type: entity
   parent: [ OrganBaseHandRight, OrganDecapoidExternal ]
