@@ -112,7 +112,7 @@
     rules: ghost-role-information-freeagent-rules
     raffle:
       settings: short
-  - type: KodepiiaConsumeAction
+  - type: ActionKodepiiaConsume
     damage:
       groups:
         Genetic: 5
