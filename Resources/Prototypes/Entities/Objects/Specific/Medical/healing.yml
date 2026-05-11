@@ -245,7 +245,7 @@
     count: 10
   - type: StackPrice
     price: 10
-  - type: Food # macro add - kodepiia gogurt
+  - type: Edible # macro add - kodepiia gogurt
     requiresSpecialDigestion: true
   - type: SolutionContainerManager # macro add
     solutions:
