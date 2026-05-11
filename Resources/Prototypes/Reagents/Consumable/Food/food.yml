@@ -72,7 +72,8 @@
       - !type:ModifyBloodLevel
         amount: 1 # weaker than iron but pretty good all things considered
       - !type:SatiateHunger
-        conditions: # macro add start
+# macro add start      
+        conditions:
         - !type:OrganType
           type: Kodepiia
           shouldHave: false
@@ -98,7 +99,8 @@
           shouldHave: true
         damage:
           types:
-            Poison: 1 # macro add end
+            Poison: 1 
+# macro add end          
   pricePerUnit: 3
 
 - type: reagent
