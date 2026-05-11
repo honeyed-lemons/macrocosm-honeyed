@@ -43,6 +43,7 @@ public sealed class EquipmentOrganSystem : EntitySystem
 
         Comp<OrganAttachedComponent>(item.Value).AttachedOrgan = ent;
     }
+
     private void OnGotInserted(Entity<EquipmentOrganComponent> ent, ref OrganGotInsertedEvent args)
     {
         if (!_container.TryGetContainer(ent,ent.Comp.ContainerId, out var container))
