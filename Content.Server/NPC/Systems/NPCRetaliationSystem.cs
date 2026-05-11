@@ -7,6 +7,12 @@ using Content.Shared.NPC.Components;
 using Content.Shared.NPC.Systems;
 using Robust.Shared.Collections;
 using Robust.Shared.Timing;
+// Macro start
+using Content.Shared.Interaction;
+using Content.Shared.Movement.Pulling.Events;
+using Content.Shared.Hands;
+using Content.Shared.Pointing;
+// Macro end
 
 namespace Content.Server.NPC.Systems;
 
@@ -23,6 +29,13 @@ public sealed class NPCRetaliationSystem : EntitySystem
     {
         SubscribeLocalEvent<NPCRetaliationComponent, DamageChangedEvent>(OnDamageChanged);
         SubscribeLocalEvent<NPCRetaliationComponent, DisarmedEvent>(OnDisarmed);
+
+        // Macro start
+        SubscribeLocalEvent<NPCRetaliationComponent, PullStartedMessage>(OnPull);
+        SubscribeLocalEvent<NPCRetaliationComponent, GotEquippedHandEvent>(OnPickup);
+        SubscribeLocalEvent<NPCRetaliationComponent, AfterGotPointedAtEvent>(OnPointedAt);
+        SubscribeLocalEvent<NPCRetaliationComponent, ActivateInWorldEvent>(OnAfterInteract);
+        // Macro end
     }
 
     private void OnDamageChanged(Entity<NPCRetaliationComponent> ent, ref DamageChangedEvent args)
@@ -38,8 +51,47 @@ public sealed class NPCRetaliationSystem : EntitySystem
 
     private void OnDisarmed(Entity<NPCRetaliationComponent> ent, ref DisarmedEvent args)
     {
+        if (!ent.Comp.AnyInteraction)
+            return;
+
         TryRetaliate(ent, args.Source);
     }
+
+    // Macro start
+    private void OnPull(Entity<NPCRetaliationComponent> ent, ref PullStartedMessage args)
+    {
+        if (!ent.Comp.AnyInteraction)
+            return;
+
+        TryRetaliate(ent, args.PullerUid);
+    }
+
+    private void OnPickup(Entity<NPCRetaliationComponent> ent, ref GotEquippedHandEvent args)
+    {
+        if (!ent.Comp.AnyInteraction)
+            return;
+
+        if (args.Handled)
+            return;
+        args.Handled = TryRetaliate(ent, args.User);
+    }
+
+    private void OnPointedAt(Entity<NPCRetaliationComponent> ent, ref AfterGotPointedAtEvent args)
+    {
+        if (!ent.Comp.AnyInteraction)
+            return;
+
+        TryRetaliate(ent, args.Pointer);
+    }
+
+    private void OnAfterInteract(Entity<NPCRetaliationComponent> ent, ref ActivateInWorldEvent args)
+    {
+        if (!ent.Comp.AnyInteraction)
+            return;
+
+        TryRetaliate(ent, args.User);
+    }
+    // Macro end
 
     public bool TryRetaliate(Entity<NPCRetaliationComponent> ent, EntityUid target)
     {

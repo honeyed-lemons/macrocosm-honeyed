@@ -61,19 +61,19 @@ public sealed class ConsumeSystem : SharedConsumeSystem
     {
         if (!_ingestion.HasMouthAvailable(args.Performer, args.Performer))
         {
-            _popup.PopupClient(Loc.GetString("consume-fail-blocked"), ent, ent);
+            _popup.PopupClient(Loc.GetString(ent.Comp.ConsumeFailByBlock), ent, ent);
             return;
         }
 
         if (!_whitelist.CheckBoth(args.Target, ent.Comp.Blacklist, ent.Comp.Whitelist))
         {
-            _popup.PopupEntity(Loc.GetString("consume-fail-inedible", ("target", Identity.Entity(args.Target, EntityManager))), ent, ent);
+            _popup.PopupEntity(Loc.GetString(ent.Comp.ConsumeFailByInedible, ("target", Identity.Entity(args.Target, EntityManager))), ent, ent);
             return;
         }
 
         if (!_mobState.IsIncapacitated(args.Target))
         {
-            _popup.PopupEntity(Loc.GetString("consume-fail-incapacitated", ("target", Identity.Entity(args.Target, EntityManager))), ent, ent);
+            _popup.PopupEntity(Loc.GetString(ent.Comp.ConsumeFailByIncapacitated, ("target", Identity.Entity(args.Target, EntityManager))), ent, ent);
             return;
         }
 
@@ -126,7 +126,7 @@ public sealed class ConsumeSystem : SharedConsumeSystem
         // All stomachs are full or we have no stomachs
         if (ev.LargestStomach.Comp == null)
         {
-            _popup.PopupClient(Loc.GetString("ingestion-you-cannot-ingest-any-more", ("verb", "eat")), ent, ent);
+            _popup.PopupClient(Loc.GetString(ent.Comp.ConsumeFailByFullStomach, ("verb", "eat")), ent, ent);
             return;
         }
 
