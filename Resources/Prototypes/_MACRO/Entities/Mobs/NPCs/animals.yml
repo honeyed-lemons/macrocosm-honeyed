@@ -90,8 +90,6 @@
       params:
         variation: 0.125
   - type: NoSlip
-  - type: Absorbable
-    biomassRestored: 0.6
   - type: YoungKodepiiaRetaliation
   - type: Tag
     tags:
