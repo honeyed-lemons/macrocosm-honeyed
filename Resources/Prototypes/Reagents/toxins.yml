@@ -545,12 +545,6 @@
         conditions:
         - !type:MetabolizerTypeCondition
           type: [ Kodepiia ]
-      - !type:AdjustReagent
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [ Goblin ]
-        reagent: Protein
-        amount: 0.5
       # macro edit end
 
 - type: reagent
