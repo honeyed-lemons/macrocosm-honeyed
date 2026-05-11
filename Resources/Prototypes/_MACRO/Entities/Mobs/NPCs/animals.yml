@@ -112,8 +112,21 @@
     rules: ghost-role-information-freeagent-rules
     raffle:
       settings: short
-  - type: ActionKodepiiaConsume
+  - type: ConsumeAction
+    popupSelfStart: kodepiia-consume-start-self
+    popupSelfEnd: kodepiia-consume-end-self
+    popupOthersStart: kodepiia-consume-start-others
+    popupOthersEnd: kodepiia-consume-end-self
+    consumeActionId: ActionKodepiiaConsume
     damage:
       groups:
         Genetic: 5
+    whitelist:
+      components:
+      - Respirator
+      - Bloodstream
+    blacklist:
+      components:
+      - SiliconLawBound
+    percentageConsumed: 0.25
     canGib: false
