@@ -225,8 +225,8 @@
       effects:
       - !type:SatiateHunger
         conditions:
-        - !type:OrganType # macro add
-          type: Kodepiia
+        - !type:MetabolizerTypeCondition # macro add
+          type: [Kodepiia]
           shouldHave: false
         - !type:ReagentCondition #Only satiates when eaten with nutriment
           reagent: Nutriment

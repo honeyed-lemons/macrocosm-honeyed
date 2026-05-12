@@ -12,8 +12,8 @@
       effects:
       - !type:SatiateHunger
         conditions: # macro add
-        - !type:OrganType
-          type: Kodepiia
+        - !type:MetabolizerTypeCondition
+          type: [Kodepiia]
           shouldHave: false
   plantMetabolism:
   - !type:PlantAdjustNutrition
@@ -43,9 +43,8 @@
         amount: -0.25
       - !type:SatiateHunger #Numbers are balanced with this in mind + it helps limit how much healing you can get from food
         conditions: # macro add
-        - !type:OrganType
-          type: Kodepiia
-          shouldHave: false
+        - !type:MetabolizerTypeCondition
+          type: [Kodepiia]
   # Lets plants benefit too
   plantMetabolism:
   - !type:PlantAdjustNutrition
@@ -72,35 +71,35 @@
       - !type:ModifyBloodLevel
         amount: 1 # weaker than iron but pretty good all things considered
       - !type:SatiateHunger
-# macro add start      
-        conditions:
-        - !type:OrganType
-          type: Kodepiia
+# macro add start
+       conditions:
+        - !type:MetabolizerTypeCondition
+          type: [Kodepiia]
           shouldHave: false
       - !type:PopupMessage
         conditions:
-        - !type:OrganType
-          type: Kodepiia
+        - !type:MetabolizerTypeCondition
+          type: [Kodepiia]
           shouldHave: true
         type: Local
         visualType: MediumCaution
         messages: [ "generic-reagent-effect-sick" ]
         probability: 0.5
-      - !type:ChemVomit
-        probability: 0.1
-        conditions:
-        - !type:OrganType
-          type: Kodepiia
-          shouldHave: true
+#      - !type:ChemVomit
+#        probability: 0.1
+#        conditions:
+#        - !type:MetabolizerTypeCondition
+#          type: [Kodepiia]
+#          shouldHave: true
       - !type:HealthChange
         conditions:
-        - !type:OrganType
-          type: Kodepiia
+        - !type:MetabolizerTypeCondition
+          type: [Kodepiia]
           shouldHave: true
         damage:
           types:
-            Poison: 1 
-# macro add end          
+            Poison: 1
+# macro add end
   pricePerUnit: 3
 
 - type: reagent
@@ -117,8 +116,8 @@
       effects:
       - !type:SatiateHunger
         conditions:
-        - !type:OrganType # macro add
-          type: Kodepiia
+        - !type:MetabolizerTypeCondition # macro add
+          type: [Kodepiia]
           shouldHave: false
         - !type:ReagentCondition #Only satiates when eaten with nutriment
           reagent: Nutriment

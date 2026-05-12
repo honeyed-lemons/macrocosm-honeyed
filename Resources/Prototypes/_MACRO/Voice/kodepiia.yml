@@ -67,7 +67,7 @@
     Chirp:
       collection: KodepiiaChirps
     Snarl:
-      collection: KodepiiaSnarls
+      collection: Snarl
     Honk:
       collection: KodepiiaHonks
     Weh:

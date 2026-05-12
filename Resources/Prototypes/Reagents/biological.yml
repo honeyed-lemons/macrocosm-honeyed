@@ -225,8 +225,8 @@
       effects:
       - !type:SatiateHunger
         conditions:
-        - !type:OrganType
-          type: Kodepiia
+        - !type:MetabolizerTypeCondition
+          type: [Kodepiia]
 
 - type: reagent
   id: Vomit
@@ -269,6 +269,6 @@
           types:
             Cellular: 2
         conditions: # macro add
-        - !type:OrganType
-          type: Kodepiia
+        - !type:MetabolizerTypeCondition
+          type: [Kodepiia]
           shouldHave: false

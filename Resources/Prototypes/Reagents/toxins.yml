@@ -498,12 +498,12 @@
         probability: 0.1
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Animal, Vox, Plant, Kodepiia ] #macro, added kode
+          type: [ Animal, Vox, Plant ]
           inverted: true
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Animal, Vox, Plant, Kodepiia ] #macro, added kode
+          type: [ Animal, Vox, Plant ]
           inverted: true
         damage:
           types:
@@ -532,7 +532,8 @@
         probability: 0.5
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Kodepiia ]
+          type: [Kodepiia]
+          shouldHave: false
         damage:
           groups:
             Brute: -0.4
@@ -540,11 +541,13 @@
         conditions:
         - !type:MetabolizerTypeCondition
           type: [ Kodepiia ]
+          shouldHave: true
       - !type:ModifyBloodLevel
         amount: 1
         conditions:
         - !type:MetabolizerTypeCondition
           type: [ Kodepiia ]
+          shouldHave: true
       # macro edit end
 
 - type: reagent
