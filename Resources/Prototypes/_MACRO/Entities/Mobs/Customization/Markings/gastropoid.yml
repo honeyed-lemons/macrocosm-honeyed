@@ -471,16 +471,6 @@
     prostheticinnerlight: unshaded
 
 - type: marking
-  id: ProstheticPulse
-  bodyPart: TailOverlay
-  groupWhitelist: [ Gastropoid ]
-  sprites:
-  - sprite: _MACRO/Mobs/Customization/Gastropoid/tail.rsi
-    state: prostheticpulse
-  shaders:
-    prostheticpulse: unshaded
-
-- type: marking
   id: SimpleBow
   bodyPart: TailOverlay
   groupWhitelist: [ Gastropoid ]
@@ -809,6 +799,10 @@
     state: prostheticmulticolor1
   - sprite: _MACRO/Mobs/Customization/Gastropoid/tail.rsi
     state: prostheticmulticolor2
+  - sprite: _MACRO/Mobs/Customization/Gastropoid/tail.rsi
+    state: prostheticpulse
+  shaders:
+    prostheticpulse: unshaded
 
 - type: marking
   id: SmallFlowers
