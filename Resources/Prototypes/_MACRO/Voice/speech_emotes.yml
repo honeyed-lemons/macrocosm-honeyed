@@ -19,9 +19,6 @@
   whitelist:
     components:
     - Vocal
-  blacklist:
-    components:
-    - BorgChassis
   chatMessages: [honks.]
   chatTriggers:
     - honk

@@ -29,7 +29,6 @@
     tags:
     - DoorBumpOpener
     - StunImmune
-    - KodeEdible # macro add
   - type: Blindable
 
 - type: entity

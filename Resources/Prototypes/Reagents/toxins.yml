@@ -488,8 +488,8 @@
       - !type:PopupMessage
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Animal, Vox, Kodepiia ] #macro, added kode
-          inverted: true
+          type: [ Animal, Vox ]
+          shouldHave: true
         type: Local
         visualType: MediumCaution
         messages: [ "generic-reagent-effect-sick" ]
@@ -499,12 +499,12 @@
         conditions:
         - !type:MetabolizerTypeCondition
           type: [ Animal, Vox, Plant ]
-          inverted: true
+          shouldHave: true
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
           type: [ Animal, Vox, Plant ]
-          inverted: true
+          ShouldHave: true
         damage:
           types:
             Poison: 1
@@ -533,7 +533,7 @@
         conditions:
         - !type:MetabolizerTypeCondition
           type: [Kodepiia]
-          shouldHave: false
+          shouldHave: true
         damage:
           groups:
             Brute: -0.4
