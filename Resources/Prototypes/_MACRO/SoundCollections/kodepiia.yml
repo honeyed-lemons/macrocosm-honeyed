@@ -4,10 +4,9 @@
   - /Audio/_MACRO/Voice/Ungu/ungu_scream.ogg
   - /Audio/_MACRO/Voice/Kodepiia/kodeextra/bros_hurt.ogg
   - /Audio/_MACRO/Voice/Kodepiia/kodeextra/curse_spawn.ogg
-  - /Audio/_MACRO/Voice/Anomolocarid/anomolocarid_scream.ogg
+  - /Audio/_MACRO/Voice/Anomalocarid/anomalocarid_scream.ogg
   - /Audio/_MACRO/Voice/Allulalo/allulalo_scream.ogg
   - /Audio/_MACRO/Voice/Gray/gray_scream.ogg
-  - /Audio/_MACRO/Voice/Kodepiia/kodeextra/silicon_scream.ogg
   - /Audio/_MACRO/Voice/Kodepiia/kodeextra/vrex_roar.ogg
   - /Audio/_MACRO/Voice/Kodepiia/kodeextra/bananadeer_eee.ogg
   - /Audio/_MACRO/Voice/Kodepiia/kodeextra/pleebnar_scream.ogg
@@ -68,7 +67,7 @@
   - /Audio/_MACRO/Voice/Gray/gray_sigh.ogg
   - /Audio/_MACRO/Voice/Gastropoid/snail_sigh.ogg
   - /Audio/_MACRO/Voice/Ungu/ungu_sigh.ogg
-  - /Audio/_MACRO/Voice/Anomolocarid/anomolocarid_sigh.ogg
+  - /Audio/_MACRO/Voice/Anomalocarid/anomalocarid_sigh.ogg
   - /Audio/Voice/Human/female_sigh.ogg
   - /Audio/Voice/Human/male_sigh.ogg
 
@@ -78,7 +77,7 @@
   - /Audio/_MACRO/Voice/Decapoid/decapoid_cry.ogg
   - /Audio/_MACRO/Voice/Gastropoid/snail_cry.ogg
   - /Audio/_MACRO/Voice/Ungu/ungu_cry.ogg
-  - /Audio/_MACRO/Voice/Anomolocarid/anomolocarid_cry.ogg
+  - /Audio/_MACRO/Voice/Anomalocarid/anomalocarid_cry.ogg
   - /Audio/_MACRO/Voice/Allulalo/allulalo_cry.ogg
   - /Audio/Voice/Human/cry_female_1.ogg
   - /Audio/Voice/Human/cry_female_2.ogg
@@ -223,7 +222,7 @@
   - /Audio/Machines/machine_switch.ogg
   - /Audio/Machines/screwdriverclose.ogg
   - /Audio/Machines/screwdriveropen.ogg
-  - /Audio/_MACRO/Voice/Anomolocarid/anomolocarid_clicks.ogg
+  - /Audio/_MACRO/Voice/Anomalocarid/anomalocarid_clicks.ogg
 
 - type: soundCollection
   id: KodepiiaChitter
@@ -266,7 +265,7 @@
   - /Audio/_MACRO/Voice/Vox/voxgasp2.ogg
   - /Audio/_MACRO/Voice/Vox/voxgasp3.ogg
   - /Audio/_MACRO/Voice/Ungu/ungu_gasp.ogg
-  - /Audio/_MACRO/Voice/Anomolocarid/anomolocarid_gasp.ogg
+  - /Audio/_MACRO/Voice/Anomalocarid/anomalocarid_gasp.ogg
   - /Audio/_MACRO/Voice/Kodepiia/kodeextra/moods_changed_mono.ogg
   - /Audio/Effects/Gasp/gasp_female1.ogg
   - /Audio/Effects/Gasp/gasp_female2.ogg
