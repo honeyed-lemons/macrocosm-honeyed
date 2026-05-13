@@ -44,6 +44,7 @@
   parent: BaseSpeciesAppearance
   id: AppearanceKodepiia
   name: Kodepiia appearance
+  abstract: true
   components:
   - type: Inventory
     displacements:

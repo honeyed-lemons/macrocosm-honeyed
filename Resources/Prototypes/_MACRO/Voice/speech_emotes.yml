@@ -15,7 +15,7 @@
   name: chat-emote-name-honk
   category: Vocal
   available: false
-  icon: _MACRO/Interface/Emotes/kodehonk.png
+  icon: /Interface/Emotes/honk.png
   whitelist:
     components:
     - Vocal
@@ -31,7 +31,7 @@
   name: chat-emote-name-ring
   category: Vocal
   available: false
-  icon: _MACRO/Interface/Emotes/ring.png
+  icon: /Interface/Emotes/ring.png
   whitelist:
     components:
     - Vocal
@@ -87,7 +87,7 @@
   id: KodeBeep
   name: chat-emote-name-beep
   category: Vocal
-  icon: _MACRO/Interface/Emotes/beep.png
+  icon: /Interface/Emotes/beep.png
   available: false
   whitelist:
     components:
@@ -120,41 +120,3 @@
     - revs
     - revving
     - revved
-
-- type: emote
-  id: Caw
-  name: chat-emote-name-caw
-  category: Vocal
-  available: false
-  icon: _MACRO/Interface/Emotes/caw.png
-  whitelist:
-    components:
-    - Vocal
-  blacklist:
-    components:
-    - BorgChassis
-  chatMessages: [caws.]
-  chatTriggers:
-    - caw
-    - caws
-    - cawing
-    - cawed
-
-- type: emote
-  id: Snarl
-  name: chat-emote-name-snarl
-  category: Vocal
-  available: false
-  icon: _MACRO/Interface/Emotes/snarl.png
-  whitelist:
-    components:
-    - Vocal
-  blacklist:
-    components:
-    - BorgChassis
-  chatMessages: [snarls.]
-  chatTriggers:
-    - snarl
-    - snarls
-    - snarled
-    - snarling
