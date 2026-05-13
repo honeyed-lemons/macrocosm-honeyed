@@ -9,8 +9,9 @@
     state: biopulse1
   - sprite: _MACRO/Mobs/Customization/Decapoid/chest.rsi
     state: biopulse2
-  # shader: unshaded
-
+  shaders:
+    biopulse1: unshaded
+    biopulse2: unshaded
 - type: marking
   id: CrabChestMasked
   bodyPart: Chest
