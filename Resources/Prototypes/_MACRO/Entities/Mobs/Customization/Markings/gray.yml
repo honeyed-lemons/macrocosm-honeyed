@@ -48,6 +48,7 @@
     state: radiumglow
   shaders:
     radiumglow: unshaded
+
 # Head
 
 - type: marking
