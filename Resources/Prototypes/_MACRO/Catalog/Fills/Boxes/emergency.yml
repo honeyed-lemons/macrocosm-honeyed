@@ -16,7 +16,7 @@
     - id: FoodMeatBacon
     - id: Bloodpack
   - type: Sprite
-    sprite: _Impstation/Objects/Storage/boxes.rsi
+    sprite: _MACRO/Objects/Storage/boxes.rsi
     layers:
     - state: box2
     - state: label

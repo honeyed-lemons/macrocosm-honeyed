@@ -5,7 +5,7 @@
   description: Is it still moving...?
   components:
   - type: Sprite
-    sprite: _Impstation/Objects/Consumable/Food/Meat/kodepiia_meat.rsi
+    sprite: _MACRO/Objects/Consumable/Food/Meat/kodepiia_meat.rsi
     state: kodepiia
   - type: SolutionContainerManager
     solutions:
@@ -38,7 +38,7 @@
     - Cooked
     - Meat
   - type: Sprite
-    sprite: _Impstation/Objects/Consumable/Food/Meat/kodepiia_meat.rsi
+    sprite: _MACRO/Objects/Consumable/Food/Meat/kodepiia_meat.rsi
     layers:
     - state: kodepiia-cooked
       map: [ "enum.DamageStateVisualLayers.Base" ]

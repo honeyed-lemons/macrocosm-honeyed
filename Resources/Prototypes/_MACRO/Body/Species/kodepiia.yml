@@ -44,7 +44,6 @@
   parent: BaseSpeciesAppearance
   id: AppearanceKodepiia
   name: Kodepiia appearance
-  abstract: true
   components:
   - type: Inventory
     displacements:
@@ -156,9 +155,8 @@
     popupOthersEnd: kodepiia-consume-end-self
     consumeActionId: ActionKodepiiaConsume
     damage:
-      groups:
-        Genetic: 15
       types:
+        Genetic: 15
         Piercing: 15
     whitelist:
       components:
