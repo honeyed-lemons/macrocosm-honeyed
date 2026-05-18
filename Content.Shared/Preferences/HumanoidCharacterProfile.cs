@@ -221,8 +221,8 @@ namespace Content.Shared.Preferences
 
             var species = random.Pick(prototypeManager
                 .EnumeratePrototypes<SpeciesPrototype>()
-                // MACRO visitor species: replace .Where
-                //.Where(x => ignoredSpecies == null ? x.RoundStart : x.RoundStart && !ignoredSpecies.Contains(x.ID)) // MACRO visitor species: commented out
+                // MACRO visitor species
+                //.Where(x => ignoredSpecies == null ? x.RoundStart : x.RoundStart && !ignoredSpecies.Contains(x.ID)) // MACRO: commented out upstream
                 .Where(x =>
                 {
                     if (speciesBlacklist != null && speciesBlacklist.Contains(x.ID))

@@ -115,8 +115,8 @@ public sealed partial class SpeciesPrototype : IPrototype
     public bool MidRoundRandomViable { get; private set; }
 
     /// <summary>
-    /// When a random species is picked, verify random float is lower than this number
-    /// if not, don't pick the species.
+    /// When a random species is picked, a number is rolled from 0 to 1, if this number is
+    /// higher, try another species. This is NOT weighting, but instead some sort of random culling system.
     /// </summary>
     [DataField]
     public float RandomChance { get; private set; } = 1f;
