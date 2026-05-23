@@ -12,6 +12,7 @@
   shaders:
     biopulse1: unshaded
     biopulse2: unshaded
+
 - type: marking
   id: CrabChestMasked
   bodyPart: Chest
