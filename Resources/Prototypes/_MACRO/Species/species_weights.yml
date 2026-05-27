@@ -1,0 +1,18 @@
+#species weights used for non character creator randomly generater species.
+- type: weightedRandomSpecies
+  id: VisitorSpeciesWeights
+  weights:
+    Human: 1
+    Reptilian: 1
+    SlimePerson: 1
+    Moth: 1
+    Dwarf: 1
+    Diona: 1
+    Vox: 1
+    Vulpkanin: 1
+    # Uncomment species here that you want randomly generated
+    #Gray: 1
+    #Gastropoid: 1
+    #Decapoid: 1
+    #Allulalo: 1
+    #Ant: 0.1 # MACRO set this to what you want, but ants should be pretty rare to get here.

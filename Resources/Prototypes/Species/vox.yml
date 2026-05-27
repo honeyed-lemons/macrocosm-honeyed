@@ -2,7 +2,6 @@
   id: Vox
   name: species-name-vox
   roundStart: true
-  midRoundRandomViable: true # MACRO
   prototype: MobVox
   dollPrototype: AppearanceVox
   skinColoration: VoxFeathers

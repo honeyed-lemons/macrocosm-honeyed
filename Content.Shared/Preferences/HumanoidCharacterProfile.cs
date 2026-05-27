@@ -20,6 +20,8 @@ using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
 using Robust.Shared;
 using YamlDotNet.RepresentationModel;
+using Content.Shared.Random;
+using Content.Shared.Random.Helpers; // MACRO
 
 namespace Content.Shared.Preferences
 {
@@ -219,22 +221,56 @@ namespace Content.Shared.Preferences
             var prototypeManager = IoCManager.Resolve<IPrototypeManager>();
             var random = IoCManager.Resolve<IRobustRandom>();
 
-            var species = random.Pick(prototypeManager
-                .EnumeratePrototypes<SpeciesPrototype>()
-                // MACRO visitor species
-                //.Where(x => ignoredSpecies == null ? x.RoundStart : x.RoundStart && !ignoredSpecies.Contains(x.ID)) // MACRO: commented out upstream
-                .Where(x =>
-                {
-                    if (speciesBlacklist != null && speciesBlacklist.Contains(x.ID))
-                        return false;
-                    if (characterCreation == true)
-                        return x.RoundStart;
-                    return random.NextFloat() < x.RandomChance && x.MidRoundRandomViable;
-                })
-                // MACRO end
-                .ToArray()
-            ).ID;
+            //var species = random.Pick(prototypeManager // MACRO: commented out upstream
+                //.EnumeratePrototypes<SpeciesPrototype>()
+                //.Where(x => ignoredSpecies == null ? x.RoundStart : x.RoundStart && !ignoredSpecies.Contains(x.ID))
+                //.ToArray()
+            //).ID;
 
+            // MACRO Start
+            const string weightId = "VisitorSpeciesWeights"; //I KNOW that hardcoding this is bad, however getting a ccvar in this would require adding another variable and i cba
+
+            ProtoId<SpeciesPrototype>? species;
+
+            // If blank, or in character creation, choose a round start species.
+            if (string.IsNullOrEmpty(weightId) || characterCreation == true)
+            {
+                var roundStart = new List<ProtoId<SpeciesPrototype>>();
+
+                var speciesPrototypes = prototypeManager.EnumeratePrototypes<SpeciesPrototype>();
+                foreach (var proto in speciesPrototypes)
+                {
+                    // If the species is blacklisted, skip it.
+                    if (speciesBlacklist != null && speciesBlacklist.Contains(proto.ID))
+                        continue;
+
+                    if (proto.RoundStart)
+                        roundStart.Add(proto.ID);
+                }
+
+                species = random.Pick(roundStart);
+            }
+            // Otherwise select a species from the given weighted list.
+            else
+            {
+                var weights = prototypeManager.Index<WeightedRandomSpeciesPrototype>(weightId);
+                // If there's a species blacklist in play, remove every single blacklisted species
+                if (speciesBlacklist != null)
+                {
+                    foreach (var pickedSpecies in speciesBlacklist)
+                    {
+                        weights.Weights.Remove(pickedSpecies);
+                    }
+                }
+
+                species = weights.Pick(random);
+            }
+
+            // If there's no speciesId yet (say, every single species is blacklisted or the weights are set incorrectly),
+            // select the default species instead.
+            species ??= DefaultSpecies;
+
+            // MACRO End
             return RandomWithSpecies(species);
         }
 

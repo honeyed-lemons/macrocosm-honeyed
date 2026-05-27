@@ -2,7 +2,6 @@
   id: SlimePerson
   name: species-name-slime
   roundStart: true
-  midRoundRandomViable: true # MACRO
   prototype: MobSlimePerson
   defaultSkinTone: "#b8b8b8"
   dollPrototype: AppearanceSlimePerson

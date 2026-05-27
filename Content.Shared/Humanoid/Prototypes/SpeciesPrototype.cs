@@ -105,22 +105,6 @@ public sealed partial class SpeciesPrototype : IPrototype
     /// </summary>
     [DataField]
     public int MaxAge = 120;
-
-    // MACRO start
-    /// <summary>
-    /// Whether the species is viable to roll when a humanoid's
-    /// species is randomized outside of character creation.
-    /// </summary>
-    [DataField]
-    public bool MidRoundRandomViable { get; private set; }
-
-    /// <summary>
-    /// When a random species is picked, a number is rolled from 0 to 1, if this number is
-    /// higher, try another species. This is NOT weighting, but instead some sort of random culling system.
-    /// </summary>
-    [DataField]
-    public float RandomChance { get; private set; } = 1f;
-    // MACRO end
 }
 
 public enum SpeciesNaming : byte

@@ -2,7 +2,6 @@
   id: Diona
   name: species-name-diona
   roundStart: true
-  midRoundRandomViable: true # MACRO
   prototype: MobDiona
   defaultSkinTone: "#cdb369"
   dollPrototype: AppearanceDiona
