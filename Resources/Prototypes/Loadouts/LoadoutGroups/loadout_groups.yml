@@ -74,6 +74,8 @@
   - EmergencyOxygen
   - LoadoutSpeciesVoxNitrogen
   - EmergencyMeat # macro add
+  - EmergencyAquatic # MACRO: Decapoids
+  - LoadoutSpeciesAquaticFullTank # MACRO: Decapoids
 
 # nitrogen or oxygen tank, depending on what your species needs
 - type: loadoutGroup
@@ -559,6 +561,8 @@
   - EmergencyOxygenClown
   - LoadoutSpeciesVoxNitrogen
   - EmergencyMeatClown # macro add
+  - EmergencyAquaticClown # MACRO: Decapoids
+  - LoadoutSpeciesAquaticFullTank # MACRO: Decapoids
 
 - type: loadoutGroup
   id: ClownJobTrinkets
@@ -624,6 +628,8 @@
   - EmergencySpeciesMothMime
   - LoadoutSpeciesVoxNitrogen
   - EmergencyMeatMime # macro add
+  - EmergencyAquaticMime # MACRO: Decapoids
+  - LoadoutSpeciesAquaticFullTank # MACRO: Decapoids
 
 #- type: loadoutGroup
 #  id: MimeJobTrinkets
@@ -971,6 +977,8 @@
   - EmergencyOxygenExtended
   - LoadoutSpeciesVoxNitrogen
   - EmergencyMeatSecurity # macro add
+  - EmergencyAquaticExtended # MACRO: Decapoids
+  - LoadoutSpeciesAquaticFullTank # MACRO: Decapoids
 
 # Science
 - type: loadoutGroup
@@ -1304,6 +1312,8 @@
   - EmergencyNitrogenSecurity
   - EmergencyOxygenSecurity
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyAquaticSecurity # MACRO: Decapoids
+  - LoadoutSpeciesAquaticFullTank # MACRO: Decapoids
 
 # Wildcards
 - type: loadoutGroup
@@ -1357,6 +1367,8 @@
   - EmergencyOxygenSyndicate
   - LoadoutSpeciesVoxNitrogen
   - EmergencyMeatSyndicate # macro add
+  - EmergencyAquaticSyndicate # MACRO: Decapoids
+  - LoadoutSpeciesAquaticFullTank # MACRO: Decapoids
 
 - type: loadoutGroup
   id: SurvivalMilitaryDouble
@@ -1366,6 +1378,7 @@
   loadouts:
   - EmergencyNitrogenMilitaryDouble
   - EmergencyOxygenMilitaryDouble
+  - LoadoutSpeciesAquaticFullTank # MACRO: Decapoids
 
 - type: loadoutGroup
   id: GroupSpeciesBreathTool

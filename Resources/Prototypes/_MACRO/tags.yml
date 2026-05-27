@@ -5,3 +5,10 @@
 
 - type: Tag
   id: KodeEdible # Used for things kodepiia are able to eat.
+  
+- type: Tag
+  id: SGD # SpeechRequiresEquipment whitelist on MobDecapoid.
+
+- type: Tag
+  id: Vaporizer # SpeechRequiresEquipment whitelist on MobDecapoid.
+  
