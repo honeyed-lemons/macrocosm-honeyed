@@ -5,3 +5,7 @@
 - type: metabolizerType
   id: Apid
   name: metabolizer-type-apid
+
+- type: metabolizerType
+  id: Allulalo
+  name: metabolizer-type-allulalo
