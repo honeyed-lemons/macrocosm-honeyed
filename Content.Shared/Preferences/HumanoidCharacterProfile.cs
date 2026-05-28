@@ -216,7 +216,7 @@ namespace Content.Shared.Preferences
         }
 
         // TODO: This should eventually not be a visual change only.
-        public static HumanoidCharacterProfile Random(HashSet<string>? speciesBlacklist = null, bool? characterCreation = true) // MACRO visitor species: add characterCreation
+        public static HumanoidCharacterProfile Random(HashSet<string>? ignoredSpecies = null, bool? characterCreation = true) // MACRO visitor species: add characterCreation
         {
             var prototypeManager = IoCManager.Resolve<IPrototypeManager>();
             var random = IoCManager.Resolve<IRobustRandom>();
@@ -241,7 +241,7 @@ namespace Content.Shared.Preferences
                 foreach (var proto in speciesPrototypes)
                 {
                     // If the species is blacklisted, skip it.
-                    if (speciesBlacklist != null && speciesBlacklist.Contains(proto.ID))
+                    if (ignoredSpecies != null && ignoredSpecies.Contains(proto.ID))
                         continue;
 
                     if (proto.RoundStart)
@@ -255,9 +255,9 @@ namespace Content.Shared.Preferences
             {
                 var weights = prototypeManager.Index<WeightedRandomSpeciesPrototype>(weightId);
                 // If there's a species blacklist in play, remove every single blacklisted species
-                if (speciesBlacklist != null)
+                if (ignoredSpecies != null)
                 {
-                    foreach (var pickedSpecies in speciesBlacklist)
+                    foreach (var pickedSpecies in ignoredSpecies)
                     {
                         weights.Weights.Remove(pickedSpecies);
                     }
