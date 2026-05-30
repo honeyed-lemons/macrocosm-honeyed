@@ -62,14 +62,6 @@ public sealed partial class EmotePrototype : IPrototype
     public List<string> ChatMessages = new();
 
     /// <summary>
-    ///     Macro.
-    ///     Determines if a emote trigger can share trigger words.
-    ///     Must ensure that non-unique triggers do not overlap with each other.
-    /// </summary>
-    [DataField]
-    public bool UniqueTrigger = true;
-
-    /// <summary>
     ///     Trigger words for emote. Case independent.
     ///     When typed into players chat they will activate emote event.
     ///     All words should be unique across all emote prototypes.

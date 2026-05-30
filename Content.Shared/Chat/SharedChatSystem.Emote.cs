@@ -8,25 +8,29 @@ namespace Content.Shared.Chat;
 
 public abstract partial class SharedChatSystem
 {
-    private FrozenDictionary<string, EmotePrototype> _wordEmoteDict = FrozenDictionary<string, EmotePrototype>.Empty;
+    private FrozenDictionary<string, List<EmotePrototype>> _wordEmoteDict = FrozenDictionary<string, List<EmotePrototype>>.Empty; // Macro, list instead of individual
 
     private void CacheEmotes()
     {
-        var dict = new Dictionary<string, EmotePrototype>();
+        var dict = new Dictionary<string, List<EmotePrototype>>(); // Macro, list instead of individual
         var emotes = _prototypeManager.EnumeratePrototypes<EmotePrototype>();
         foreach (var emote in emotes)
         {
             foreach (var word in emote.ChatTriggers)
             {
                 var lowerWord = word.ToLower();
-                if (emote.UniqueTrigger && dict.TryGetValue(lowerWord, out var value)) // Macro, added emote.UniqueTrigger &&
+                if (dict.TryGetValue(lowerWord, out var value))
                 {
-                    var errMsg = $"Duplicate of emote word {lowerWord} in emotes {emote.ID} and {value.ID}";
-                    Log.Error(errMsg);
+                    // Macro removal, changed to a list of emote prototypes
+                    // var errMsg = $"Duplicate of emote word {lowerWord} in emotes {emote.ID} and {value.ID}";
+                    // Log.Error(errMsg);
+
+                    value.Add(emote); // Macro
                     continue;
                 }
 
-                dict.Add(lowerWord, emote);
+                var emoteList = new List<EmotePrototype>() { emote }; // Macro
+                dict.Add(lowerWord, emoteList); // Macro, added list instead of individual
             }
         }
 
@@ -168,14 +172,18 @@ public abstract partial class SharedChatSystem
     protected bool TryEmoteChatInput(EntityUid source, string textInput)
     {
         var actionTrimmedLower = TrimPunctuation(textInput.ToLower());
-        if (!_wordEmoteDict.TryGetValue(actionTrimmedLower, out var emote))
+        if (!_wordEmoteDict.TryGetValue(actionTrimmedLower, out var emoteList)) // Macro, output list instead of individual
             return true;
 
-        if (!AllowedToUseEmote(source, emote))
-            return true;
+        foreach (var emote in emoteList) // Macro
+        {
+            if (!AllowedToUseEmote(source, emote))
+                continue; // Macro, continue instead of instantly returning
 
-        return TryInvokeEmoteEvent(source, emote);
+            return TryInvokeEmoteEvent(source, emote);
+        }
 
+        return true; // Macro, default if no emotes were valid
     }
     /// <summary>
     /// Checks if we can use this emote based on the emotes whitelist, blacklist, and availability to the entity.

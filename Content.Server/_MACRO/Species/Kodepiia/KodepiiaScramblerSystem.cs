@@ -14,14 +14,14 @@ using Robust.Shared.Player;
 
 namespace Content.Server._MACRO.Species.Kodepiia;
 
-public sealed class KodepiiaScramblerSystem : SharedKodepiiaScramblerSystem
+public sealed partial class KodepiiaScramblerSystem : SharedKodepiiaScramblerSystem
 {
-    [Dependency] private readonly ActionsSystem _actionsSystem = default!;
-    [Dependency] private readonly HumanoidProfileSystem _humanoidProfile = default!;
-    [Dependency] private readonly SharedVisualBodySystem _visualBody = default!;
-    [Dependency] private readonly PopupSystem _popup = default!;
-    [Dependency] private readonly DoAfterSystem _doAfter = default!;
-    [Dependency] private readonly SharedAudioSystem _audio = default!;
+    [Dependency] private ActionsSystem _actionsSystem = default!;
+    [Dependency] private HumanoidProfileSystem _humanoidProfile = default!;
+    [Dependency] private SharedVisualBodySystem _visualBody = default!;
+    [Dependency] private PopupSystem _popup = default!;
+    [Dependency] private DoAfterSystem _doAfter = default!;
+    [Dependency] private SharedAudioSystem _audio = default!;
     private const string OnScrambleStart = "kodepiia-scramble-others";
     private const string OnScrambleCompleted = "kodepiia-scramble-self";
 

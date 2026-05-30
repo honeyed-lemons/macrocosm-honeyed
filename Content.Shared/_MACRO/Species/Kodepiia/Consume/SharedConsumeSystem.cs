@@ -8,7 +8,7 @@ namespace Content.Shared._MACRO.Species.Kodepiia.Consume;
 public abstract partial class SharedConsumeSystem : EntitySystem
 {
 
-    [Dependency] private readonly SharedActionsSystem _actionsSystem = default!;
+    [Dependency] private SharedActionsSystem _actionsSystem = default!;
     public override void Initialize()
     {
         base.Initialize();
