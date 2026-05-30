@@ -183,7 +183,7 @@
     bloodReferenceSolution:
       reagents:
       - ReagentId: BloodKodepiia
-        Quantity: 300
+        Quantity: 600
   - type: MeleeWeapon
     angle: 0
     animation: WeaponArcPunch
