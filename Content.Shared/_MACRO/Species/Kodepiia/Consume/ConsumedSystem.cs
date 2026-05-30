@@ -5,7 +5,7 @@ using Content.Shared._MACRO.Species.Kodepiia.Consume.Components;
 
 namespace Content.Shared._MACRO.Species.Kodepiia.Consume;
 
-public sealed class ConsumedSystem : EntitySystem
+public sealed partial class ConsumedSystem : EntitySystem
 {
     public override void Initialize()
     {

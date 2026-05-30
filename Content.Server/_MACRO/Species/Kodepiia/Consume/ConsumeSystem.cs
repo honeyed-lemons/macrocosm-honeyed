@@ -25,22 +25,22 @@ using Robust.Shared.Player;
 
 namespace Content.Server._MACRO.Species.Kodepiia.Consume;
 
-public sealed class ConsumeSystem : SharedConsumeSystem
+public sealed partial class ConsumeSystem : SharedConsumeSystem
 {
-    [Dependency] private readonly AudioSystem _audio = default!;
-    [Dependency] private readonly BodySystem _body = default!;
-    [Dependency] private readonly DamageableSystem _damage = default!;
-    [Dependency] private readonly DoAfterSystem _doAfter = default!;
-    [Dependency] private readonly EntityWhitelistSystem _whitelist = default!;
-    [Dependency] private readonly ForensicsSystem _forensics = default!;
-    [Dependency] private readonly GibbingSystem _gibbing = default!;
-    [Dependency] private readonly IngestionSystem _ingestion = default!;
-    [Dependency] private readonly MobStateSystem _mobState = default!;
-    [Dependency] private readonly PopupSystem _popup = default!;
-    [Dependency] private readonly PuddleSystem _puddle = default!;
-    [Dependency] private readonly RottingSystem _rotting = default!;
-    [Dependency] private readonly SharedSolutionContainerSystem _solutionContainer = default!;
-    [Dependency] private readonly StomachSystem _stomach = default!;
+    [Dependency] private AudioSystem _audio = default!;
+    [Dependency] private BodySystem _body = default!;
+    [Dependency] private DamageableSystem _damage = default!;
+    [Dependency] private DoAfterSystem _doAfter = default!;
+    [Dependency] private EntityWhitelistSystem _whitelist = default!;
+    [Dependency] private ForensicsSystem _forensics = default!;
+    [Dependency] private GibbingSystem _gibbing = default!;
+    [Dependency] private IngestionSystem _ingestion = default!;
+    [Dependency] private MobStateSystem _mobState = default!;
+    [Dependency] private PopupSystem _popup = default!;
+    [Dependency] private PuddleSystem _puddle = default!;
+    [Dependency] private RottingSystem _rotting = default!;
+    [Dependency] private SharedSolutionContainerSystem _solutionContainer = default!;
+    [Dependency] private StomachSystem _stomach = default!;
 
     /// <summary>
     /// How far consumed the consumed must be before they gib
@@ -151,7 +151,7 @@ public sealed class ConsumeSystem : SharedConsumeSystem
                 var split = consumedSolution.SplitSolution(consumedSolution.Volume - ev.LargestVolume);
                 _puddle.TrySpillAt(ent.Owner, split, out _);
             }
-            _stomach.TryTransferSolution(ev.LargestStomach.Owner, consumedSolution, ev.LargestStomach.Comp);
+            _stomach.TryTransferSolution((ev.LargestStomach.Owner, ev.LargestStomach.Comp), consumedSolution);
         }
 
         // Transfer DNA
