@@ -18,6 +18,9 @@ public abstract partial class SharedChatSystem
         {
             foreach (var word in emote.ChatTriggers)
             {
+                if (!emote.UniqueTrigger) // Macro
+                    continue;
+
                 var lowerWord = word.ToLower();
                 if (dict.TryGetValue(lowerWord, out var value))
                 {

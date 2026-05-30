@@ -20,6 +20,7 @@
     components:
     - Vocal
   chatMessages: [honks.]
+  uniqueTrigger: false
   chatTriggers:
     - honk
     - honks
@@ -96,6 +97,7 @@
     components:
     - BorgChassis
   chatMessages: [beeps.]
+  uniqueTrigger: false
   chatTriggers:
     - beep
     - beeps
