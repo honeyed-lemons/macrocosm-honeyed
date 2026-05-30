@@ -67,6 +67,7 @@
     tags:
     - SiliconEmotes
   chatMessages: ["chat-emote-msg-honk"]
+  uniqueTrigger: false # Macro
   chatTriggers:
     - honk
     - honks
@@ -528,6 +529,7 @@
     tags:
     - SiliconEmotes
   chatMessages: ["chat-emote-msg-beep"]
+  uniqueTrigger: false # Macro
   chatTriggers:
     - beep
     - beeps

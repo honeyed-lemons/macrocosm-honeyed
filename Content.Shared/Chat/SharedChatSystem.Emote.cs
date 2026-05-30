@@ -19,7 +19,7 @@ public abstract partial class SharedChatSystem
             foreach (var word in emote.ChatTriggers)
             {
                 var lowerWord = word.ToLower();
-                if (dict.TryGetValue(lowerWord, out var value))
+                if (emote.UniqueTrigger && dict.TryGetValue(lowerWord, out var value)) // Macro, added emote.UniqueTrigger &&
                 {
                     var errMsg = $"Duplicate of emote word {lowerWord} in emotes {emote.ID} and {value.ID}";
                     Log.Error(errMsg);
