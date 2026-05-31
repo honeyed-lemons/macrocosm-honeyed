@@ -59,6 +59,11 @@
     - map: [ "pocket1" ]
     - map: [ "pocket2" ]
 
+    #MACRO start
+    # Kodepiiae 'arms' are drawn in front of everything else
+    - map: [ "enum.HumanoidVisualLayers.Tenta" ]
+    #MACRO end
+
     # Extra stuff
     - map: ["enum.HumanoidVisualLayers.Handcuffs"]
       color: "#ffffff"

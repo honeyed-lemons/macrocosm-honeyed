@@ -5,6 +5,10 @@
     enum.HumanoidVisualLayers.Hair:
       limit: 1
       required: false
+    enum.HumanoidVisualLayers.Eyes:
+      limit: 2
+      required: true
+      default: [ KodeHumanEyesUneven ]
     enum.HumanoidVisualLayers.Head:
       limit: 8
       required: false
@@ -77,68 +81,6 @@
       Kidneys: OrganKodepiiaKidneys
   - type: HumanoidProfile
     species: Kodepiia
-  - type: Sprite #have to redefine so that the arms are drawn above clothes.
-    layers:
-    # Torso
-    - map: [ "enum.HumanoidVisualLayers.Chest" ]
-
-    # Head
-    - map: [ "enum.HumanoidVisualLayers.Head" ]
-    - map: [ "enum.HumanoidVisualLayers.Snout" ]
-    - map: [ "enum.HumanoidVisualLayers.Eyes" ]
-
-    # Limbs
-    - map: [ "enum.HumanoidVisualLayers.RLeg" ]
-    - map: [ "enum.HumanoidVisualLayers.LLeg" ]
-
-    # Underwear & clothing
-    - map: [ "enum.HumanoidVisualLayers.UndergarmentBottom" ]
-    - map: [ "enum.HumanoidVisualLayers.UndergarmentTop" ]
-    - map: ["jumpsuit"]
-
-    # Extremities
-    - map: ["enum.HumanoidVisualLayers.LFoot"]
-    - map: ["enum.HumanoidVisualLayers.RFoot"]
-
-    # Stuff that goes over the body but below equipment
-    - map: ["enum.HumanoidVisualLayers.Overlay"]
-
-    # More equipment
-    - map: [ "gloves" ]
-    - map: [ "shoes" ]
-    - map: [ "ears" ]
-    - map: [ "eyes" ]
-    - map: [ "belt" ]
-    - map: [ "id" ]
-    - map: [ "outerClothing" ]
-    - map: [ "back" ]
-    - map: [ "neck" ]
-    - map: [ "suitstorage" ]
-
-    # Stuff that goes in front of equipment
-    - map: [ "enum.HumanoidVisualLayers.SnoutCover" ]
-    - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
-    - map: [ "enum.HumanoidVisualLayers.Hair" ]
-    - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
-    - map: [ "enum.HumanoidVisualLayers.HeadTop" ]
-    - map: [ "enum.HumanoidVisualLayers.Tail" ]
-    - map: [ "enum.HumanoidVisualLayers.TailOverlay" ]
-
-    # Kodepiiae 'arms' are drawn in front of everything else
-    - map: [ "enum.HumanoidVisualLayers.Tenta" ]
-
-    # Stuff that goes in front of stuff that goes in front of equipment
-    - map: [ "mask" ]
-    - map: [ "head" ]
-    - map: [ "pocket1" ]
-    - map: [ "pocket2" ]
-
-    # Extra stuff
-    - map: ["enum.HumanoidVisualLayers.Handcuffs"]
-      color: "#ffffff"
-      sprite: Objects/Misc/handcuffs.rsi
-      state: body-overlay-2
-      visible: false
 
 - type: entity
   parent:
@@ -179,6 +121,11 @@
       Unsexed: Kodepiia
   - type: Damageable
     damageModifierSet: Kodepiia
+  - type: DamageVisuals
+    damageOverlayGroups:
+      Brute:
+        sprite: Mobs/Effects/brute_damage.rsi
+        color: "#4f0000"
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:

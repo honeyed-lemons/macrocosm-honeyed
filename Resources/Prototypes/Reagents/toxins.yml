@@ -488,8 +488,8 @@
       - !type:PopupMessage
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Animal, Vox ]
-          shouldHave: true
+          type: [ Animal, Vox, Kodepiia ] #Macro, add Kodepiia
+          inverted: true
         type: Local
         visualType: MediumCaution
         messages: [ "generic-reagent-effect-sick" ]
@@ -498,13 +498,13 @@
         probability: 0.1
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Animal, Vox, Plant ]
-          shouldHave: true
+          type: [ Animal, Vox, Plant, Kodepiia ] #Macro, add Kodepiia
+          inverted: true
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Animal, Vox, Plant ]
-          ShouldHave: true
+          type: [ Animal, Vox, Plant, Kodepiia ] #Macro, add Kodepiia
+          inverted: true
         damage:
           types:
             Poison: 1
@@ -528,26 +528,22 @@
         reagent: Protein
         amount: 0.25
       # macro edit start
-      - !type:HealthChange
+      - !type:EvenHealthChange
         probability: 0.5
         conditions:
         - !type:MetabolizerTypeCondition
           type: [Kodepiia]
-          shouldHave: true
         damage:
-          groups:
-            Brute: -0.4
+          Brute: -0.4
       - !type:SatiateHunger
         conditions:
         - !type:MetabolizerTypeCondition
           type: [ Kodepiia ]
-          shouldHave: true
       - !type:ModifyBloodLevel
         amount: 1
         conditions:
         - !type:MetabolizerTypeCondition
           type: [ Kodepiia ]
-          shouldHave: true
       # macro edit end
 
 - type: reagent

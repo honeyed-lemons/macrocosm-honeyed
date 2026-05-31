@@ -197,6 +197,11 @@
   id: BigSquareEyes
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+        negative: false
   sprites:
   - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: bigsquare1
@@ -207,6 +212,11 @@
   id: BigSquareEyesUneven
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+        negative: false
   sprites:
   - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: bigsquareuneven1
@@ -217,6 +227,11 @@
   id: KodeGrayEyes
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+        negative: false
   sprites:
   - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: gray
@@ -225,6 +240,11 @@
   id: KodeGrayEyesUneven
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+        negative: false
   sprites:
   - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: grayuneven
@@ -233,6 +253,11 @@
   id: KodeHumanEyes
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+        negative: false
   sprites:
   - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: human
@@ -241,6 +266,11 @@
   id: KodeHumanEyesUnshaded
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+        negative: false
   sprites:
   - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: human
@@ -250,6 +280,11 @@
   id: KodeHumanEyesUneven
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+        negative: false
   sprites:
   - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: humanuneven1
@@ -260,6 +295,11 @@
   id: KodeHumanEyesUnevenUnshaded
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+        negative: false
   sprites:
   - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: humanuneven1
@@ -271,6 +311,11 @@
   id: KodeJamjar1
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+        negative: false
   sprites:
   - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: jamjar
@@ -279,6 +324,11 @@
   id: KodeJamjar2
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+        negative: false
   sprites:
   - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: jamjar2
@@ -287,6 +337,11 @@
   id: MaskEyes
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+        negative: false
   sprites:
   - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: mask
@@ -295,6 +350,11 @@
   id: KodeMothEyes
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+        negative: false
   sprites:
   - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: moth
@@ -303,6 +363,11 @@
   id: KodeMothEyesUneven
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+        negative: false
   sprites:
   - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: moth1
@@ -313,6 +378,11 @@
   id: KodeSharkminnowEyes
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+        negative: false
   sprites:
   - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: sharkminnow
@@ -321,6 +391,11 @@
   id: SquareEyes
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+        negative: false
   sprites:
   - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: square
@@ -329,6 +404,11 @@
   id: SquareEyesUnshaded
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+        negative: false
   sprites:
   - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: square
@@ -338,6 +418,11 @@
   id: SquareEyesUneven
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+        negative: false
   sprites:
   - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: squareuneven
@@ -346,6 +431,11 @@
   id: SquareEyesUnevenUnshaded
   bodyPart: Eyes
   groupWhitelist: [ Kodepiia ]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+        negative: false
   sprites:
   - sprite: _MACRO/Mobs/Customization/Kodepiia/eyes.rsi
     state: squareuneven

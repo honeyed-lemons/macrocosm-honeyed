@@ -14,7 +14,7 @@
         conditions: # macro add
         - !type:MetabolizerTypeCondition
           type: [Kodepiia]
-          shouldHave: false
+          inverted: true
   plantMetabolism:
   - !type:PlantAdjustNutrition
     amount: 1.5
@@ -75,12 +75,11 @@
        conditions:
         - !type:MetabolizerTypeCondition
           type: [Kodepiia]
-          shouldHave: false
+          inverted: true
       - !type:PopupMessage
         conditions:
         - !type:MetabolizerTypeCondition
           type: [Kodepiia]
-          shouldHave: true
         type: Local
         visualType: MediumCaution
         messages: [ "generic-reagent-effect-sick" ]
@@ -90,12 +89,10 @@
 #        conditions:
 #        - !type:MetabolizerTypeCondition
 #          type: [Kodepiia]
-#          shouldHave: true
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
           type: [Kodepiia]
-          shouldHave: true
         damage:
           types:
             Poison: 1
@@ -118,7 +115,7 @@
         conditions:
         - !type:MetabolizerTypeCondition # macro add
           type: [Kodepiia]
-          shouldHave: false
+          inverted: true
         - !type:ReagentCondition #Only satiates when eaten with nutriment
           reagent: Nutriment
           min: 0.1

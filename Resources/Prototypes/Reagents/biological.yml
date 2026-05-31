@@ -221,7 +221,7 @@
     params:
       volume: 6
   metabolisms: # macro add
-    edible:
+    Digestion:
       effects:
       - !type:SatiateHunger
         conditions:
@@ -271,4 +271,4 @@
         conditions: # macro add
         - !type:MetabolizerTypeCondition
           type: [Kodepiia]
-          shouldHave: false
+          inverted: true
