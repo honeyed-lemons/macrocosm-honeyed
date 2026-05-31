@@ -15,7 +15,7 @@
   name: chat-emote-name-honk
   category: Vocal
   available: false
-  icon: /Interface/Emotes/honk.png
+  icon: Interface/Emotes/honk.png
   whitelist:
     components:
     - Vocal
@@ -31,7 +31,7 @@
   name: chat-emote-name-ring
   category: Vocal
   available: false
-  icon: /Interface/Emotes/ring.png
+  icon: Interface/Emotes/ring.png
   whitelist:
     components:
     - Vocal
@@ -87,7 +87,7 @@
   id: KodeBeep
   name: chat-emote-name-beep
   category: Vocal
-  icon: /Interface/Emotes/beep.png
+  icon: Interface/Emotes/beep.png
   available: false
   whitelist:
     components:
