@@ -31,7 +31,7 @@
   name: chat-emote-name-ring
   category: Vocal
   available: false
-  icon: Interface/Emotes/ring.png
+  icon: Interface/Emotes/ping.png
   whitelist:
     components:
     - Vocal
@@ -126,7 +126,7 @@
   name: chat-emote-name-boom
   category: Vocal
   available: false
-  icon: _MACRO/Interface/Emotes/revs.png
+  icon: _MACRO/Interface/Emotes/bang.png
   whitelist:
     components:
     - Vocal
