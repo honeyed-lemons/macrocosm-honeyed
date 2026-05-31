@@ -120,3 +120,22 @@
     - revs
     - revving
     - revved
+
+- type: emote
+  id: KodeBoom
+  name: chat-emote-name-boom
+  category: Vocal
+  available: false
+  icon: _MACRO/Interface/Emotes/revs.png
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [booms.]
+  chatTriggers:
+    - boom
+    - booms
+    - boomed
+    - booming

@@ -92,7 +92,6 @@
   id: KodepiiaHisses
   files:
   - /Audio/_MACRO/Voice/Kodepiia/kodeextra/gon.ogg
-  - /Audio/_MACRO/Voice/Reptilian/reptilian_hiss1.ogg
   - /Audio/_MACRO/Voice/Vox/voxhiss.ogg
   - /Audio/Animals/snake_hiss.ogg
   - /Audio/Effects/spray.ogg
@@ -114,7 +113,7 @@
 - type: soundCollection
   id: KodepiiaRings
   files:
-  - /Audio/Voice/Kodepiia/kodeextra/doorbell.ogg
+  - /Audio/_MACRO/Voice/Kodepiia/kodeextra/doorbell.ogg
   - /Audio/Items/desk_bell_ring.ogg
   - /Audio/Items/ring.ogg
   - /Audio/Machines/ding.ogg
@@ -133,7 +132,7 @@
 - type: soundCollection
   id: KodepiiaPews
   files:
-  - /Audio/Voice/Kodepiia/kodeextra/pvc.ogg
+  - /Audio/_MACRO/Voice/Kodepiia/kodeextra/pvc.ogg
   - /Audio/Effects/Arcade/player_attack.ogg
   - /Audio/Effects/Arcade/player_charge.ogg
   - /Audio/Effects/Arcade/player_heal.ogg
@@ -194,7 +193,7 @@
 - type: soundCollection
   id: KodepiiaRevs
   files:
-  - /Audio/Weapons/chainsawwield.ogg
+  - /Audio/Weapons/chainsaw_rev.ogg
 
 - type: soundCollection
   id: KodepiiaBooms
@@ -250,13 +249,13 @@
 - type: soundCollection
   id: KodepiiaDeathgasp
   files:
-  - /Audio/_MACRO/Kodepiia/kodedeath1.ogg
-  - /Audio/_MACRO/Kodepiia/kodedeath2.ogg
+  - /Audio/_MACRO/Voice/Kodepiia/kodedeath1.ogg
+  - /Audio/_MACRO/Voice/Kodepiia/kodedeath2.ogg
 
 - type: soundCollection
   id: KodepiiaGasp
   files:
-  - /Audio/_MACRO/Kodepiia/kodegasp.ogg
+  - /Audio/_MACRO/Voice/Kodepiia/kodegasp.ogg
   - /Audio/_MACRO/Voice/Decapoid/decapoid_gasp.ogg
   - /Audio/_MACRO/Voice/Kodepiia/kodeextra/dino_gasp.ogg
   - /Audio/_MACRO/Voice/Gray/gray_gasp.ogg
@@ -325,6 +324,6 @@
 - type: soundCollection
   id: KodePlushie # so it can have all kode vocal sounds
   files:
-  - /Audio/_MACRO/Kodepiia/kodeask.ogg
-  - /Audio/_MACRO/Kodepiia/kodeexclaim.ogg
-  - /Audio/_MACRO/Kodepiia/kodetalk.ogg
+  - /Audio/_MACRO/Voice/Kodepiia/kodeask.ogg
+  - /Audio/_MACRO/Voice/Kodepiia/kodeexclaim.ogg
+  - /Audio/_MACRO/Voice/Kodepiia/kodetalk.ogg

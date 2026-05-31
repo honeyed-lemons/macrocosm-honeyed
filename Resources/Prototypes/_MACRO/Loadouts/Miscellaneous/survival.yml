@@ -70,6 +70,15 @@
     back:
     - BoxSurvivalAquatic
 
+- type: loadout
+  id: EmergencyMeat
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Carnivorous
+  storage:
+    back:
+    - BoxSurvivalKodepiia
+
 # Clown
 - type: loadout
   id: EmergencyAquaticClown
@@ -79,6 +88,15 @@
   storage:
     back:
     - BoxHugAquatic
+
+- type: loadout
+  id: EmergencyMeatClown
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Carnivorous
+  storage:
+    back:
+    - BoxHugKodepiia
 
 # Mime
 - type: loadout
@@ -90,6 +108,15 @@
     back:
     - BoxMimeAquatic
 
+- type: loadout
+  id: EmergencyMeatMime
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Carnivorous
+  storage:
+    back:
+    - BoxMimeKodepiia
+
 # Engineering / Extended
 - type: loadout
   id: EmergencyAquaticExtended
@@ -99,6 +126,15 @@
   storage:
     back:
     - BoxSurvivalEngineeringAquatic
+
+- type: loadout
+  id: EmergencyMeatExtended
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Carnivorous
+  storage:
+    back:
+    - BoxSurvivalEngineeringKodepiia
 
 # Medical
 - type: loadout
@@ -110,6 +146,15 @@
     back:
     - BoxSurvivalMedicalAquatic
 
+- type: loadout
+  id: EmergencyMeatMedical
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Carnivorous
+  storage:
+    back:
+    - BoxSurvivalMedicalKodepiia
+
 # Security
 - type: loadout
   id: EmergencyAquaticSecurity
@@ -120,6 +165,15 @@
     back:
     - BoxSurvivalSecurityAquatic
 
+- type: loadout
+  id: EmergencyMeatSecurity
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Carnivorous
+  storage:
+    back:
+    - BoxSurvivalSecurityKodepiia
+
 # Syndicate
 - type: loadout
   id: EmergencyAquaticSyndicate
@@ -129,3 +183,28 @@
   storage:
     back:
     - BoxSurvivalSyndicateAquatic
+
+- type: loadout
+  id: EmergencyMeatSyndicate
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Carnivorous
+  storage:
+    back:
+    - BoxSurvivalSyndicateKodepiia
+
+- type: loadout
+  id: LoadoutSpeciesEVAKodepiia
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Carnivorous
+  equipment:
+    suitstorage: OxygenTankFilled
+
+- type: loadout
+  id: LoadoutSpeciesPocketDoubleOxygenKodepiia
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Carnivorous
+  equipment:
+    pocket1: DoubleEmergencyOxygenTankFilled

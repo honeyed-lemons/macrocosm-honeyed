@@ -1,11 +1,11 @@
 - type: speechSounds
   id: Kodepiia
   saySound:
-    path: /Audio/_MACRO/Kodepiia/kodetalk.ogg
+    path: /Audio/_MACRO/Voice/Kodepiia/kodetalk.ogg
   askSound:
-    path: /Audio/_MACRO/Kodepiia/kodeask.ogg
+    path: /Audio/_MACRO/Voice/Kodepiia/kodeask.ogg
   exclaimSound:
-    path: /Audio/_MACRO/Kodepiia/kodeexclaim.ogg
+    path: /Audio/_MACRO/Voice/Kodepiia/kodeexclaim.ogg
 
 - type: emoteSounds
   id: Kodepiia
@@ -32,7 +32,7 @@
       collection: KodepiiaHisses
     CatMeow:
       collection: KodepiiaMeows
-    Boom:
+    KodeBoom:
       collection: KodepiiaBooms
     KodeRing:
       collection: KodepiiaRings
@@ -65,7 +65,7 @@
     Chirp:
       collection: KodepiiaChirps
     Snarl:
-      collection: Snarl
+      collection: VulpkaninSnarls
     Honk:
       collection: KodepiiaHonks
     Weh:
@@ -78,14 +78,6 @@
       collection: KodepiiaDeathgasp
     Squish:
       collection: Squishes
-    Bubble:
-      collection: Bubbles
-    Pop:
-      collection: Pops
-    Coo:
-      collection: VoxCoo
-      params:
-        volume: -7
 
 - type: speechVerb
   id: Kodepiia

@@ -73,7 +73,7 @@
   - EmergencyNitrogen
   - EmergencyOxygen
   - LoadoutSpeciesVoxNitrogen
-  - EmergencyMeat # macro add
+  - EmergencyMeat # MACRO: Kodepiia
   - EmergencyAquatic # MACRO: Decapoids
   - LoadoutSpeciesAquaticFullTank # MACRO: Decapoids
 
@@ -85,7 +85,7 @@
   loadouts:
   - LoadoutSpeciesEVANitrogen
   - LoadoutSpeciesEVAOxygen
-  - LoadoutSpeciesEVAKodepiia # macro add
+  - LoadoutSpeciesEVAKodepiia # MACRO: Kodepiia
 
 # vox get a nitrogen tank, other species get nothing
 - type: loadoutGroup
@@ -102,7 +102,7 @@
   loadouts:
   - LoadoutSpeciesPocketDoubleNitrogen
   - LoadoutSpeciesPocketDoubleOxygen
-  - LoadoutSpeciesPocketDoubleOxygenKodepiia # macro add
+  - LoadoutSpeciesPocketDoubleOxygenKodepiia # MACRO: Kodepiia
 
 # Command
 - type: loadoutGroup
@@ -560,7 +560,7 @@
   - EmergencyNitrogenClown
   - EmergencyOxygenClown
   - LoadoutSpeciesVoxNitrogen
-  - EmergencyMeatClown # macro add
+  - EmergencyMeatClown # MACRO: Kodepiia
   - EmergencyAquaticClown # MACRO: Decapoids
   - LoadoutSpeciesAquaticFullTank # MACRO: Decapoids
 
@@ -627,7 +627,7 @@
   - EmergencyOxygenMime
   - EmergencySpeciesMothMime
   - LoadoutSpeciesVoxNitrogen
-  - EmergencyMeatMime # macro add
+  - EmergencyMeatMime # MACRO: Kodepiia
   - EmergencyAquaticMime # MACRO: Decapoids
   - LoadoutSpeciesAquaticFullTank # MACRO: Decapoids
 
@@ -976,7 +976,7 @@
   - EmergencyNitrogenExtended
   - EmergencyOxygenExtended
   - LoadoutSpeciesVoxNitrogen
-  - EmergencyMeatSecurity # macro add
+  - EmergencyMeatSecurity # MACRO: Kodepiia
   - EmergencyAquaticExtended # MACRO: Decapoids
   - LoadoutSpeciesAquaticFullTank # MACRO: Decapoids
 
@@ -1367,7 +1367,7 @@
   - EmergencyNitrogenSyndicate
   - EmergencyOxygenSyndicate
   - LoadoutSpeciesVoxNitrogen
-  - EmergencyMeatSyndicate # macro add
+  - EmergencyMeatSyndicate # MACRO: Kodepiia
   - EmergencyAquaticSyndicate # MACRO: Decapoids
   - LoadoutSpeciesAquaticFullTank # MACRO: Decapoids
 
