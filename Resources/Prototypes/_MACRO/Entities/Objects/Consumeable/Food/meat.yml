@@ -7,15 +7,6 @@
   - type: Sprite
     sprite: _MACRO/Objects/Consumable/Food/Meat/kodepiia_meat.rsi
     state: kodepiia
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 20
-        reagents:
-        - ReagentId: UncookedAnimalProteins
-          Quantity: 9
-        - ReagentId: Fat
-          Quantity: 9
   - type: InternalTemperature
     conductivity: 0.41
   - type: Construction
@@ -29,7 +20,7 @@
 
 - type: entity
   name: crispy kodepiia flakes
-  parent: FoodMeatBase
+  parent: FoodMeatCookedBase
   id: FoodMeatKodepiiaCooked
   description: Crackly, salty, and just a little alive.
   components:
@@ -42,15 +33,6 @@
     layers:
     - state: kodepiia-cooked
       map: [ "enum.DamageStateVisualLayers.Base" ]
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 20
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 9
-        - ReagentId: Protein
-          Quantity: 9
   - type: Construction
     graph: KodepiiaFlakes
     node: crispy kodepiia flakes
