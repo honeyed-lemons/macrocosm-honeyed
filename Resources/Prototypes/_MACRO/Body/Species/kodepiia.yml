@@ -284,6 +284,15 @@
   id: OrganKodepiiaStomach
   name: primary gullet
   description: "Leaky."
+  components:
+  - type: Stomach
+    specialDigestible:
+      tags:
+      - Meat
+      - Pill
+      - Crayon
+      - Paper
+      - KodeEdible
 
 - type: entity
   parent: [ OrganBaseLiver, OrganKodepiiaInternal, OrganHumanMetabolizer ]
