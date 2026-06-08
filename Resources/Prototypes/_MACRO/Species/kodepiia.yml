@@ -1,7 +1,7 @@
 - type: species
   id: Kodepiia
   name: species-name-kodepiia
-  roundStart: true # reminder to set this back after testing
+  roundStart: false
 # randomViable: true
   prototype: MobKodepiia
   dollPrototype: AppearanceKodepiia
