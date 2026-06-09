@@ -19,11 +19,6 @@ public abstract partial class SharedKodepiiaScramblerSystem : EntitySystem
         SubscribeLocalEvent<KodepiiaScramblerComponent, ComponentShutdown>(OnShutdown);
     }
 
-    public sealed partial class KodepiiaScramblerEvent : InstantActionEvent;
-
-    [Serializable, NetSerializable]
-    public sealed partial class KodepiiaScramblerDoAfterEvent : SimpleDoAfterEvent;
-
     public void OnStartup(Entity<KodepiiaScramblerComponent> ent, ref ComponentStartup args)
     {
         _actionsSystem.AddAction(ent, ref ent.Comp.ScramblerAction, ent.Comp.ScramblerActionId);
@@ -40,3 +35,7 @@ public abstract partial class SharedKodepiiaScramblerSystem : EntitySystem
     }
 }
 
+public sealed partial class KodepiiaScramblerEvent : InstantActionEvent;
+
+[Serializable, NetSerializable]
+public sealed partial class KodepiiaScramblerDoAfterEvent : SimpleDoAfterEvent;

@@ -22,8 +22,6 @@ public sealed partial class KodepiiaScramblerSystem : SharedKodepiiaScramblerSys
     [Dependency] private PopupSystem _popup = default!;
     [Dependency] private DoAfterSystem _doAfter = default!;
     [Dependency] private SharedAudioSystem _audio = default!;
-    private const string OnScrambleStart = "kodepiia-scramble-others";
-    private const string OnScrambleCompleted = "kodepiia-scramble-self";
 
     public override void Initialize()
     {
@@ -39,7 +37,7 @@ public sealed partial class KodepiiaScramblerSystem : SharedKodepiiaScramblerSys
             BreakOnDamage = true,
             BreakOnMove = true,
         };
-        var popupOthers = Loc.GetString(OnScrambleStart, ("name", Identity.Entity(ent, EntityManager)), ("ent", ent));
+        var popupOthers = Loc.GetString(ent.Comp.OnScrambleStart, ("name", Identity.Entity(ent, EntityManager)), ("ent", ent));
         _popup.PopupEntity(popupOthers, ent, Filter.Pvs(ent).RemovePlayersByAttachedEntity(ent), true, PopupType.MediumCaution);
         _audio.PlayPvs(ent.Comp.ScramblerSound, ent);
         _doAfter.TryStartDoAfter(doargs);
@@ -60,7 +58,7 @@ public sealed partial class KodepiiaScramblerSystem : SharedKodepiiaScramblerSys
         if (!TryComp<HumanoidProfileComponent>(ent, out var humanoid))
             return;
 
-        var popupSelf = Loc.GetString(OnScrambleCompleted, ("name", Identity.Entity(ent, EntityManager)));
+        var popupSelf = Loc.GetString(ent.Comp.OnScrambleCompleted, ("name", Identity.Entity(ent, EntityManager)));
         var profile = HumanoidCharacterProfile.RandomWithSpecies(humanoid.Species);
 
         _visualBody.ApplyProfileTo(ent.Owner, profile);

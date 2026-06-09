@@ -15,4 +15,9 @@ public sealed partial class KodepiiaScramblerComponent : Component
     [DataField]
     public SoundSpecifier ScramblerSound = new SoundPathSpecifier("/Audio/_MACRO/Voice/Kodepiia/kodescramble/kodescramble.ogg");
 
+    [DataField]
+    public LocId OnScrambleStart = "kodepiia-scramble-others";
+
+    [DataField]
+    public LocId OnScrambleCompleted = "kodepiia-scramble-self";
 }

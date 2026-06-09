@@ -17,10 +17,6 @@ public abstract partial class SharedConsumeSystem : EntitySystem
         SubscribeLocalEvent<Components.ConsumeActionComponent, ComponentShutdown>(OnShutdown);
     }
 
-    public sealed partial class ConsumeEvent : EntityTargetActionEvent;
-    [Serializable, NetSerializable]
-    public sealed partial class ConsumeDoAfterEvent : SimpleDoAfterEvent;
-
     public void OnShutdown(Entity<Components.ConsumeActionComponent> ent, ref ComponentShutdown args)
     {
         _actionsSystem.RemoveAction(ent.Owner, ent.Comp.ConsumeAction);
@@ -31,3 +27,8 @@ public abstract partial class SharedConsumeSystem : EntitySystem
         _actionsSystem.AddAction(ent, ref ent.Comp.ConsumeAction, ent.Comp.ConsumeActionId);
     }
 }
+
+public sealed partial class ConsumeEvent : EntityTargetActionEvent;
+
+[Serializable, NetSerializable]
+public sealed partial class ConsumeDoAfterEvent : SimpleDoAfterEvent;
