@@ -1,3 +1,4 @@
+using Content.Shared.Body.Components;
 using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Damage;
 using Content.Shared.Whitelist;
@@ -52,7 +53,7 @@ public sealed partial class ConsumeActionComponent : Component
     /// Solution Container to eat from! Yummy!
     /// </summary>
     [DataField]
-    public string SolutionToDrinkFrom = "bloodstream";
+    public string SolutionToDrinkFrom = BloodstreamComponent.DefaultBloodSolutionName;
 
     /// <summary>
     /// Body mass is multiplied by this to get the amount of
