@@ -108,7 +108,6 @@
     blacklist:
       components:
       - SiliconLawBound
-    percentageConsumed: 0.25
   - type: TypingIndicator
     proto: kodepiia
   - type: Speech
