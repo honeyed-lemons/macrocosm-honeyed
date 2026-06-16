@@ -13,7 +13,7 @@ using Robust.Shared.Audio.Systems;
 using Robust.Shared.Player;
 
 namespace Content.Server._MACRO.Species.Kodepiia;
-
+/// <inheritdoc/>
 public sealed partial class KodepiiaScramblerSystem : SharedKodepiiaScramblerSystem
 {
     [Dependency] private ActionsSystem _actionsSystem = default!;
@@ -21,7 +21,6 @@ public sealed partial class KodepiiaScramblerSystem : SharedKodepiiaScramblerSys
     [Dependency] private SharedVisualBodySystem _visualBody = default!;
     [Dependency] private PopupSystem _popup = default!;
     [Dependency] private DoAfterSystem _doAfter = default!;
-    [Dependency] private SharedAudioSystem _audio = default!;
 
     public override void Initialize()
     {
@@ -37,10 +36,14 @@ public sealed partial class KodepiiaScramblerSystem : SharedKodepiiaScramblerSys
             BreakOnDamage = true,
             BreakOnMove = true,
         };
+
         var popupOthers = Loc.GetString(ent.Comp.OnScrambleStart, ("name", Identity.Entity(ent, EntityManager)), ("ent", ent));
         _popup.PopupEntity(popupOthers, ent, Filter.Pvs(ent).RemovePlayersByAttachedEntity(ent), true, PopupType.MediumCaution);
-        _audio.PlayPvs(ent.Comp.ScramblerSound, ent);
+
+        PlaySound(ent);
+
         _doAfter.TryStartDoAfter(doargs);
+
         args.Handled = true;
     }
 

@@ -5,7 +5,9 @@ using Robust.Shared.Audio.Systems;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared._MACRO.Species.Kodepiia;
-
+/// <summary>
+/// Handles kodepiia appearance scrambling.
+/// </summary>
 public abstract partial class SharedKodepiiaScramblerSystem : EntitySystem
 {
     [Dependency] private SharedActionsSystem _actionsSystem = default!;
@@ -29,13 +31,18 @@ public abstract partial class SharedKodepiiaScramblerSystem : EntitySystem
         _actionsSystem.RemoveAction(ent.Owner, ent.Comp.ScramblerAction);
     }
 
-    public void PlaySound(EntityUid uid, KodepiiaScramblerComponent comp)
+    public void PlaySound(Entity<KodepiiaScramblerComponent> ent)
     {
-        _audio.PlayPredicted(comp.ScramblerSound, uid, uid);
+        _audio.PlayPredicted(ent.Comp.ScramblerSound, ent, ent);
     }
 }
-
+/// <summary>
+/// Event that is triggered when the scrambler's action is used.
+/// </summary>
 public sealed partial class KodepiiaScramblerEvent : InstantActionEvent;
 
+/// <summary>
+/// This sure is a scrambler doafter event!
+/// </summary>
 [Serializable, NetSerializable]
 public sealed partial class KodepiiaScramblerDoAfterEvent : SimpleDoAfterEvent;

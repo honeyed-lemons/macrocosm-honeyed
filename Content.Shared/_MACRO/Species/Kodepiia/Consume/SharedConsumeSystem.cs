@@ -4,7 +4,9 @@ using Content.Shared.DoAfter;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared._MACRO.Species.Kodepiia.Consume;
-
+/// <summary>
+/// System that handles entities that consume other entities.. It's entity cannibalism.
+/// </summary>
 public abstract partial class SharedConsumeSystem : EntitySystem
 {
 
@@ -17,18 +19,24 @@ public abstract partial class SharedConsumeSystem : EntitySystem
         SubscribeLocalEvent<Components.ConsumeActionComponent, ComponentShutdown>(OnShutdown);
     }
 
-    public void OnShutdown(Entity<Components.ConsumeActionComponent> ent, ref ComponentShutdown args)
+    private void OnShutdown(Entity<Components.ConsumeActionComponent> ent, ref ComponentShutdown args)
     {
         _actionsSystem.RemoveAction(ent.Owner, ent.Comp.ConsumeAction);
     }
 
-    public void OnStartup(Entity<Components.ConsumeActionComponent> ent, ref ComponentStartup args)
+    private void OnStartup(Entity<Components.ConsumeActionComponent> ent, ref ComponentStartup args)
     {
         _actionsSystem.AddAction(ent, ref ent.Comp.ConsumeAction, ent.Comp.ConsumeActionId);
     }
 }
 
+/// <summary>
+/// Event that is triggered when the entity uses the consume action.
+/// </summary>
 public sealed partial class ConsumeEvent : EntityTargetActionEvent;
 
+/// <summary>
+/// This is a consume doafter event! It is a simple doafter event!
+/// </summary>
 [Serializable, NetSerializable]
 public sealed partial class ConsumeDoAfterEvent : SimpleDoAfterEvent;

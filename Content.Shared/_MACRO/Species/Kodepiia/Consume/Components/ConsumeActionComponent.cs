@@ -2,17 +2,27 @@ using Content.Shared.Body.Components;
 using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Damage;
 using Content.Shared.Whitelist;
+using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 
 namespace Content.Shared._MACRO.Species.Kodepiia.Consume.Components;
 
+/// <summary>
+/// Entities with the component gain the ability to "consume" other entities.
+/// </summary>
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 public sealed partial class ConsumeActionComponent : Component
 {
+    /// <summary>
+    /// The consume action entity itself.
+    /// </summary>
     [DataField]
     public EntityUid? ConsumeAction;
 
+    /// <summary>
+    /// The Id of the action.
+    /// </summary>
     [DataField]
     public string? ConsumeActionId;
 
@@ -22,6 +32,9 @@ public sealed partial class ConsumeActionComponent : Component
     [DataField(required: true)]
     public DamageSpecifier Damage = new();
 
+    /// <summary>
+    /// Whether or not the consumer can eat corpses that are rotten.
+    /// </summary>
     [DataField]
     public bool CanEatRotten = true;
 
@@ -69,41 +82,68 @@ public sealed partial class ConsumeActionComponent : Component
     public float PortionDrunk = 0.1f;
 
     /// <summary>
-    /// Percentage of how much we want to consume.
+    /// Sound that is played when the the victim is consumed.
     /// </summary>
     [DataField]
-    public float PercentageConsumed = 0.25f;
+    public SoundSpecifier ConsumptionSound = new SoundCollectionSpecifier("gib");
 
+    /// <summary>
+    /// LocId of the failure popup that occurs when consuming is blocked.
+    /// </summary>
     [DataField]
     public LocId ConsumeFailByBlock = "consume-fail-blocked";
 
+    /// <summary>
+    /// LocId of the failure popup that occurs when the victim is inedible.
+    /// </summary>
     [DataField]
     public LocId ConsumeFailByInedible = "consume-fail-inedible";
 
+    /// <summary>
+    /// LocId of the failure popup that occurs when consuming isn't actually dead.
+    /// </summary>
     [DataField]
     public LocId ConsumeFailByIncapacitated = "consume-fail-incapacitated";
 
+    /// <summary>
+    /// LocId of the failure popup that occurs when the consumer is full.
+    /// </summary>
     [DataField]
     public LocId ConsumeFailByFullStomach = "ingestion-you-cannot-ingest-any-more";
 
+    /// <summary>
+    /// LocId of the popup that only shows up to the consumer when they consume something.
+    /// </summary>
     [DataField]
     public LocId? PopupSelfStart;
 
+    /// <summary>
+    /// LocId of the popup that shows up to everyone but the consumer when they consume something.
+    /// </summary>
     [DataField]
     public LocId? PopupOthersStart;
 
+    /// <summary>
+    /// LocId of the popup that only shows up to the consumer after they consume something.
+    /// </summary>
     [DataField]
     public LocId? PopupSelfEnd;
 
+    /// <summary>
+    /// LocId of the popup that shows up to everyone but the consumer after they consume something.
+    /// </summary>
     [DataField]
     public LocId? PopupOthersEnd;
 
-    [DataField]
-    public bool CanGib = true;
-
+    /// <summary>
+    /// Whitelist of consumable entities.
+    /// </summary>
     [DataField, AutoNetworkedField]
     public EntityWhitelist? Whitelist;
 
+    /// <summary>
+    /// Blacklist of consumable entities.
+    /// </summary>
     [DataField, AutoNetworkedField]
     public EntityWhitelist? Blacklist;
 }
