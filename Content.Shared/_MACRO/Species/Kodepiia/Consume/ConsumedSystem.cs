@@ -14,22 +14,23 @@ public sealed partial class ConsumedSystem : EntitySystem
         SubscribeLocalEvent<ConsumedComponent, ExaminedEvent>(OnExamine);
         SubscribeLocalEvent<ConsumedComponent, MobStateChangedEvent>(OnMobStateChange);
     }
+
     private void OnExamine(Entity<ConsumedComponent> ent, ref ExaminedEvent args)
     {
-
         var consumeIndex = 0;
+        //This is basically just how consumed the entity is, with a range of 1 to 4
         switch (ent.Comp.ConsumedValue)
         {
-            case <= 0.25f:
+            case <= 1:
                 consumeIndex = 1;
                 break;
-            case <= 0.75f:
+            case <= 3:
                 consumeIndex = 2;
                 break;
-            case <= 1.0f:
+            case <= 4:
                 consumeIndex = 3;
                 break;
-            case <= 2.0f:
+            case <= 8:
                 consumeIndex = 4;
                 break;
         }
@@ -38,8 +39,10 @@ public sealed partial class ConsumedSystem : EntitySystem
             ("target", Identity.Entity(ent, EntityManager))));
 
     }
+
     private void OnMobStateChange(Entity<ConsumedComponent> ent, ref MobStateChangedEvent args)
     {
+        // If the entity is like, revived, it should no longer be considered "consumed"
         if (args.NewMobState == MobState.Alive)
             RemComp<ConsumedComponent>(ent);
     }
