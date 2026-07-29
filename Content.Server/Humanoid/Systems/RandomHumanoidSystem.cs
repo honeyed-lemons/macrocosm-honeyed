@@ -1,9 +1,11 @@
 using Content.Server.Humanoid.Components;
 using Content.Server.RandomMetadata;
+using Content.Shared._MACRO.CCVars;
 using Content.Shared.Body;
 using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.Humanoid;
 using Content.Shared.Preferences;
+using Robust.Shared.Configuration;
 using Robust.Shared.Map;
 using Robust.Shared.Serialization.Manager;
 
@@ -18,6 +20,8 @@ public sealed partial class RandomHumanoidSystem : EntitySystem
     [Dependency] private ISerializationManager _serialization = default!;
     [Dependency] private MetaDataSystem _metaData = default!;
     [Dependency] private SharedVisualBodySystem _visualBody = default!;
+
+    [Dependency] private IConfigurationManager _configurationManager = default!; // Macro
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -39,6 +43,14 @@ public sealed partial class RandomHumanoidSystem : EntitySystem
             throw new ArgumentException("Could not get random humanoid settings");
 
         var profile = HumanoidCharacterProfile.Random(prototype.SpeciesBlacklist);
+
+        // Macro Start
+        var weightProto = _configurationManager.GetCVar(MacroCCVars.RandomSpeciesWeightPrototype);
+        profile.Species = HumanoidCharacterProfile.RandomSpeciesWeighted(weightProto, prototype.SpeciesBlacklist);
+
+        profile.Appearance = HumanoidCharacterAppearance.Random(profile.Species,profile.Sex); // Rerandomize appearance after changing the profile species. this is clunky.
+        // Macro End
+
         var speciesProto = ProtoMan.Index<SpeciesPrototype>(profile.Species);
         var humanoid = EntityManager.CreateEntityUninitialized(speciesProto.Prototype, coordinates);
 
